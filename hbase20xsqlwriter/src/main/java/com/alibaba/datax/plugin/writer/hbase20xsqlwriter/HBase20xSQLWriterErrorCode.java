@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.hbase20xsqlwriter;
+package net.tbsoft.datax.plugin.writer.hbase20xsqlwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum HBase20xSQLWriterErrorCode implements ErrorCode {
     REQUIRED_VALUE("Hbasewriter-00", "您缺失了必须填写的参数值."),

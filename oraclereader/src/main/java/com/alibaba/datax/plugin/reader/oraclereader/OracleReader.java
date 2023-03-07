@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.reader.oraclereader;
+package net.tbsoft.datax.plugin.reader.oraclereader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.reader.CommonRdbmsReader;
-import com.alibaba.datax.plugin.rdbms.reader.Key;
-import com.alibaba.datax.plugin.rdbms.reader.util.HintUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.reader.CommonRdbmsReader;
+import net.tbsoft.datax.plugin.rdbms.reader.Key;
+import net.tbsoft.datax.plugin.rdbms.reader.util.HintUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,7 +64,7 @@ public class OracleReader extends Reader {
 
 		private void dealFetchSize(Configuration originalConfig) {
 			int fetchSize = originalConfig.getInt(
-					com.alibaba.datax.plugin.rdbms.reader.Constant.FETCH_SIZE,
+					net.tbsoft.datax.plugin.rdbms.reader.Constant.FETCH_SIZE,
 					Constant.DEFAULT_FETCH_SIZE);
 			if (fetchSize < 1) {
 				throw DataXException
@@ -73,14 +73,14 @@ public class OracleReader extends Reader {
 										fetchSize));
 			}
 			originalConfig.set(
-					com.alibaba.datax.plugin.rdbms.reader.Constant.FETCH_SIZE,
+					net.tbsoft.datax.plugin.rdbms.reader.Constant.FETCH_SIZE,
 					fetchSize);
 		}
 
 		private void dealHint(Configuration originalConfig) {
 			String hint = originalConfig.getString(Key.HINT);
 			if (StringUtils.isNotBlank(hint)) {
-				boolean isTableMode = originalConfig.getBool(com.alibaba.datax.plugin.rdbms.reader.Constant.IS_TABLE_MODE).booleanValue();
+				boolean isTableMode = originalConfig.getBool(net.tbsoft.datax.plugin.rdbms.reader.Constant.IS_TABLE_MODE).booleanValue();
 				if(!isTableMode){
 					throw DataXException.asDataXException(OracleReaderErrorCode.HINT_ERROR, "当且仅当非 querySql 模式读取 oracle 时才能配置 HINT.");
 				}
@@ -105,7 +105,7 @@ public class OracleReader extends Reader {
 		@Override
 		public void startRead(RecordSender recordSender) {
 			int fetchSize = this.readerSliceConfig
-					.getInt(com.alibaba.datax.plugin.rdbms.reader.Constant.FETCH_SIZE);
+					.getInt(net.tbsoft.datax.plugin.rdbms.reader.Constant.FETCH_SIZE);
 
 			this.commonRdbmsReaderTask.startRead(this.readerSliceConfig,
 					recordSender, super.getTaskPluginCollector(), fetchSize);

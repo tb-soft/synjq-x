@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.clickhousewriter;
+package net.tbsoft.datax.plugin.writer.clickhousewriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum ClickhouseWriterErrorCode implements ErrorCode {
 	TUPLE_NOT_SUPPORTED_ERROR("ClickhouseWriter-00", "不支持TUPLE类型导入."),

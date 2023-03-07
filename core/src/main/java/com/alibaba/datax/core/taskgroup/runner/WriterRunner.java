@@ -1,10 +1,10 @@
-package com.alibaba.datax.core.taskgroup.runner;
+package net.tbsoft.datax.core.taskgroup.runner;
 
-import com.alibaba.datax.common.plugin.AbstractTaskPlugin;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.statistics.PerfRecord;
-import com.alibaba.datax.core.statistics.communication.CommunicationTool;
+import net.tbsoft.datax.common.plugin.AbstractTaskPlugin;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.statistics.PerfRecord;
+import net.tbsoft.datax.core.statistics.communication.CommunicationTool;
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

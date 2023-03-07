@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.reader.hdfsreader;
+package net.tbsoft.datax.plugin.reader.hdfsreader;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.ColumnEntry;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.ColumnEntry;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONObject;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileStatus;
@@ -245,9 +245,9 @@ public class DFSUtil {
                                 RecordSender recordSender, TaskPluginCollector taskPluginCollector) {
         LOG.info(String.format("Start Read rcfile [%s].", sourceRcFilePath));
         List<ColumnEntry> column = UnstructuredStorageReaderUtil
-                .getListColumnEntry(readerSliceConfig, com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
+                .getListColumnEntry(readerSliceConfig, net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
         // warn: no default value '\N'
-        String nullFormat = readerSliceConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.NULL_FORMAT);
+        String nullFormat = readerSliceConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.NULL_FORMAT);
 
         Path rcFilePath = new Path(sourceRcFilePath);
         FileSystem fs = null;
@@ -293,8 +293,8 @@ public class DFSUtil {
                                  RecordSender recordSender, TaskPluginCollector taskPluginCollector) {
         LOG.info(String.format("Start Read orcfile [%s].", sourceOrcFilePath));
         List<ColumnEntry> column = UnstructuredStorageReaderUtil
-                .getListColumnEntry(readerSliceConfig, com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
-        String nullFormat = readerSliceConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.NULL_FORMAT);
+                .getListColumnEntry(readerSliceConfig, net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
+        String nullFormat = readerSliceConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.NULL_FORMAT);
         StringBuilder allColumns = new StringBuilder();
         StringBuilder allColumnTypes = new StringBuilder();
         boolean isReadAllColumns = false;

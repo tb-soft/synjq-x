@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.writer.selectdbwriter;
+package net.tbsoft.datax.plugin.writer.selectdbwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
 
 import java.io.Serializable;
 import java.util.List;

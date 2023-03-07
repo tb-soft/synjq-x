@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.tdenginewriter;
+package net.tbsoft.datax.plugin.writer.tdenginewriter;
 
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.Configuration;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

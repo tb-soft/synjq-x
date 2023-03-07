@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>datax-all</artifactId>
-        <groupId>com.alibaba.datax</groupId>
+        <groupId>net.tbsoft.datax</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -20,12 +20,12 @@
             <version>0.0.4</version>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>datax-core</artifactId>
             <version>${datax-project-version}</version>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>datax-common</artifactId>
             <version>${datax-project-version}</version>
         </dependency>
@@ -40,7 +40,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>plugin-rdbms-util</artifactId>
             <version>${datax-project-version}</version>
             <exclusions>

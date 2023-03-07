@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.reader.ossreader.util;
+package net.tbsoft.datax.plugin.reader.ossreader.util;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.ossreader.Constant;
-import com.alibaba.datax.plugin.reader.ossreader.Key;
-import com.alibaba.datax.plugin.reader.ossreader.OssReaderErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.ossreader.Constant;
+import net.tbsoft.datax.plugin.reader.ossreader.Key;
+import net.tbsoft.datax.plugin.reader.ossreader.OssReaderErrorCode;
 import com.aliyun.oss.ClientConfiguration;
 import com.aliyun.oss.OSSClient;
 

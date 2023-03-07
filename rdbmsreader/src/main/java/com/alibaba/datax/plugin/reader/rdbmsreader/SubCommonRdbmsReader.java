@@ -1,19 +1,19 @@
-package com.alibaba.datax.plugin.reader.rdbmsreader;
+package net.tbsoft.datax.plugin.reader.rdbmsreader;
 
-import com.alibaba.datax.common.element.BoolColumn;
-import com.alibaba.datax.common.element.BytesColumn;
-import com.alibaba.datax.common.element.DateColumn;
-import com.alibaba.datax.common.element.DoubleColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.plugin.rdbms.reader.CommonRdbmsReader;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.common.element.BoolColumn;
+import net.tbsoft.datax.common.element.BytesColumn;
+import net.tbsoft.datax.common.element.DateColumn;
+import net.tbsoft.datax.common.element.DoubleColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.plugin.rdbms.reader.CommonRdbmsReader;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;

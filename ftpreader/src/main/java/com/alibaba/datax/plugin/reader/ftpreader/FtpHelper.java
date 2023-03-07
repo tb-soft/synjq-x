@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.ftpreader;
+package net.tbsoft.datax.plugin.reader.ftpreader;
 
 import java.io.InputStream;
 import java.util.HashSet;

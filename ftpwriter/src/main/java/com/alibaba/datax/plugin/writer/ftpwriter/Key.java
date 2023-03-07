@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.ftpwriter;
+package net.tbsoft.datax.plugin.writer.ftpwriter;
 
 public class Key {
     public static final String PROTOCOL = "protocol";

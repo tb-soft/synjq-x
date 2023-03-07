@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.odpswriter.model;
+package net.tbsoft.datax.plugin.writer.odpswriter.model;
 
 import java.io.Serializable;
 import java.util.List;

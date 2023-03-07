@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.util;
+package net.tbsoft.datax.plugin.writer.util;
 
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSON;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.fluent.Content;
 import org.apache.http.client.fluent.Request;
@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：HttpUtils
  *

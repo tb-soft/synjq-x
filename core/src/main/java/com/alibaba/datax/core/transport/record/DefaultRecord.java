@@ -1,11 +1,11 @@
-package com.alibaba.datax.core.transport.record;
+package net.tbsoft.datax.core.transport.record;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.core.util.ClassSize;
-import com.alibaba.datax.core.util.FrameworkErrorCode;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.core.util.ClassSize;
+import net.tbsoft.datax.core.util.FrameworkErrorCode;
+import net.tbsoft.fastjson2.JSON;
 
 import java.util.ArrayList;
 import java.util.HashMap;

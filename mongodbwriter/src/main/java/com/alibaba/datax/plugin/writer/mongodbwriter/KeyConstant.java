@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.mongodbwriter;
+package net.tbsoft.datax.plugin.writer.mongodbwriter;
 
 public class KeyConstant {
     /**

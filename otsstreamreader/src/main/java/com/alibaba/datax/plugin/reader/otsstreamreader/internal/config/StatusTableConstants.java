@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.config;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config;
 
 import com.alicloud.openservices.tablestore.model.PrimaryKeySchema;
 import com.alicloud.openservices.tablestore.model.PrimaryKeyType;

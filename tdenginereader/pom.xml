@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>datax-all</artifactId>
-        <groupId>com.alibaba.datax</groupId>
+        <groupId>net.tbsoft.datax</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -18,7 +18,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>datax-common</artifactId>
             <version>${datax-project-version}</version>
             <exclusions>
@@ -30,7 +30,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.datax.tdenginewriter</groupId>
+            <groupId>net.tbsoft.datax.tdenginewriter</groupId>
             <artifactId>tdenginewriter</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
@@ -49,14 +49,14 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>plugin-rdbms-util</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>datax-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>test</scope>

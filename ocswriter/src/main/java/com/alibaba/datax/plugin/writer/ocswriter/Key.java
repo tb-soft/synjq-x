@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.ocswriter;
+package net.tbsoft.datax.plugin.writer.ocswriter;
 
 public final class Key {
     public final static String USER = "username";

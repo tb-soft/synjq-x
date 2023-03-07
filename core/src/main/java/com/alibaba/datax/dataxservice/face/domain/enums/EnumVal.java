@@ -1,4 +1,4 @@
-package com.alibaba.datax.dataxservice.face.domain.enums;
+package net.tbsoft.datax.dataxservice.face.domain.enums;
 
 public interface EnumVal {
     public int value();

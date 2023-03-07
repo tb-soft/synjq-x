@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adswriter.ads;
+package net.tbsoft.datax.plugin.writer.adswriter.ads;
 
 /**
  * ADS column meta.<br>

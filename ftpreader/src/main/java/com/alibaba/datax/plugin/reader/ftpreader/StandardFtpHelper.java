@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.ftpreader;
+package net.tbsoft.datax.plugin.reader.ftpreader;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,8 +14,8 @@ import org.apache.commons.net.ftp.FTPReply;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
 
 public class StandardFtpHelper extends FtpHelper {
 	private static final Logger LOG = LoggerFactory.getLogger(StandardFtpHelper.class);

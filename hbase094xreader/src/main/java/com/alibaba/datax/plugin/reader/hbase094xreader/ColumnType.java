@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.hbase094xreader;
+package net.tbsoft.datax.plugin.reader.hbase094xreader;
 
-import com.alibaba.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.exception.DataXException;
 import org.apache.commons.lang.StringUtils;
 
 import java.util.Arrays;

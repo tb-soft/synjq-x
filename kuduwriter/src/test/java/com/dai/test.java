@@ -1,7 +1,7 @@
 package com.dai;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.RetryUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.RetryUtil;
 import com.q1.datax.plugin.writer.kudu11xwriter.*;
 import static org.apache.kudu.client.AsyncKuduClient.LOG;
 

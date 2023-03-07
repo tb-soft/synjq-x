@@ -1,16 +1,16 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader.ext;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader.ext;
 
 import java.util.List;
 
-import com.alibaba.datax.common.constant.CommonConstant;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.reader.CommonRdbmsReader;
-import com.alibaba.datax.plugin.rdbms.reader.Key;
-import com.alibaba.datax.plugin.rdbms.reader.Constant;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.OceanBaseReader;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.util.ObReaderUtils;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.util.PartitionSplitUtil;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.constant.CommonConstant;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.reader.CommonRdbmsReader;
+import net.tbsoft.datax.plugin.rdbms.reader.Key;
+import net.tbsoft.datax.plugin.rdbms.reader.Constant;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.OceanBaseReader;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.util.ObReaderUtils;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.util.PartitionSplitUtil;
+import net.tbsoft.fastjson2.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -75,7 +75,7 @@ public class ReaderJob extends CommonRdbmsReader.Job {
     }
 
     private String getObRegionName(String jdbcUrl) {
-        final String obJdbcDelimiter = com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING;
+        final String obJdbcDelimiter = net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING;
         if (jdbcUrl.startsWith(obJdbcDelimiter)) {
             String[] ss = jdbcUrl.split(obJdbcDelimiter);
             int elementCount = 2;

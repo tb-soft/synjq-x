@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.unstructuredstorage.writer;
+package net.tbsoft.datax.plugin.unstructuredstorage.writer;
 
 import java.io.*;
 import java.text.DateFormat;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
-import com.alibaba.datax.common.element.BytesColumn;
+import net.tbsoft.datax.common.element.BytesColumn;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.compress.compressors.CompressorOutputStream;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;
@@ -20,13 +20,13 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.DateColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.DateColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
 import com.google.common.collect.Sets;
 
 public class UnstructuredStorageWriterUtil {

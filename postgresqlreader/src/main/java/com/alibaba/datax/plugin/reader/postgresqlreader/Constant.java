@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.postgresqlreader;
+package net.tbsoft.datax.plugin.reader.postgresqlreader;
 
 public class Constant {
 

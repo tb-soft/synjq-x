@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.mongodbreader.util;
+package net.tbsoft.datax.plugin.reader.mongodbreader.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.mongodbreader.KeyConstant;
-import com.alibaba.datax.plugin.reader.mongodbreader.MongoDBReaderErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.mongodbreader.KeyConstant;
+import net.tbsoft.datax.plugin.reader.mongodbreader.MongoDBReaderErrorCode;
 import com.google.common.base.Strings;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCommandException;

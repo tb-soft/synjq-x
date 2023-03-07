@@ -2,9 +2,9 @@ package com.starrocks.connector.datax.plugin.writer.starrockswriter;
 
 import java.io.Serializable;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;

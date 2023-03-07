@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader.util;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

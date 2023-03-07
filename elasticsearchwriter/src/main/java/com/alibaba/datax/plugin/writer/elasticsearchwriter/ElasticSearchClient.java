@@ -1,12 +1,12 @@
-package com.alibaba.datax.plugin.writer.elasticsearchwriter;
+package net.tbsoft.datax.plugin.writer.elasticsearchwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.elasticsearchwriter.jest.ClusterInfo;
-import com.alibaba.datax.plugin.writer.elasticsearchwriter.jest.ClusterInfoResult;
-import com.alibaba.datax.plugin.writer.elasticsearchwriter.jest.PutMapping7;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.elasticsearchwriter.jest.ClusterInfo;
+import net.tbsoft.datax.plugin.writer.elasticsearchwriter.jest.ClusterInfoResult;
+import net.tbsoft.datax.plugin.writer.elasticsearchwriter.jest.PutMapping7;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONObject;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;

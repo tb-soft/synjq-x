@@ -1,12 +1,12 @@
-package com.alibaba.datax.plugin.reader.tsdbreader;
+package net.tbsoft.datax.plugin.reader.tsdbreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.tsdbreader.conn.TSDBConnection;
-import com.alibaba.datax.plugin.reader.tsdbreader.util.TimeUtils;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.tsdbreader.conn.TSDBConnection;
+import net.tbsoft.datax.plugin.reader.tsdbreader.util.TimeUtils;
+import net.tbsoft.fastjson2.JSON;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.slf4j.Logger;
@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：TSDB Reader
  *

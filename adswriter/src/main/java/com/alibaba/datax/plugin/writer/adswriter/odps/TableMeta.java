@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adswriter.odps;
+package net.tbsoft.datax.plugin.writer.adswriter.odps;
 
 import java.util.Iterator;
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.osswriter;
+package net.tbsoft.datax.plugin.writer.osswriter;
 
-import com.alibaba.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.exception.DataXException;
 import com.aliyun.oss.model.PartETag;
 import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;

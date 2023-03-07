@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.ossreader.util;
+package net.tbsoft.datax.plugin.reader.ossreader.util;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.ossreader.Key;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.ossreader.Key;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONObject;
 
 /**
  * @Author: guxuan
@@ -25,9 +25,9 @@ public class HdfsParquetUtil {
     public static void adaptConfiguration(Configuration readerOriginConfig){
         String bucket = readerOriginConfig.getString(Key.BUCKET);
         String fs =String.format("oss://%s",bucket);
-        readerOriginConfig.set(com.alibaba.datax.plugin.reader.hdfsreader.Key.DEFAULT_FS,fs);
-        readerOriginConfig.set(com.alibaba.datax.plugin.reader.hdfsreader.Key.FILETYPE,
-                readerOriginConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT));
+        readerOriginConfig.set(net.tbsoft.datax.plugin.reader.hdfsreader.Key.DEFAULT_FS,fs);
+        readerOriginConfig.set(net.tbsoft.datax.plugin.reader.hdfsreader.Key.FILETYPE,
+                readerOriginConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT));
         /**
          *  "path"、 "column" 相互一致
          */

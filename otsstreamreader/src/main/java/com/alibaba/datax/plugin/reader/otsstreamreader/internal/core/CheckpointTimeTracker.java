@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.core;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.core;
 
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.StatusTableConstants;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.model.ShardCheckpoint;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.model.StreamJob;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.GsonParser;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.StatusTableConstants;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model.ShardCheckpoint;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model.StreamJob;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.GsonParser;
 import com.alicloud.openservices.tablestore.*;
 import com.alicloud.openservices.tablestore.core.protocol.OtsInternalApi;
 import com.alicloud.openservices.tablestore.model.*;

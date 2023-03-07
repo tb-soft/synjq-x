@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.reader.conn;
+package net.tbsoft.datax.plugin.reader.conn;
 
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.plugin.reader.util.TSDBUtils;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.plugin.reader.util.TSDBUtils;
+import net.tbsoft.fastjson2.JSON;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;

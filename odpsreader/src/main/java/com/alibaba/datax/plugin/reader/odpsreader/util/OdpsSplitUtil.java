@@ -1,12 +1,12 @@
-package com.alibaba.datax.plugin.reader.odpsreader.util;
+package net.tbsoft.datax.plugin.reader.odpsreader.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.MessageSource;
-import com.alibaba.datax.common.util.RangeSplitUtil;
-import com.alibaba.datax.plugin.reader.odpsreader.Constant;
-import com.alibaba.datax.plugin.reader.odpsreader.Key;
-import com.alibaba.datax.plugin.reader.odpsreader.OdpsReaderErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.MessageSource;
+import net.tbsoft.datax.common.util.RangeSplitUtil;
+import net.tbsoft.datax.plugin.reader.odpsreader.Constant;
+import net.tbsoft.datax.plugin.reader.odpsreader.Key;
+import net.tbsoft.datax.plugin.reader.odpsreader.OdpsReaderErrorCode;
 import com.aliyun.odps.Odps;
 import com.aliyun.odps.tunnel.TableTunnel.DownloadSession;
 

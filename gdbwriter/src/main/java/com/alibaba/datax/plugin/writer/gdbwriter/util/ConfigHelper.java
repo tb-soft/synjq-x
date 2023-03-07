@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.util;
+package net.tbsoft.datax.plugin.writer.gdbwriter.util;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,11 +9,11 @@ import java.util.function.Supplier;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.gdbwriter.GdbWriterErrorCode;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.gdbwriter.GdbWriterErrorCode;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONObject;
 
 /**
  * @author jerrywang

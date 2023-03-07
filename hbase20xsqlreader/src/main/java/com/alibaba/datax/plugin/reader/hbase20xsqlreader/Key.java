@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.hbase20xsqlreader;
+package net.tbsoft.datax.plugin.reader.hbase20xsqlreader;
 
 public class Key {
     /**

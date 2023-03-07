@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.opentsdbreader;
+package net.tbsoft.datax.plugin.reader.opentsdbreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 //This file is part of OpenTSDB.
 

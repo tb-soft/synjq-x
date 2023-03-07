@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.loghubwriter;
+package net.tbsoft.datax.plugin.writer.loghubwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum LogHubWriterErrorCode implements ErrorCode {
     BAD_CONFIG_VALUE("LogHubWriter-00", "The value you configured is invalid."),

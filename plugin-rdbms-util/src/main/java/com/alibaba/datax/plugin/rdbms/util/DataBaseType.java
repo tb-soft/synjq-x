@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.rdbms.util;
+package net.tbsoft.datax.plugin.rdbms.util;
 
-import com.alibaba.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.exception.DataXException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,7 +16,7 @@ public enum DataBaseType {
     Oracle("oracle", "oracle.jdbc.OracleDriver"),
     SQLServer("sqlserver", "com.microsoft.sqlserver.jdbc.SQLServerDriver"),
     PostgreSQL("postgresql", "org.postgresql.Driver"),
-    RDBMS("rdbms", "com.alibaba.datax.plugin.rdbms.util.DataBaseType"),
+    RDBMS("rdbms", "net.tbsoft.datax.plugin.rdbms.util.DataBaseType"),
     DB2("db2", "com.ibm.db2.jcc.DB2Driver"),
     ADB("adb","com.mysql.jdbc.Driver"),
     ADS("ads","com.mysql.jdbc.Driver"),

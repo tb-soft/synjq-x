@@ -1,6 +1,6 @@
 {
   "name": "tsdbreader",
-  "class": "com.alibaba.datax.plugin.reader.tsdbreader.TSDBReader",
+  "class": "net.tbsoft.datax.plugin.reader.tsdbreader.TSDBReader",
   "description": {
     "useScene": "从 TSDB 中摄取数据点",
     "mechanism": "通过 /api/query 接口查询出符合条件的数据点",

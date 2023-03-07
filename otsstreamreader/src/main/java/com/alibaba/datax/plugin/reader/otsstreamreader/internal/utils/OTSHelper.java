@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils;
 
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSRetryStrategyForStreamReader;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSRetryStrategyForStreamReader;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
 import com.alicloud.openservices.tablestore.model.*;
 import com.alicloud.openservices.tablestore.*;
 import com.aliyun.openservices.ots.internal.streamclient.utils.TimeUtils;

@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader.util;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader.util;
 
 import java.sql.Connection;
 import java.util.Collections;
 import java.util.List;
 
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Record;
 
 public class TaskContext {
     private Connection conn;

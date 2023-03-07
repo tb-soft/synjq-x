@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.util;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.util;
 
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.writer.CommonRdbmsWriter.Task;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.Config;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.writer.CommonRdbmsWriter.Task;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.Config;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;

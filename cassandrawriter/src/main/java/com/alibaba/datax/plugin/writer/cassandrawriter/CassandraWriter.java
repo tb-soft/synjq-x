@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.writer.cassandrawriter;
+package net.tbsoft.datax.plugin.writer.cassandrawriter;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
 
 import com.datastax.driver.core.BatchStatement;
 import com.datastax.driver.core.BatchStatement.Type;

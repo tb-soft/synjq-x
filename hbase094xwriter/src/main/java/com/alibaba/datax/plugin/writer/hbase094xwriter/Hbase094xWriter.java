@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.writer.hbase094xwriter;
+package net.tbsoft.datax.plugin.writer.hbase094xwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

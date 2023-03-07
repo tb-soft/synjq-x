@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.mongodbreader;
+package net.tbsoft.datax.plugin.reader.mongodbreader;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,21 +6,21 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import com.alibaba.datax.common.element.BoolColumn;
-import com.alibaba.datax.common.element.DateColumn;
-import com.alibaba.datax.common.element.DoubleColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil;
-import com.alibaba.datax.plugin.reader.mongodbreader.util.MongoUtil;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.element.BoolColumn;
+import net.tbsoft.datax.common.element.DateColumn;
+import net.tbsoft.datax.common.element.DoubleColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil;
+import net.tbsoft.datax.plugin.reader.mongodbreader.util.MongoUtil;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONObject;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Strings;

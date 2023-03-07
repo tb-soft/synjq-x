@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.unstructuredstorage.reader;
+package net.tbsoft.datax.plugin.unstructuredstorage.reader;
 
 public class Constant {
 	public static final String DEFAULT_ENCODING = "UTF-8";

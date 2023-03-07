@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.tdenginewriter;
+package net.tbsoft.datax.plugin.writer.tdenginewriter;
 
 public class Key {
     public static final String USERNAME = "username";

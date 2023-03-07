@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.writer.osswriter.util;
+package net.tbsoft.datax.plugin.writer.osswriter.util;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.osswriter.Constant;
-import com.alibaba.datax.plugin.writer.osswriter.Key;
-import com.alibaba.datax.plugin.writer.osswriter.OssWriterErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.osswriter.Constant;
+import net.tbsoft.datax.plugin.writer.osswriter.Key;
+import net.tbsoft.datax.plugin.writer.osswriter.OssWriterErrorCode;
 import com.aliyun.oss.ClientConfiguration;
 import com.aliyun.oss.OSSClient;
 

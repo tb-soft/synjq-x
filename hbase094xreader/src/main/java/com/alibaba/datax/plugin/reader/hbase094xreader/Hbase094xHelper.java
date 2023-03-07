@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.hbase094xreader;
+package net.tbsoft.datax.plugin.reader.hbase094xreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.TypeReference;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.TypeReference;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.hadoop.fs.Path;
@@ -54,7 +54,7 @@ public class Hbase094xHelper {
     /**
      * 每次都获取一个新的HTable  注意：HTable 本身是线程不安全的
      */
-    public static HTable getTable(com.alibaba.datax.common.util.Configuration configuration) {
+    public static HTable getTable(net.tbsoft.datax.common.util.Configuration configuration) {
         String hbaseConnConf = configuration.getString(Key.HBASE_CONFIG);
         String tableName = configuration.getString(Key.TABLE);
         HBaseAdmin admin = null;

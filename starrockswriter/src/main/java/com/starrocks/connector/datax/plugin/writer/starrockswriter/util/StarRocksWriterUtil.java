@@ -1,10 +1,10 @@
 package com.starrocks.connector.datax.plugin.writer.starrockswriter.util;
 
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.util.RdbmsException;
-import com.alibaba.datax.plugin.rdbms.writer.Constant;
-import com.alibaba.druid.sql.parser.ParserException;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.util.RdbmsException;
+import net.tbsoft.datax.plugin.rdbms.writer.Constant;
+import net.tbsoft.druid.sql.parser.ParserException;
 import com.starrocks.connector.datax.plugin.writer.starrockswriter.StarRocksWriterOptions;
 import com.google.common.base.Strings;
 

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.hbase094xreader;
+package net.tbsoft.datax.plugin.reader.hbase094xreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum Hbase094xReaderErrorCode implements ErrorCode {
     REQUIRED_VALUE("Hbase094xReader-00", "您缺失了必须填写的参数值."),

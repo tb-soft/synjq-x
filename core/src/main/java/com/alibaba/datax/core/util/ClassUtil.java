@@ -1,4 +1,4 @@
-package com.alibaba.datax.core.util;
+package net.tbsoft.datax.core.util;
 
 import java.lang.reflect.Constructor;
 

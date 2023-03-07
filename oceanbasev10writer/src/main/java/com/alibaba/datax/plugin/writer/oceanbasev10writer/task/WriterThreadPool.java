@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.task;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.task;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;

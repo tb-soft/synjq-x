@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.util;
+package net.tbsoft.datax.plugin.reader.util;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,9 +8,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
- * Function：com.alibaba.datax.common.util
+ * Function：net.tbsoft.datax.common.util
  *
  * @author Benedict Jin
  * @since 2019-04-22

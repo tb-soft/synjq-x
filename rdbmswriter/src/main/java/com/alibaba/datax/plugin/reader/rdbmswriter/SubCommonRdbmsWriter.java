@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.reader.rdbmswriter;
+package net.tbsoft.datax.plugin.reader.rdbmswriter;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.writer.CommonRdbmsWriter;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.writer.CommonRdbmsWriter;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

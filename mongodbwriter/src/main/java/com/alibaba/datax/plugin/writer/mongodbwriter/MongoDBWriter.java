@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.writer.mongodbwriter;
+package net.tbsoft.datax.plugin.writer.mongodbwriter;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.writer.Key;
-import com.alibaba.datax.plugin.writer.mongodbwriter.util.MongoUtil;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.writer.Key;
+import net.tbsoft.datax.plugin.writer.mongodbwriter.util.MongoUtil;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONObject;
 import com.google.common.base.Strings;
 import com.mongodb.*;
 import com.mongodb.client.MongoCollection;

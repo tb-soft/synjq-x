@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal;
 
 public class OTSStreamReaderException extends RuntimeException {
 

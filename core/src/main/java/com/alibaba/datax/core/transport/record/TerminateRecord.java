@@ -1,7 +1,7 @@
-package com.alibaba.datax.core.transport.record;
+package net.tbsoft.datax.core.transport.record;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
 
 import java.util.Map;
 

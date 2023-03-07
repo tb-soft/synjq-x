@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.ext;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -7,14 +7,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.alibaba.datax.plugin.rdbms.reader.Key;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.util.ObWriterUtils;
+import net.tbsoft.datax.plugin.rdbms.reader.Key;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.util.ObWriterUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.Config;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.Config;
 import com.alipay.oceanbase.obproxy.datasource.ObGroupDataSource;
 import com.alipay.oceanbase.obproxy.exception.ConnectionPropertiesNotSupportedException;
 import com.alipay.oceanbase.obproxy.util.StringParser.IllegalFormatException;

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.selectdbwriter;
+package net.tbsoft.datax.plugin.writer.selectdbwriter;
 
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Record;
 
 public class SelectdbCsvCodec extends SelectdbBaseCodec implements SelectdbCodec {
 

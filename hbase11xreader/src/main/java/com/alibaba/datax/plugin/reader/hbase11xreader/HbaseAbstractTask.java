@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.hbase11xreader;
+package net.tbsoft.datax.plugin.reader.hbase11xreader;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang3.time.DateUtils;
 import org.apache.hadoop.hbase.client.Result;
@@ -30,7 +30,7 @@ public abstract class HbaseAbstractTask {
     protected ResultScanner resultScanner;
 
 
-    public HbaseAbstractTask(com.alibaba.datax.common.util.Configuration configuration) {
+    public HbaseAbstractTask(net.tbsoft.datax.common.util.Configuration configuration) {
 
         this.htable = Hbase11xHelper.getTable(configuration);
 

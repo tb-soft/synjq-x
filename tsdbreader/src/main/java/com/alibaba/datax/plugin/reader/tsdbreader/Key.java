@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.reader.tsdbreader;
+package net.tbsoft.datax.plugin.reader.tsdbreader;
 
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：Key
  *

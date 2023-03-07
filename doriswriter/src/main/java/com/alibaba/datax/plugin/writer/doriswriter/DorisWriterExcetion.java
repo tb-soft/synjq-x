@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.doriswriter;
+package net.tbsoft.datax.plugin.writer.doriswriter;
 
 import java.io.IOException;
 import java.util.Map;

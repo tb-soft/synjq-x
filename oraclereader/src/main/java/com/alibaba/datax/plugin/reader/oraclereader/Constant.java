@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.oraclereader;
+package net.tbsoft.datax.plugin.reader.oraclereader;
 
 public class Constant {
 

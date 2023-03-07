@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.odpswriter;
+package net.tbsoft.datax.plugin.writer.odpswriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
-import com.alibaba.datax.common.util.MessageSource;
+import net.tbsoft.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.util.MessageSource;
 
 public enum OdpsWriterErrorCode implements ErrorCode {
     REQUIRED_VALUE("OdpsWriter-00", MessageSource.loadResourceBundle(OdpsWriterErrorCode.class).message("errorcode.required_value")),

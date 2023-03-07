@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.hologresjdbcwriter;
+package net.tbsoft.datax.plugin.writer.hologresjdbcwriter;
 
 public final class Key {
     public final static String JDBC_URL = "jdbcUrl";

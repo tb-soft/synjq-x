@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.writer.hbase11xsqlwriter;
+package net.tbsoft.datax.plugin.writer.hbase11xsqlwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.TypeReference;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.TypeReference;
 import org.apache.hadoop.hbase.TableName;
 import org.apache.hadoop.hbase.client.Admin;
 import org.apache.hadoop.hbase.util.Pair;

@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.reader.odpsreader.util;
+package net.tbsoft.datax.plugin.reader.odpsreader.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.DataXCaseEnvUtil;
-import com.alibaba.datax.common.util.MessageSource;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.reader.odpsreader.ColumnType;
-import com.alibaba.datax.plugin.reader.odpsreader.Constant;
-import com.alibaba.datax.plugin.reader.odpsreader.InternalColumnInfo;
-import com.alibaba.datax.plugin.reader.odpsreader.Key;
-import com.alibaba.datax.plugin.reader.odpsreader.OdpsReaderErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.DataXCaseEnvUtil;
+import net.tbsoft.datax.common.util.MessageSource;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.reader.odpsreader.ColumnType;
+import net.tbsoft.datax.plugin.reader.odpsreader.Constant;
+import net.tbsoft.datax.plugin.reader.odpsreader.InternalColumnInfo;
+import net.tbsoft.datax.plugin.reader.odpsreader.Key;
+import net.tbsoft.datax.plugin.reader.odpsreader.OdpsReaderErrorCode;
 import com.aliyun.odps.*;
 import com.aliyun.odps.Column;
 import com.aliyun.odps.account.Account;

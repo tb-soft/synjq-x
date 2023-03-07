@@ -1,12 +1,12 @@
-package com.alibaba.datax.plugin.reader.postgresqlreader;
+package net.tbsoft.datax.plugin.reader.postgresqlreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.reader.CommonRdbmsReader;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.reader.CommonRdbmsReader;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
 
 import java.util.List;
 
@@ -22,13 +22,13 @@ public class PostgresqlReader extends Reader {
         @Override
         public void init() {
             this.originalConfig = super.getPluginJobConf();
-            int fetchSize = this.originalConfig.getInt(com.alibaba.datax.plugin.rdbms.reader.Constant.FETCH_SIZE,
+            int fetchSize = this.originalConfig.getInt(net.tbsoft.datax.plugin.rdbms.reader.Constant.FETCH_SIZE,
                     Constant.DEFAULT_FETCH_SIZE);
             if (fetchSize < 1) {
             	throw DataXException.asDataXException(DBUtilErrorCode.REQUIRED_VALUE,
 					String.format("您配置的fetchSize有误，根据DataX的设计，fetchSize : [%d] 设置值不能小于 1.", fetchSize));
             }
-            this.originalConfig.set(com.alibaba.datax.plugin.rdbms.reader.Constant.FETCH_SIZE, fetchSize);
+            this.originalConfig.set(net.tbsoft.datax.plugin.rdbms.reader.Constant.FETCH_SIZE, fetchSize);
 
             this.commonRdbmsReaderMaster = new CommonRdbmsReader.Job(DATABASE_TYPE);
             this.commonRdbmsReaderMaster.init(this.originalConfig);
@@ -65,7 +65,7 @@ public class PostgresqlReader extends Reader {
 
         @Override
         public void startRead(RecordSender recordSender) {
-            int fetchSize = this.readerSliceConfig.getInt(com.alibaba.datax.plugin.rdbms.reader.Constant.FETCH_SIZE);
+            int fetchSize = this.readerSliceConfig.getInt(net.tbsoft.datax.plugin.rdbms.reader.Constant.FETCH_SIZE);
 
             this.commonRdbmsReaderSlave.startRead(this.readerSliceConfig, recordSender,
                     super.getTaskPluginCollector(), fetchSize);

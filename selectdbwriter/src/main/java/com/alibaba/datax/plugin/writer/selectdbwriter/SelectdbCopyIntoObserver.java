@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.selectdbwriter;
+package net.tbsoft.datax.plugin.writer.selectdbwriter;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,15 +1,15 @@
-package com.alibaba.datax.core.container.util;
+package net.tbsoft.datax.core.container.util;
 
 /**
  * Created by xiafei.qiuxf on 14/12/17.
  */
 
-import com.alibaba.datax.common.exception.CommonErrorCode;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.spi.Hook;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.util.FrameworkErrorCode;
-import com.alibaba.datax.core.util.container.JarLoader;
+import net.tbsoft.datax.common.exception.CommonErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.spi.Hook;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.util.FrameworkErrorCode;
+import net.tbsoft.datax.core.util.container.JarLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

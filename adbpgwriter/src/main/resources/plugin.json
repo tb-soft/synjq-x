@@ -1,6 +1,6 @@
 {
   "name": "adbpgwriter",
-  "class": "com.alibaba.datax.plugin.writer.adbpgwriter.AdbpgWriter",
+  "class": "net.tbsoft.datax.plugin.writer.adbpgwriter.AdbpgWriter",
   "description": "",
   "developer": "alibaba"
 }

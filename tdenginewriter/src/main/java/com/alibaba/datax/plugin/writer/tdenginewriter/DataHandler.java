@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.tdenginewriter;
+package net.tbsoft.datax.plugin.writer.tdenginewriter;
 
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
 
 public interface DataHandler {
     int handle(RecordReceiver lineReceiver, TaskPluginCollector collector);

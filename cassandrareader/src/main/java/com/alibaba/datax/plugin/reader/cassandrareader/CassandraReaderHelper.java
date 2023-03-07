@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.cassandrareader;
+package net.tbsoft.datax.plugin.reader.cassandrareader;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -13,17 +13,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.alibaba.datax.common.element.BoolColumn;
-import com.alibaba.datax.common.element.BytesColumn;
-import com.alibaba.datax.common.element.DateColumn;
-import com.alibaba.datax.common.element.DoubleColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.element.BoolColumn;
+import net.tbsoft.datax.common.element.BytesColumn;
+import net.tbsoft.datax.common.element.DateColumn;
+import net.tbsoft.datax.common.element.DoubleColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.fastjson2.JSON;
 
 import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.CodecRegistry;

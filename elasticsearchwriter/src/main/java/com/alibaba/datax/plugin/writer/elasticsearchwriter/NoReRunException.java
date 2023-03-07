@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.elasticsearchwriter;
+package net.tbsoft.datax.plugin.writer.elasticsearchwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public class NoReRunException extends DataXException {
     public NoReRunException(String errorMessage) {

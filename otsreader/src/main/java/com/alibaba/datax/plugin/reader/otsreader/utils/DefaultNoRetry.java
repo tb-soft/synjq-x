@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsreader.utils;
+package net.tbsoft.datax.plugin.reader.otsreader.utils;
 
 import com.aliyun.openservices.ots.internal.OTSDefaultRetryStrategy;
 

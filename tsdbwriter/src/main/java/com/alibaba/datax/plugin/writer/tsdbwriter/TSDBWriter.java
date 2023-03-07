@@ -1,13 +1,13 @@
-package com.alibaba.datax.plugin.writer.tsdbwriter;
+package net.tbsoft.datax.plugin.writer.tsdbwriter;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.ConfigurationUtil;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.writer.conn.TSDBConnection;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.ConfigurationUtil;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.writer.conn.TSDBConnection;
 import com.aliyun.hitsdb.client.TSDB;
 import com.aliyun.hitsdb.client.TSDBClientFactory;
 import com.aliyun.hitsdb.client.TSDBConfig;
@@ -25,7 +25,7 @@ import java.util.*;
 import java.util.concurrent.Callable;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：TSDB Http Writer
  *

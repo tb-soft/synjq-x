@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.writer.adswriter.load;
+package net.tbsoft.datax.plugin.writer.adswriter.load;
 
-import com.alibaba.datax.plugin.writer.adswriter.ads.ColumnDataType;
-import com.alibaba.datax.plugin.writer.adswriter.ads.ColumnInfo;
-import com.alibaba.datax.plugin.writer.adswriter.ads.TableInfo;
-import com.alibaba.datax.plugin.writer.adswriter.odps.DataType;
-import com.alibaba.datax.plugin.writer.adswriter.odps.FieldSchema;
-import com.alibaba.datax.plugin.writer.adswriter.odps.TableMeta;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.ColumnDataType;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.ColumnInfo;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.TableInfo;
+import net.tbsoft.datax.plugin.writer.adswriter.odps.DataType;
+import net.tbsoft.datax.plugin.writer.adswriter.odps.FieldSchema;
+import net.tbsoft.datax.plugin.writer.adswriter.odps.TableMeta;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,9 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.mapping;
+package net.tbsoft.datax.plugin.writer.gdbwriter.mapping;
 
-import static com.alibaba.datax.plugin.writer.gdbwriter.Key.ImportType.VERTEX;
+import static net.tbsoft.datax.plugin.writer.gdbwriter.Key.ImportType.VERTEX;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,14 +13,14 @@ import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.gdbwriter.Key;
-import com.alibaba.datax.plugin.writer.gdbwriter.model.GdbEdge;
-import com.alibaba.datax.plugin.writer.gdbwriter.model.GdbElement;
-import com.alibaba.datax.plugin.writer.gdbwriter.model.GdbVertex;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.gdbwriter.Key;
+import net.tbsoft.datax.plugin.writer.gdbwriter.model.GdbEdge;
+import net.tbsoft.datax.plugin.writer.gdbwriter.model.GdbElement;
+import net.tbsoft.datax.plugin.writer.gdbwriter.model.GdbVertex;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONObject;
 
 import lombok.extern.slf4j.Slf4j;
 

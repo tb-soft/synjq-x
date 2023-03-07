@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsreader;
+package net.tbsoft.datax.plugin.reader.otsreader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,18 +7,18 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.otsreader.callable.GetFirstRowPrimaryKeyCallable;
-import com.alibaba.datax.plugin.reader.otsreader.callable.GetTableMetaCallable;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSConf;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSConst;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSRange;
-import com.alibaba.datax.plugin.reader.otsreader.utils.ParamChecker;
-import com.alibaba.datax.plugin.reader.otsreader.utils.Common;
-import com.alibaba.datax.plugin.reader.otsreader.utils.GsonParser;
-import com.alibaba.datax.plugin.reader.otsreader.utils.ReaderModelParser;
-import com.alibaba.datax.plugin.reader.otsreader.utils.RangeSplit;
-import com.alibaba.datax.plugin.reader.otsreader.utils.RetryHelper;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.otsreader.callable.GetFirstRowPrimaryKeyCallable;
+import net.tbsoft.datax.plugin.reader.otsreader.callable.GetTableMetaCallable;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSConf;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSConst;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSRange;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.ParamChecker;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.Common;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.GsonParser;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.ReaderModelParser;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.RangeSplit;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.RetryHelper;
 import com.aliyun.openservices.ots.OTSClient;
 import com.aliyun.openservices.ots.model.Direction;
 import com.aliyun.openservices.ots.model.PrimaryKeyValue;

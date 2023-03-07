@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.conn;
+package net.tbsoft.datax.plugin.reader.conn;
 
-import com.alibaba.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.plugin.RecordSender;
 
 import java.util.List;
 

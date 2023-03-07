@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.writer.odpswriter.util;
+package net.tbsoft.datax.plugin.writer.odpswriter.util;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.MessageSource;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.writer.odpswriter.*;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.MessageSource;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.writer.odpswriter.*;
 import com.aliyun.odps.*;
 import com.aliyun.odps.Column;
 import com.aliyun.odps.account.Account;
@@ -573,7 +573,7 @@ public class OdpsUtil {
         return allPartColumns;
     }
 
-    public static String getPartColValFromDataXRecord(com.alibaba.datax.common.element.Record dataxRecord,
+    public static String getPartColValFromDataXRecord(net.tbsoft.datax.common.element.Record dataxRecord,
                                                       List<Integer> positions, List<String> userConfiguredColumns,
                                                       Map<String, DateTransForm> dateTransFormMap) {
         StringBuilder partition = new StringBuilder();
@@ -584,7 +584,7 @@ public class OdpsUtil {
                 }
                 String partName = userConfiguredColumns.get(i);
                 //todo: 这里应该根据分区列的类型做转换，这里先直接toString转换了
-                com.alibaba.datax.common.element.Column partitionCol = dataxRecord.getColumn(i);
+                net.tbsoft.datax.common.element.Column partitionCol = dataxRecord.getColumn(i);
                 String partVal = partitionCol.getRawData().toString();
                 if (StringUtils.isBlank(partVal)) {
                     throw new DataXException(OdpsWriterErrorCode.ILLEGAL_VALUE, String.format(
@@ -599,11 +599,11 @@ public class OdpsUtil {
                 if (null != dateTransForm) {
                     try {
                         // 日期列
-                        if (partitionCol.getType().equals(com.alibaba.datax.common.element.Column.Type.DATE)) {
+                        if (partitionCol.getType().equals(net.tbsoft.datax.common.element.Column.Type.DATE)) {
                             partVal = OdpsUtil.date2StringWithFormat(partitionCol.asDate(), dateTransForm.getToFormat());
                         }
                         // String 列，需要先按照 fromFormat 转换为日期
-                        if (partitionCol.getType().equals(com.alibaba.datax.common.element.Column.Type.STRING)) {
+                        if (partitionCol.getType().equals(net.tbsoft.datax.common.element.Column.Type.STRING)) {
                             partVal = OdpsUtil.date2StringWithFormat(partitionCol.asDate(dateTransForm.getFromFormat()), dateTransForm.getToFormat());
                         }
                     } catch (DataXException e) {

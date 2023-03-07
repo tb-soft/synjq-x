@@ -1,8 +1,8 @@
-package com.alibaba.datax.common.statistics;
+package net.tbsoft.datax.common.statistics;
 
-import com.alibaba.datax.common.statistics.PerfRecord.PHASE;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.HostUtils;
+import net.tbsoft.datax.common.statistics.PerfRecord.PHASE;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.HostUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

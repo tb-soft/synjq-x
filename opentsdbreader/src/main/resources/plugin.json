@@ -1,6 +1,6 @@
 {
   "name": "opentsdbreader",
-  "class": "com.alibaba.datax.plugin.reader.opentsdbreader.OpenTSDBReader",
+  "class": "net.tbsoft.datax.plugin.reader.opentsdbreader.OpenTSDBReader",
   "description": {
     "useScene": "从 OpenTSDB 中摄取数据点",
     "mechanism": "根据时间和 metric 直连底层 HBase 存储，从而 Scan 出符合条件的数据点",

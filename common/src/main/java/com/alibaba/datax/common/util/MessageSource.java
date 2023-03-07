@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.util;
+package net.tbsoft.datax.common.util;
 
 import java.text.MessageFormat;
 import java.util.HashMap;

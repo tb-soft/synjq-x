@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.selectdbwriter;
+package net.tbsoft.datax.plugin.writer.selectdbwriter;
 
 import java.util.Map;
 

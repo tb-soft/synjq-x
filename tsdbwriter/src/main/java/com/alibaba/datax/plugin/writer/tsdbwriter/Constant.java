@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.tsdbwriter;
+package net.tbsoft.datax.plugin.writer.tsdbwriter;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：Key
  *

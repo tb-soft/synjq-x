@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.hbase11xsqlreader;
+package net.tbsoft.datax.plugin.reader.hbase11xsqlreader;
 
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.Configuration;
 import org.junit.Test;
 
 import java.util.List;

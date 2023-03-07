@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.ossreader;
+package net.tbsoft.datax.plugin.reader.ossreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.RetryUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.RetryUtil;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.GetObjectRequest;
 import com.aliyun.oss.model.OSSObject;

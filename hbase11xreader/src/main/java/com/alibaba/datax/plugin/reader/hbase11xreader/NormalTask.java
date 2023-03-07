@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.hbase11xreader;
+package net.tbsoft.datax.plugin.reader.hbase11xreader;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.util.Configuration;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;

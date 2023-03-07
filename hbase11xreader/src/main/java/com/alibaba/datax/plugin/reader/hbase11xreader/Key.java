@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.hbase11xreader;
+package net.tbsoft.datax.plugin.reader.hbase11xreader;
 
 public final class Key {
 

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.hbase11xsqlreader;
+package net.tbsoft.datax.plugin.reader.hbase11xsqlreader;
 
 import org.apache.hadoop.hbase.HConstants;
 

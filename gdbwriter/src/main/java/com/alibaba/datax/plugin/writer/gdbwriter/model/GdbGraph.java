@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.model;
+package net.tbsoft.datax.plugin.writer.gdbwriter.model;
 
 import java.util.List;
 
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Record;
 
 import groovy.lang.Tuple2;
 

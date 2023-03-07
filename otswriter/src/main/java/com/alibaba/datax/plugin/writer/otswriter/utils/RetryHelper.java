@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.otswriter.utils;
+package net.tbsoft.datax.plugin.writer.otswriter.utils;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,7 +7,7 @@ import java.util.concurrent.Callable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.plugin.writer.otswriter.model.LogExceptionManager;
+import net.tbsoft.datax.plugin.writer.otswriter.model.LogExceptionManager;
 import com.aliyun.openservices.ots.ClientException;
 import com.aliyun.openservices.ots.OTSErrorCode;
 import com.aliyun.openservices.ots.OTSException;

@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.writer.elasticsearchwriter;
+package net.tbsoft.datax.plugin.writer.elasticsearchwriter;
 
 import java.util.List;
 
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.fastjson2.JSONObject;
 
 public class JsonPathUtil {
 

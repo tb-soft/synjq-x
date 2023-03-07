@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.util;
+package net.tbsoft.datax.plugin.reader.util;
 
-import com.alibaba.datax.plugin.reader.conn.DataPoint4TSDB;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.plugin.reader.conn.DataPoint4TSDB;
+import net.tbsoft.fastjson2.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

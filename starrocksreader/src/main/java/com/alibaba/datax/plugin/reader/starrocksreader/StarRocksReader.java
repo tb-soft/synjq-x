@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.reader.starrocksreader;
+package net.tbsoft.datax.plugin.reader.starrocksreader;
 
 import java.util.List;
 
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.reader.CommonRdbmsReader;
-import com.alibaba.datax.plugin.rdbms.reader.Constant;
-import com.alibaba.datax.plugin.rdbms.reader.Key;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.reader.CommonRdbmsReader;
+import net.tbsoft.datax.plugin.rdbms.reader.Constant;
+import net.tbsoft.datax.plugin.rdbms.reader.Key;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

@@ -1,7 +1,7 @@
-package com.alibaba.datax.core.util.container;
+package net.tbsoft.datax.core.util.container;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.core.util.FrameworkErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.core.util.FrameworkErrorCode;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.Validate;
 

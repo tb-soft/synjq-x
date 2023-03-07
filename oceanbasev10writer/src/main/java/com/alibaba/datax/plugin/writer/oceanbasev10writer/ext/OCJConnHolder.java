@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.ext;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext;
 
 import java.sql.Connection;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
 
 /**
  * wrap oceanbase java client

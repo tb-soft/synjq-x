@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.rdbms.util;
+package net.tbsoft.datax.plugin.rdbms.util;
 
 import java.util.ArrayList;
 import java.util.List;

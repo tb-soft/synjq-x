@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.reader.tsdbreader.conn;
+package net.tbsoft.datax.plugin.reader.tsdbreader.conn;
 
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.plugin.reader.tsdbreader.util.TSDBUtils;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.plugin.reader.tsdbreader.util.TSDBUtils;
+import net.tbsoft.fastjson2.JSON;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 import java.util.Map;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：TSDB Connection
  *

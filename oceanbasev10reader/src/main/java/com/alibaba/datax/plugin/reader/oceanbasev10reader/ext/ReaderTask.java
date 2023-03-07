@@ -1,20 +1,20 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader.ext;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader.ext;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.statistics.PerfRecord;
-import com.alibaba.datax.common.statistics.PerfTrace;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.reader.CommonRdbmsReader;
-import com.alibaba.datax.plugin.rdbms.reader.Constant;
-import com.alibaba.datax.plugin.rdbms.reader.Key;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.RdbmsException;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.Config;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.util.ObReaderUtils;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.util.TaskContext;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.statistics.PerfRecord;
+import net.tbsoft.datax.common.statistics.PerfTrace;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.reader.CommonRdbmsReader;
+import net.tbsoft.datax.plugin.rdbms.reader.Constant;
+import net.tbsoft.datax.plugin.rdbms.reader.Key;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.RdbmsException;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.Config;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.util.ObReaderUtils;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.util.TaskContext;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -53,8 +53,8 @@ public class ReaderTask extends CommonRdbmsReader.Task {
         queryTimeoutSeconds = readerSliceConfig.getInt(Config.QUERY_TIMEOUT_SECOND,
                 Config.DEFAULT_QUERY_TIMEOUT_SECOND);
         // ob10的处理
-        if (jdbcUrl.startsWith(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING)) {
-            String[] ss = jdbcUrl.split(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
+        if (jdbcUrl.startsWith(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING)) {
+            String[] ss = jdbcUrl.split(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
             if (ss.length == 3) {
                 LOG.info("this is ob1_0 jdbc url.");
                 username = ss[1].trim() + ":" + username;

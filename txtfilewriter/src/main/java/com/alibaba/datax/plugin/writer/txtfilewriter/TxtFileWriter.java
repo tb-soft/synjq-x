@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.writer.txtfilewriter;
+package net.tbsoft.datax.plugin.writer.txtfilewriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterUtil;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
@@ -39,12 +39,12 @@ public class TxtFileWriter extends Writer {
             this.writerSliceConfig = this.getPluginJobConf();
             this.validateParameter();
             String dateFormatOld = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FORMAT);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FORMAT);
             String dateFormatNew = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.DATE_FORMAT);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.DATE_FORMAT);
             if (null == dateFormatNew) {
                 this.writerSliceConfig
-                        .set(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.DATE_FORMAT,
+                        .set(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.DATE_FORMAT,
                                 dateFormatOld);
             }
             if (null != dateFormatOld) {
@@ -57,7 +57,7 @@ public class TxtFileWriter extends Writer {
         private void validateParameter() {
             this.writerSliceConfig
                     .getNecessaryValue(
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME,
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME,
                             TxtFileWriterErrorCode.REQUIRED_VALUE);
 
             String path = this.writerSliceConfig.getNecessaryValue(Key.PATH,
@@ -95,9 +95,9 @@ public class TxtFileWriter extends Writer {
         public void prepare() {
             String path = this.writerSliceConfig.getString(Key.PATH);
             String fileName = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
             String writeMode = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.WRITE_MODE);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.WRITE_MODE);
             // truncate option handler
             if ("truncate".equals(writeMode)) {
                 LOG.info(String.format(
@@ -213,7 +213,7 @@ public class TxtFileWriter extends Writer {
             LOG.info("begin do split...");
             List<Configuration> writerSplitConfigs = new ArrayList<Configuration>();
             String filePrefix = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
 
             Set<String> allFiles = new HashSet<String>();
             String path = null;
@@ -245,7 +245,7 @@ public class TxtFileWriter extends Writer {
                 allFiles.add(fullFileName);
 
                 splitedTaskConfig
-                        .set(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME,
+                        .set(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME,
                                 fullFileName);
 
                 LOG.info(String.format("splited write file name:[%s]",
@@ -273,7 +273,7 @@ public class TxtFileWriter extends Writer {
             this.writerSliceConfig = this.getPluginJobConf();
             this.path = this.writerSliceConfig.getString(Key.PATH);
             this.fileName = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
         }
 
         @Override

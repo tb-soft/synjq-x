@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.ftpreader;
+package net.tbsoft.datax.plugin.reader.ftpreader;
 
 public class Key {
 	public static final String PROTOCOL = "protocol";

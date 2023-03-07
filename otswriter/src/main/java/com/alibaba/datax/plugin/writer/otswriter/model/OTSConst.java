@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.otswriter.model;
+package net.tbsoft.datax.plugin.writer.otswriter.model;
 
 public class OTSConst {
     // Reader support type

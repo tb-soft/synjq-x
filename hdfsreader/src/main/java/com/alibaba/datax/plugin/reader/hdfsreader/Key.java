@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.hdfsreader;
+package net.tbsoft.datax.plugin.reader.hdfsreader;
 
 public final class Key {
 

@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.writer.ftpwriter;
+package net.tbsoft.datax.plugin.writer.ftpwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterUtil;
-import com.alibaba.datax.plugin.writer.ftpwriter.util.Constant;
-import com.alibaba.datax.plugin.writer.ftpwriter.util.IFtpHelper;
-import com.alibaba.datax.plugin.writer.ftpwriter.util.SftpHelperImpl;
-import com.alibaba.datax.plugin.writer.ftpwriter.util.StandardFtpHelperImpl;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterUtil;
+import net.tbsoft.datax.plugin.writer.ftpwriter.util.Constant;
+import net.tbsoft.datax.plugin.writer.ftpwriter.util.IFtpHelper;
+import net.tbsoft.datax.plugin.writer.ftpwriter.util.SftpHelperImpl;
+import net.tbsoft.datax.plugin.writer.ftpwriter.util.StandardFtpHelperImpl;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -66,7 +66,7 @@ public class FtpWriter extends Writer {
         private void validateParameter() {
             this.writerSliceConfig
                     .getNecessaryValue(
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME,
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME,
                             FtpWriterErrorCode.REQUIRED_VALUE);
             String path = this.writerSliceConfig.getNecessaryValue(Key.PATH,
                     FtpWriterErrorCode.REQUIRED_VALUE);
@@ -112,9 +112,9 @@ public class FtpWriter extends Writer {
             this.ftpHelper.mkDirRecursive(path);
 
             String fileName = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
             String writeMode = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.WRITE_MODE);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.WRITE_MODE);
 
             Set<String> allFileExists = this.ftpHelper.getAllFilesInDir(path,
                     fileName);
@@ -217,9 +217,9 @@ public class FtpWriter extends Writer {
             this.writerSliceConfig = this.getPluginJobConf();
             this.path = this.writerSliceConfig.getString(Key.PATH);
             this.fileName = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME);
             this.suffix = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.SUFFIX);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.SUFFIX);
 
             this.host = this.writerSliceConfig.getString(Key.HOST);
             this.port = this.writerSliceConfig.getInt(Key.PORT);

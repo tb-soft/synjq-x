@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.ext;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,8 +14,8 @@ public class ServerConnectInfo {
 	public String jdbcUrl;
 
 	public ServerConnectInfo(final String jdbcUrl, final String username, final String password) {
-		if (jdbcUrl.startsWith(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING)) {
-			String[] ss = jdbcUrl.split(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
+		if (jdbcUrl.startsWith(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING)) {
+			String[] ss = jdbcUrl.split(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
 			if (ss.length != 3) {
 				throw new RuntimeException("jdbc url format is not correct: " + jdbcUrl);
 			}

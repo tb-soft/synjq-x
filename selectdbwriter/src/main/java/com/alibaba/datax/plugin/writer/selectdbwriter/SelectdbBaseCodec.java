@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.selectdbwriter;
+package net.tbsoft.datax.plugin.writer.selectdbwriter;
 
-import com.alibaba.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Column;
 
 public class SelectdbBaseCodec {
     protected String convertionField( Column col) {

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.adswriter;
+package net.tbsoft.datax.plugin.writer.adswriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum AdsWriterErrorCode implements ErrorCode {
     REQUIRED_VALUE("AdsWriter-00", "您缺失了必须填写的参数值."),

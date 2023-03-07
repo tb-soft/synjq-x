@@ -1,11 +1,11 @@
-package com.alibaba.datax.core.statistics.container.communicator.taskgroup;
+package net.tbsoft.datax.core.statistics.container.communicator.taskgroup;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.statistics.communication.Communication;
-import com.alibaba.datax.core.statistics.container.collector.ProcessInnerCollector;
-import com.alibaba.datax.core.statistics.container.communicator.AbstractContainerCommunicator;
-import com.alibaba.datax.core.util.container.CoreConstant;
-import com.alibaba.datax.dataxservice.face.domain.enums.State;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.core.statistics.container.collector.ProcessInnerCollector;
+import net.tbsoft.datax.core.statistics.container.communicator.AbstractContainerCommunicator;
+import net.tbsoft.datax.core.util.container.CoreConstant;
+import net.tbsoft.datax.dataxservice.face.domain.enums.State;
 import org.apache.commons.lang.Validate;
 
 import java.util.List;

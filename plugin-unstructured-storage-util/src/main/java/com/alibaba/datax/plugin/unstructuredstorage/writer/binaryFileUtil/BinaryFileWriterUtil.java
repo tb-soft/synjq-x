@@ -1,13 +1,13 @@
-package com.alibaba.datax.plugin.unstructuredstorage.writer.binaryFileUtil;
+package net.tbsoft.datax.plugin.unstructuredstorage.writer.binaryFileUtil;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.Key;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterErrorCode;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.Key;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterErrorCode;
 import com.google.common.collect.Sets;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -21,7 +21,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.*;
+import static net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.*;
 
 /**
  * @Author: guxuan
@@ -102,9 +102,9 @@ public class BinaryFileWriterUtil {
             Configuration splitedTaskConfig = writerSliceConfig.clone();
             String fileName = getFileName(readerSliceConfig.getString(SOURCE_FILE));
             splitedTaskConfig
-                    .set(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME, fileName);
+                    .set(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME, fileName);
             splitedTaskConfig.
-                    set(com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.BINARY, true);
+                    set(net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.BINARY, true);
             writerSplitConfigs.add(splitedTaskConfig);
         }
         LOG.info("end do split.");

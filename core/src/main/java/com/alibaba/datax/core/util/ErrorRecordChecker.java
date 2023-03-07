@@ -1,10 +1,10 @@
-package com.alibaba.datax.core.util;
+package net.tbsoft.datax.core.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.statistics.communication.Communication;
-import com.alibaba.datax.core.statistics.communication.CommunicationTool;
-import com.alibaba.datax.core.util.container.CoreConstant;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.core.statistics.communication.CommunicationTool;
+import net.tbsoft.datax.core.util.container.CoreConstant;
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

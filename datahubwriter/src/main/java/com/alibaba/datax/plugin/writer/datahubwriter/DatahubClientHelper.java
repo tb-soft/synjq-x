@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.writer.datahubwriter;
+package net.tbsoft.datax.plugin.writer.datahubwriter;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.TypeReference;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.TypeReference;
 import com.aliyun.datahub.client.DatahubClient;
 import com.aliyun.datahub.client.DatahubClientBuilder;
 import com.aliyun.datahub.client.auth.Account;

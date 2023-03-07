@@ -1,7 +1,7 @@
-package com.alibaba.datax.common.plugin;
+package net.tbsoft.datax.common.plugin;
 
-import com.alibaba.datax.common.base.BaseObject;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.base.BaseObject;
+import net.tbsoft.datax.common.util.Configuration;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.tdenginewriter;
+package net.tbsoft.datax.plugin.writer.tdenginewriter;
 
 import org.junit.AfterClass;
 import org.junit.Assert;

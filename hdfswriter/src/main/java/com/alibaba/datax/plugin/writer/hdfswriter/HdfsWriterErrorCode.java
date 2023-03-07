@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.hdfswriter;
+package net.tbsoft.datax.plugin.writer.hdfswriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * Created by shf on 15/10/8.

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.otswriter;
+package net.tbsoft.datax.plugin.writer.otswriter;
 
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSConf;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSConf;
 import com.aliyun.openservices.ots.internal.OTSRetryStrategy;
 
 public class WriterRetryPolicy implements OTSRetryStrategy {

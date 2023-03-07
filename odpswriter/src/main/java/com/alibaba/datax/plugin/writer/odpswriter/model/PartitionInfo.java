@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.odpswriter.model;
+package net.tbsoft.datax.plugin.writer.odpswriter.model;
 
 public class PartitionInfo {
     /**

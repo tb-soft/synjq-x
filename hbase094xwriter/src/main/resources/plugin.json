@@ -1,7 +1,6 @@
 {
-    "name": "hbase094xwriter",
-    "class": "com.alibaba.datax.plugin.writer.hbase094xwriter.Hbase094xWriter",
-    "description": "use put: prod. mechanism: use hbase java api put data.",
-    "developer": "alibaba"
+  "name": "hbase094xwriter",
+  "class": "net.tbsoft.datax.plugin.writer.hbase094xwriter.Hbase094xWriter",
+  "description": "use put: prod. mechanism: use hbase java api put data.",
+  "developer": "alibaba"
 }
-

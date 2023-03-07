@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.osswriter;
+package net.tbsoft.datax.plugin.writer.osswriter;
 
 import java.io.*;
 import java.text.DateFormat;
@@ -6,36 +6,36 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.Callable;
 
-import com.alibaba.datax.common.element.BytesColumn;
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.util.RangeSplitUtil;
-import com.alibaba.datax.plugin.unstructuredstorage.FileFormat;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.binaryFileUtil.BinaryFileWriterUtil;
-import com.alibaba.datax.plugin.writer.hdfswriter.HdfsWriter;
-import com.alibaba.datax.plugin.writer.osswriter.util.HandlerUtil;
-import com.alibaba.datax.plugin.writer.osswriter.util.HdfsParquetUtil;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.element.BytesColumn;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.util.RangeSplitUtil;
+import net.tbsoft.datax.plugin.unstructuredstorage.FileFormat;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.binaryFileUtil.BinaryFileWriterUtil;
+import net.tbsoft.datax.plugin.writer.hdfswriter.HdfsWriter;
+import net.tbsoft.datax.plugin.writer.osswriter.util.HandlerUtil;
+import net.tbsoft.datax.plugin.writer.osswriter.util.HdfsParquetUtil;
+import net.tbsoft.fastjson2.JSON;
 import com.aliyun.oss.model.*;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.TextCsvWriterManager;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterUtil;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.UnstructuredWriter;
-import com.alibaba.datax.plugin.writer.osswriter.util.OssUtil;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.TextCsvWriterManager;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterUtil;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.UnstructuredWriter;
+import net.tbsoft.datax.plugin.writer.osswriter.util.OssUtil;
 import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.OSSException;
 
-import static com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.*;
+import static net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.*;
 
 /**
  * Created by haiwei.luo on 15-02-09.
@@ -94,11 +94,11 @@ public class OssWriter extends Writer {
             this.writerSliceConfig = this.getPluginJobConf();
             this.basicValidateParameter();
             this.fileFormat = this.writerSliceConfig.getString(
-                    com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT,
-                    com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.FILE_FORMAT_TEXT);
+                    net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT,
+                    net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.FILE_FORMAT_TEXT);
             this.encoding = this.writerSliceConfig.getString(
-                    com.alibaba.datax.plugin.unstructuredstorage.writer.Key.ENCODING,
-                    com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.DEFAULT_ENCODING);
+                    net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.ENCODING,
+                    net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.DEFAULT_ENCODING);
             this.useHdfsWriterProxy  = HdfsParquetUtil.isUseHdfsWriterProxy(this.fileFormat);
             if(useHdfsWriterProxy){
                 this.hdfsWriterJob = new HdfsWriter.Job();
@@ -114,10 +114,10 @@ public class OssWriter extends Writer {
             this.peerPluginJobConf = this.getPeerPluginJobConf();
             this.isBinaryFile = FileFormat.getFileFormatByConfiguration(this.peerPluginJobConf).isBinary();
             this.syncMode = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.SYNC_MODE, "");
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.SYNC_MODE, "");
             this.writeSingleObject = this.writerSliceConfig.getBool(Key.WRITE_SINGLE_OBJECT, false);
             this.header = this.writerSliceConfig
-                    .getList(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.HEADER, null, String.class);
+                    .getList(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.HEADER, null, String.class);
             this.validateParameter();
             this.ossClient = OssUtil.initOssClient(this.writerSliceConfig);
             this.ossWriterProxy = new OssWriterProxy(this.writerSliceConfig, this.ossClient);
@@ -146,7 +146,7 @@ public class OssWriter extends Writer {
 
             // warn: do not support compress!!
             String compress = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.COMPRESS);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.COMPRESS);
             if (StringUtils.isNotBlank(compress)) {
                 String errorMessage = String.format("OSS writes do not support compression for the moment. The compressed item %s does not work", compress);
                 LOG.error(errorMessage);
@@ -169,7 +169,7 @@ public class OssWriter extends Writer {
             this.bucket = this.writerSliceConfig.getString(Key.BUCKET);
             this.object = this.writerSliceConfig.getString(Key.OBJECT);
             String writeMode = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.WRITE_MODE);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.WRITE_MODE);
             List<String> sourceFileName = this.peerPluginJobConf.getList(SOURCE_FILE_NAME, new ArrayList<String>(),
                     String.class);
             this.objectDir = this.getObjectDir(object);
@@ -213,9 +213,9 @@ public class OssWriter extends Writer {
                     }
                 } else {
                     if (TRUNCATE.equals(writeMode)) {
-                        sourceFileName = this.peerPluginJobConf.getList(com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.SOURCE_FILE, new ArrayList<String>(),
+                        sourceFileName = this.peerPluginJobConf.getList(net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.SOURCE_FILE, new ArrayList<String>(),
                                 String.class);
-                        List<String> readerPath =  this.peerPluginJobConf.getList(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.PATH, new ArrayList<String>(),
+                        List<String> readerPath =  this.peerPluginJobConf.getList(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.PATH, new ArrayList<String>(),
                                 String.class);
                         int parentPathLength = OssWriter.parseParentPathLength(readerPath);
                         this.writerSliceConfig.set("__parentPathLength", parentPathLength);
@@ -461,7 +461,7 @@ public class OssWriter extends Writer {
                 for (int i = 0; i < readerSplitConfigs.size(); i++) {
                     Configuration splitedTaskConfig = writerSliceConfig.clone();
                     splitedTaskConfig.set(Key.OBJECT, objectDir);
-                    splitedTaskConfig.set(com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.BINARY,
+                    splitedTaskConfig.set(net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.BINARY,
                             this.isBinaryFile);
                     writerSplitConfigs.add(splitedTaskConfig);
                 }
@@ -571,7 +571,7 @@ public class OssWriter extends Writer {
 
         private boolean isPeer2PeerCopyMode() {
             return this.isBinaryFile
-                    || com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.SYNC_MODE_VALUE_COPY
+                    || net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.SYNC_MODE_VALUE_COPY
                     .equalsIgnoreCase(this.syncMode);
         }
 
@@ -622,8 +622,8 @@ public class OssWriter extends Writer {
             this.writerSliceConfig = this.getPluginJobConf();
             this.fileFormat = this.writerSliceConfig
                     .getString(
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT,
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.FILE_FORMAT_TEXT);
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT,
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.FILE_FORMAT_TEXT);
             this.useHdfsWriterProxy  = HdfsParquetUtil.isUseHdfsWriterProxy(this.fileFormat);
             if(useHdfsWriterProxy){
                 this.hdfsWriterTask = new HdfsWriter.Task();
@@ -642,30 +642,30 @@ public class OssWriter extends Writer {
             this.bucket = this.writerSliceConfig.getString(Key.BUCKET);
             this.object = this.writerSliceConfig.getString(Key.OBJECT);
             this.nullFormat = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.NULL_FORMAT);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.NULL_FORMAT);
             this.dateFormat = this.writerSliceConfig
                     .getString(
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Key.DATE_FORMAT,
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.DATE_FORMAT,
                             null);
             if (StringUtils.isNotBlank(this.dateFormat)) {
                 this.dateParse = new SimpleDateFormat(dateFormat);
             }
             this.encoding = this.writerSliceConfig
                     .getString(
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Key.ENCODING,
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.DEFAULT_ENCODING);
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.ENCODING,
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.DEFAULT_ENCODING);
             this.header = this.writerSliceConfig
                     .getList(
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Key.HEADER,
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.HEADER,
                             null, String.class);
             this.maxFileSize = this.writerSliceConfig
                     .getLong(
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Key.MAX_FILE_SIZE,
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.MAX_FILE_SIZE);
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.MAX_FILE_SIZE,
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.MAX_FILE_SIZE);
             this.suffix = this.writerSliceConfig
                     .getString(
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Key.SUFFIX,
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.DEFAULT_SUFFIX);
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.SUFFIX,
+                            net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.DEFAULT_SUFFIX);
             this.suffix = this.suffix.trim();// warn: need trim
             this.encrypt = this.writerSliceConfig.getBool(Key.ENCRYPT, false);
 
@@ -673,15 +673,15 @@ public class OssWriter extends Writer {
             this.blockSizeInByte = this.writerSliceConfig.getLong(Key.BLOCK_SIZE_IN_MB, 10L) * 1024 * 1024;
 
             this.isBinaryFile = this.writerSliceConfig.getBool(
-                    com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.BINARY, false);
+                    net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.BINARY, false);
 
             this.objectDir = this.getObjectDir(this.object);
             this.syncMode = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.SYNC_MODE, "");
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.SYNC_MODE, "");
             this.parentPathLength = this.writerSliceConfig.getInt("__parentPathLength", 0);
 
             this.byteEncoding = this.writerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.BYTE_ENCODING);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.BYTE_ENCODING);
 
             this.writeSingleObject = this.writerSliceConfig.getBool(Key.WRITE_SINGLE_OBJECT, false);
             this.uploadId = this.writerSliceConfig.getString(Key.UPLOAD_ID);
@@ -808,7 +808,7 @@ public class OssWriter extends Writer {
                     assert meta != null;
                     gotData = true;
                     String objectNameTmp = meta
-                            .get(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.META_KEY_FILE_PATH);
+                            .get(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.META_KEY_FILE_PATH);
                     String fullObjectNameTmp = String.format("%s%s", this.objectDir, objectNameTmp.substring(this.parentPathLength, objectNameTmp.length()));
 
                     // init: 2 condition begin new multipart upload
@@ -954,7 +954,7 @@ public class OssWriter extends Writer {
                     if (this.isPeer2PeerCopyMode()) {
                         assert meta != null;
                         String objectNameTmp = meta
-                                .get(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.META_KEY_FILE_PATH);
+                                .get(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.META_KEY_FILE_PATH);
                         String fullObjectNameTmp = String.format("%s%s", this.objectDir, objectNameTmp.substring(this.parentPathLength, objectNameTmp.length()));
                         if (!StringUtils.equals(currentObject, fullObjectNameTmp)) {
                             currentObject = fullObjectNameTmp;
@@ -1168,7 +1168,7 @@ public class OssWriter extends Writer {
 
         private boolean isPeer2PeerCopyMode() {
             return this.isBinaryFile
-                    || com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.SYNC_MODE_VALUE_COPY
+                    || net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.SYNC_MODE_VALUE_COPY
                     .equalsIgnoreCase(this.syncMode);
         }
 

@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.writer.odpswriter;
+package net.tbsoft.datax.plugin.writer.odpswriter;
 
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.MessageSource;
-import com.alibaba.datax.plugin.writer.odpswriter.util.OdpsUtil;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.MessageSource;
+import net.tbsoft.datax.plugin.writer.odpswriter.util.OdpsUtil;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONObject;
 import com.aliyun.odps.OdpsType;
 import com.aliyun.odps.TableSchema;
 import com.aliyun.odps.data.ArrayRecord;
@@ -200,7 +200,7 @@ public class OdpsWriterProxy {
         return this.slaveUpload;
     }
     
-    public long writeOneRecord(com.alibaba.datax.common.element.Record dataXRecord, List<Long> blocks)
+    public long writeOneRecord(net.tbsoft.datax.common.element.Record dataXRecord, List<Long> blocks)
             throws Exception {
 
         this.lastActiveTime = System.currentTimeMillis();
@@ -247,7 +247,7 @@ public class OdpsWriterProxy {
         return 0;
     }
 
-    public Record dataxRecordToOdpsRecord(com.alibaba.datax.common.element.Record dataXRecord) throws Exception {
+    public Record dataxRecordToOdpsRecord(net.tbsoft.datax.common.element.Record dataXRecord) throws Exception {
         int sourceColumnCount = dataXRecord.getColumnNumber();
         ArrayRecord odpsRecord = (ArrayRecord) slaveUpload.newRecord();
 
@@ -266,7 +266,7 @@ public class OdpsWriterProxy {
         int currentIndex = 0;
         int sourceIndex = 0;
         try {
-            com.alibaba.datax.common.element.Column columnValue;
+            net.tbsoft.datax.common.element.Column columnValue;
 
             for (; sourceIndex < sourceColumnCount; sourceIndex++) {
                 // 跳过分区列

@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.ext;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext;
 
 import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.reader.Key;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.util.ObWriterUtils;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.reader.Key;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.util.ObWriterUtils;
 
 /**
  * 数据库连接代理对象,负责创建连接，重新连接

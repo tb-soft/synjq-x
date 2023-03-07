@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adbpgwriter.util;
+package net.tbsoft.datax.plugin.writer.adbpgwriter.util;
 /**
  * @author yuncheng
  */

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsreader.utils;
+package net.tbsoft.datax.plugin.reader.otsreader.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.Map;
 
 import org.apache.commons.codec.binary.Base64;
 
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSColumn;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSConst;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSColumn;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSConst;
 import com.aliyun.openservices.ots.model.PrimaryKeyValue;
 
 /**

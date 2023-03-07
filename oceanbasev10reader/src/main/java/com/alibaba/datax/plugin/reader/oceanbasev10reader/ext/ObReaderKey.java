@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader.ext;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader.ext;
 
 /**
  * @author johnrobbet

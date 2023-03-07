@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.otswriter.utils;
+package net.tbsoft.datax.plugin.writer.otswriter.utils;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -7,10 +7,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSAttrColumn;
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSErrorMessage;
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSPKColumn;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSAttrColumn;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSErrorMessage;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSPKColumn;
 import com.aliyun.openservices.ots.model.PrimaryKeyType;
 import com.aliyun.openservices.ots.model.TableMeta;
 

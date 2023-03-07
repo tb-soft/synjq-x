@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.ftpreader;
+package net.tbsoft.datax.plugin.reader.ftpreader;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -8,11 +8,11 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
 
 public class FtpReader extends Reader {
 	public static class Job extends Reader.Job {

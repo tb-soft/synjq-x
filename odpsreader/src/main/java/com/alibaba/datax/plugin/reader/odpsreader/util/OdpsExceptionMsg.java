@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.odpsreader.util;
+package net.tbsoft.datax.plugin.reader.odpsreader.util;
 
 /**
  * Created by hongjiao.hj on 2015/6/9.

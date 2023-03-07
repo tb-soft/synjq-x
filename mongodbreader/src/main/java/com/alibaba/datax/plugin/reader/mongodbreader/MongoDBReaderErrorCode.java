@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.mongodbreader;
+package net.tbsoft.datax.plugin.reader.mongodbreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * Created by jianying.wcj on 2015/3/19 0019.

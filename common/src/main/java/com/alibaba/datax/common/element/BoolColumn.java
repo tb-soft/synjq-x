@@ -1,7 +1,7 @@
-package com.alibaba.datax.common.element;
+package net.tbsoft.datax.common.element;
 
-import com.alibaba.datax.common.exception.CommonErrorCode;
-import com.alibaba.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.exception.CommonErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

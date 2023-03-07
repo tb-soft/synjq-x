@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.hbase11xreader;
+package net.tbsoft.datax.plugin.reader.hbase11xreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.TypeReference;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.TypeReference;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.hadoop.hbase.HBaseConfiguration;
@@ -58,7 +58,7 @@ public class Hbase11xHelper {
     }
 
 
-    public static Table getTable(com.alibaba.datax.common.util.Configuration configuration){
+    public static Table getTable(net.tbsoft.datax.common.util.Configuration configuration){
         String hbaseConfig = configuration.getString(Key.HBASE_CONFIG);
         String userTable = configuration.getString(Key.TABLE);
         org.apache.hadoop.hbase.client.Connection hConnection = Hbase11xHelper.getHbaseConnection(hbaseConfig);
@@ -79,7 +79,7 @@ public class Hbase11xHelper {
         return hTable;
     }
 
-   public static RegionLocator getRegionLocator(com.alibaba.datax.common.util.Configuration configuration){
+   public static RegionLocator getRegionLocator(net.tbsoft.datax.common.util.Configuration configuration){
        String hbaseConfig = configuration.getString(Key.HBASE_CONFIG);
        String userTable = configuration.getString(Key.TABLE);
        org.apache.hadoop.hbase.client.Connection hConnection = Hbase11xHelper.getHbaseConnection(hbaseConfig);
@@ -159,7 +159,7 @@ public class Hbase11xHelper {
     }
 
 
-    public static byte[] convertUserStartRowkey(com.alibaba.datax.common.util.Configuration configuration) {
+    public static byte[] convertUserStartRowkey(net.tbsoft.datax.common.util.Configuration configuration) {
         String startRowkey = configuration.getString(Key.START_ROWKEY);
         if (StringUtils.isBlank(startRowkey)) {
             return HConstants.EMPTY_BYTE_ARRAY;
@@ -169,7 +169,7 @@ public class Hbase11xHelper {
         }
     }
 
-    public static byte[] convertUserEndRowkey(com.alibaba.datax.common.util.Configuration configuration) {
+    public static byte[] convertUserEndRowkey(net.tbsoft.datax.common.util.Configuration configuration) {
         String endRowkey = configuration.getString(Key.END_ROWKEY);
         if (StringUtils.isBlank(endRowkey)) {
             return HConstants.EMPTY_BYTE_ARRAY;
@@ -406,7 +406,7 @@ public class Hbase11xHelper {
     }
 
 
-    public static void validateParameter(com.alibaba.datax.common.util.Configuration originalConfig) {
+    public static void validateParameter(net.tbsoft.datax.common.util.Configuration originalConfig) {
         originalConfig.getNecessaryValue(Key.HBASE_CONFIG, Hbase11xReaderErrorCode.REQUIRED_VALUE);
         originalConfig.getNecessaryValue(Key.TABLE, Hbase11xReaderErrorCode.REQUIRED_VALUE);
 
@@ -442,7 +442,7 @@ public class Hbase11xHelper {
         originalConfig.set(Key.SCAN_BATCH_SIZE,scanBatchSize);
     }
 
-    private static String validateMode(com.alibaba.datax.common.util.Configuration  originalConfig) {
+    private static String validateMode(net.tbsoft.datax.common.util.Configuration  originalConfig) {
         String mode = originalConfig.getNecessaryValue(Key.MODE,Hbase11xReaderErrorCode.REQUIRED_VALUE);
         List<Map> column = originalConfig.getList(Key.COLUMN, Map.class);
         if (column == null || column.isEmpty()) {

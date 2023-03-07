@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.constant;
+package net.tbsoft.datax.common.constant;
 
 public final class CommonConstant {
     /**

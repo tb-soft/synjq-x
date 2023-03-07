@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.elasticsearchwriter;
+package net.tbsoft.datax.plugin.writer.elasticsearchwriter;
 
 public class PartitionColumn {
     private String name;

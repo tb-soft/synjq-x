@@ -1,6 +1,6 @@
 {
-    "name": "oceanbasev10writer",
-    "class": "com.alibaba.datax.plugin.writer.oceanbasev10writer.OceanBaseV10Writer",
-    "description": "write data into oceanbase with sql interface",
-    "developer": "oceanbase"
+  "name": "oceanbasev10writer",
+  "class": "net.tbsoft.datax.plugin.writer.oceanbasev10writer.OceanBaseV10Writer",
+  "description": "write data into oceanbase with sql interface",
+  "developer": "oceanbase"
 }

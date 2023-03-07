@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adswriter.insert;
+package net.tbsoft.datax.plugin.writer.adswriter.insert;
 
 public enum OperationType {
     // i: insert uo:before image uu:before image un: after image d: delete

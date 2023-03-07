@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.cassandrawriter;
+package net.tbsoft.datax.plugin.writer.cassandrawriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * Created by mazhenlin on 2019/8/19.

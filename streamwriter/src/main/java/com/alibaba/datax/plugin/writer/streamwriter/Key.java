@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.streamwriter;
+package net.tbsoft.datax.plugin.writer.streamwriter;
 
 public class Key {
     public static final String FIELD_DELIMITER = "fieldDelimiter";

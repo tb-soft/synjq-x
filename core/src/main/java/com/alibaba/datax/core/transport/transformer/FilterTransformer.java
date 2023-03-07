@@ -1,8 +1,8 @@
-package com.alibaba.datax.core.transport.transformer;
+package net.tbsoft.datax.core.transport.transformer;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.transformer.Transformer;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.transformer.Transformer;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;

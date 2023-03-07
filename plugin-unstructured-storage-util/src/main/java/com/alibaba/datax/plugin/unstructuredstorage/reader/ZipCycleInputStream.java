@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.unstructuredstorage.reader;
+package net.tbsoft.datax.plugin.unstructuredstorage.reader;
 
 import java.io.IOException;
 import java.io.InputStream;

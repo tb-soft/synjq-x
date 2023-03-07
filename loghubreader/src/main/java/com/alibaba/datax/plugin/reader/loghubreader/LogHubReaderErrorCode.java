@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.loghubreader;
+package net.tbsoft.datax.plugin.reader.loghubreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum LogHubReaderErrorCode implements ErrorCode {
     BAD_CONFIG_VALUE("LogHuReader-00", "The value you configured is invalid."),

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.doriswriter;
+package net.tbsoft.datax.plugin.writer.doriswriter;
 
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Record;
 
 import java.io.Serializable;
 

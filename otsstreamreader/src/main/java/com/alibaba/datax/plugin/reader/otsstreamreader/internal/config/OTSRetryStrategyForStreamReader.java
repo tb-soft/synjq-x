@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.config;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config;
 
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.model.OTSErrorCode;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model.OTSErrorCode;
 import com.alicloud.openservices.tablestore.*;
 import com.alicloud.openservices.tablestore.model.RetryStrategy;
 

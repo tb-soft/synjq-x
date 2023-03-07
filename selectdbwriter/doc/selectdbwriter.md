@@ -1,10 +1,12 @@
 # SelectdbWriter 插件文档
 
 ## 1 快速介绍
-SelectdbWriter支持将大批量数据写入SELECTDB中。
+
+SelectdbWriter 支持将大批量数据写入 SELECTDB 中。
 
 ## 2 实现原理
-SelectdbWriter 通过调用selectdb api （/copy/upload），返回一个重定向的S3地址，使用Http向S3地址发送字节流，设置参数达到要求时执行copy into
+
+SelectdbWriter 通过调用 selectdb api （/copy/upload），返回一个重定向的 S3 地址，使用 Http 向 S3 地址发送字节流，设置参数达到要求时执行 copy into
 
 ## 3 编译
 
@@ -14,26 +16,26 @@ SelectdbWriter 通过调用selectdb api （/copy/upload），返回一个重定�
 
 i. 单独编译 selectdbwriter 插件:
 
-   ```text
-     mvn clean install -pl plugin-rdbms-util,selectdbwriter -DskipTests
-   ```
-
+```text
+  mvn clean install -pl plugin-rdbms-util,selectdbwriter -DskipTests
+```
 
 ii.编译整个 DataX 项目:
 
-   ```text
-     mvn package assembly:assembly -Dmaven.test.skip=true
-   ```
+```text
+  mvn package assembly:assembly -Dmaven.test.skip=true
+```
+
 产出在 target/datax/datax/.
-hdfsreader, hdfswriter and oscarwriter 这三个插件需要额外的jar包。如果你并不需要这些插件，可以在 DataX/pom.xml 中删除这些插件的模块。
-   
- 
+hdfsreader, hdfswriter and oscarwriter 这三个插件需要额外的 jar 包。如果你并不需要这些插件，可以在 DataX/pom.xml 中删除这些插件的模块。
+
 iii.编译错误
 
-如遇到如下编译错误： 
-  ```text
-  Could not find artifact com.alibaba.datax:datax-all:pom:0.0.1-SNAPSHOT 
-  ```
+如遇到如下编译错误：
+
+```text
+Could not find artifact net.tbsoft.datax:datax-all:pom:0.0.1-SNAPSHOT
+```
 
 可尝试以下方式解决：
 
@@ -47,7 +49,7 @@ c.再次尝试编译。
 
 ### 3.1 配置样例
 
-这里是一份从Stream读取数据后导入至selectdb的配置文件。
+这里是一份从 Stream 读取数据后导入至 selectdb 的配置文件。
 
 ```
 {
@@ -408,9 +410,9 @@ c.再次尝试编译。
 
 ### 类型转换
 
-默认传入的数据均会被转为字符串，并以`\t`作为列分隔符，`\n`作为行分隔符，组成`csv`文件进行Selectdb导入操作。
+默认传入的数据均会被转为字符串，并以`\t`作为列分隔符，`\n`作为行分隔符，组成`csv`文件进行 Selectdb 导入操作。
 
-默认是csv格式导入，如需更改列分隔符， 则正确配置 `loadProps` 即可：
+默认是 csv 格式导入，如需更改列分隔符， 则正确配置 `loadProps` 即可：
 
 ```json
 "loadProps": {
@@ -420,6 +422,7 @@ c.再次尝试编译。
 ```
 
 如需更改导入格式为`json`， 则正确配置 `loadProps` 即可：
+
 ```json
 "loadProps": {
     "file.type": "json",

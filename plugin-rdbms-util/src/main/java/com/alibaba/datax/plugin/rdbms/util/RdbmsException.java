@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.rdbms.util;
+package net.tbsoft.datax.plugin.rdbms.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * Created by judy.lt on 2015/6/5.

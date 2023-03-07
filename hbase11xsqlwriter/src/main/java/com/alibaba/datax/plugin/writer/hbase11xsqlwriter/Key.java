@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.hbase11xsqlwriter;
+package net.tbsoft.datax.plugin.writer.hbase11xsqlwriter;
 
 import org.apache.hadoop.hbase.HConstants;
 

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.ossreader;
+package net.tbsoft.datax.plugin.reader.ossreader;
 
 /**
  * Created by mengxin.liumx on 2014/12/7.

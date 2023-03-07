@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.writer.hbase11xwriter;
+package net.tbsoft.datax.plugin.writer.hbase11xwriter;
 
-import com.alibaba.datax.common.element.DoubleColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.DoubleColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.commons.lang3.time.DateUtils;

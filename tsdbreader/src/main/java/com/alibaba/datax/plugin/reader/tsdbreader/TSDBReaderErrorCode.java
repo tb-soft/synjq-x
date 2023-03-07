@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.tsdbreader;
+package net.tbsoft.datax.plugin.reader.tsdbreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：TSDB Reader Error Code
  *

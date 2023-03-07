@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.mysqlreader;
+package net.tbsoft.datax.plugin.reader.mysqlreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum MysqlReaderErrorCode implements ErrorCode {
     ;

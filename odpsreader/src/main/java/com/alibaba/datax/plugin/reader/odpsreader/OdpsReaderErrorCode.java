@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.odpsreader;
+package net.tbsoft.datax.plugin.reader.odpsreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
-import com.alibaba.datax.common.util.MessageSource;
+import net.tbsoft.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.util.MessageSource;
 
 public enum OdpsReaderErrorCode implements ErrorCode {
     REQUIRED_VALUE("DATAX_R_ODPS_001", MessageSource.loadResourceBundle(OdpsReaderErrorCode.class).message("description.DATAX_R_ODPS_001"),MessageSource.loadResourceBundle(OdpsReaderErrorCode.class).message("solution.DATAX_R_ODPS_001")),

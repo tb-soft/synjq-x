@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.elasticsearchwriter;
+package net.tbsoft.datax.plugin.writer.elasticsearchwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum ElasticSearchWriterErrorCode implements ErrorCode {
     BAD_CONFIG_VALUE("ESWriter-00", "The value you configured is not valid."),

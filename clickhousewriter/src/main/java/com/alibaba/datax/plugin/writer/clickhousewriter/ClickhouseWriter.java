@@ -1,17 +1,17 @@
-package com.alibaba.datax.plugin.writer.clickhousewriter;
+package net.tbsoft.datax.plugin.writer.clickhousewriter;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.CommonErrorCode;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.writer.CommonRdbmsWriter;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONArray;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.CommonErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.writer.CommonRdbmsWriter;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONArray;
 
 import java.sql.Array;
 import java.sql.Connection;

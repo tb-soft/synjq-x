@@ -1,4 +1,4 @@
-package com.alibaba.datax.core.util;
+package net.tbsoft.datax.core.util;
 
 /**
  * Created by liqiang on 15/12/12.

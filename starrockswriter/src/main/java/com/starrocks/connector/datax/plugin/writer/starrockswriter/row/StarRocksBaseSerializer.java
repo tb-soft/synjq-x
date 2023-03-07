@@ -1,7 +1,7 @@
 package com.starrocks.connector.datax.plugin.writer.starrockswriter.row;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Column.Type;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Column.Type;
 
 public class StarRocksBaseSerializer {
 

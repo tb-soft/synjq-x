@@ -1,11 +1,11 @@
-package com.alibaba.datax.core.taskgroup.runner;
+package net.tbsoft.datax.core.taskgroup.runner;
 
-import com.alibaba.datax.common.plugin.AbstractTaskPlugin;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.statistics.communication.Communication;
-import com.alibaba.datax.core.statistics.communication.CommunicationTool;
-import com.alibaba.datax.dataxservice.face.domain.enums.State;
+import net.tbsoft.datax.common.plugin.AbstractTaskPlugin;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.core.statistics.communication.CommunicationTool;
+import net.tbsoft.datax.dataxservice.face.domain.enums.State;
 import org.apache.commons.lang.Validate;
 
 public abstract class AbstractRunner {

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.otswriter.model;
+package net.tbsoft.datax.plugin.writer.otswriter.model;
 
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Record;
 
 public class RowUpdateChangeWithRecord extends com.aliyun.openservices.ots.model.RowUpdateChange implements WithRecord {
 

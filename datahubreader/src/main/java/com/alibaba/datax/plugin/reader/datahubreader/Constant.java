@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.datahubreader;
+package net.tbsoft.datax.plugin.reader.datahubreader;
 
 public class Constant {
 

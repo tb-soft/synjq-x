@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.unstructuredstorage.util;
+package net.tbsoft.datax.plugin.unstructuredstorage.util;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.ColumnEntry;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.ColumnEntry;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;

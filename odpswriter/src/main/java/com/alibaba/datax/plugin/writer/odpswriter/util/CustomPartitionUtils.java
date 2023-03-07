@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.writer.odpswriter.util;
+package net.tbsoft.datax.plugin.writer.odpswriter.util;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.odpswriter.model.PartitionInfo;
-import com.alibaba.datax.plugin.writer.odpswriter.model.UserDefinedFunction;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.odpswriter.model.PartitionInfo;
+import net.tbsoft.datax.plugin.writer.odpswriter.model.UserDefinedFunction;
+import net.tbsoft.fastjson2.JSON;
 import com.google.common.base.Joiner;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

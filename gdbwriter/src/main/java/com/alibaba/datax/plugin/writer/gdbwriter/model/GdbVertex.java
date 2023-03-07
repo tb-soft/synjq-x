@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.model;
+package net.tbsoft.datax.plugin.writer.gdbwriter.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

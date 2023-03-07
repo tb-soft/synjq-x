@@ -1,4 +1,4 @@
-package com.alibaba.datax.core.job.meta;
+package net.tbsoft.datax.core.job.meta;
 
 /**
  * Created by liupeng on 15/12/21.

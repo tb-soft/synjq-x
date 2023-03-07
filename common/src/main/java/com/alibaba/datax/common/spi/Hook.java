@@ -1,6 +1,6 @@
-package com.alibaba.datax.common.spi;
+package net.tbsoft.datax.common.spi;
 
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.Configuration;
 
 import java.util.Map;
 

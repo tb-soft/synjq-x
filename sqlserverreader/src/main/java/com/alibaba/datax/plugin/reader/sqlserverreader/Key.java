@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.sqlserverreader;
+package net.tbsoft.datax.plugin.reader.sqlserverreader;
 
 public class Key {
 

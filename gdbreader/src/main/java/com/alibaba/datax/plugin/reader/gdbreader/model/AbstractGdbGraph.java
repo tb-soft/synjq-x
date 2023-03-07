@@ -5,10 +5,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-package com.alibaba.datax.plugin.reader.gdbreader.model;
+package net.tbsoft.datax.plugin.reader.gdbreader.model;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.gdbreader.Key;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.gdbreader.Key;
 import org.apache.tinkerpop.gremlin.driver.Client;
 import org.apache.tinkerpop.gremlin.driver.Cluster;
 import org.apache.tinkerpop.gremlin.driver.RequestOptions;

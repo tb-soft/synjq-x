@@ -1,13 +1,13 @@
-package com.alibaba.datax.plugin.unstructuredstorage.reader;
+package net.tbsoft.datax.plugin.unstructuredstorage.reader;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONObject;
-import com.alibaba.fastjson2.TypeReference;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONObject;
+import net.tbsoft.fastjson2.TypeReference;
 import com.csvreader.CsvReader;
 import org.apache.commons.beanutils.BeanUtils;
 import io.airlift.compress.snappy.SnappyCodec;
@@ -529,8 +529,8 @@ public class UnstructuredStorageReaderUtil {
 		// encoding check
 		String encoding = readerConfiguration
 				.getString(
-						com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
-						com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_ENCODING);
+						net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
+						net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_ENCODING);
 		try {
 			encoding = encoding.trim();
 			readerConfiguration.set(Key.ENCODING, encoding);
@@ -546,7 +546,7 @@ public class UnstructuredStorageReaderUtil {
 
 	public static void validateCompress(Configuration readerConfiguration) {
 		String compress =readerConfiguration
-				.getUnnecessaryValue(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COMPRESS,null,null);
+				.getUnnecessaryValue(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COMPRESS,null,null);
 		if(StringUtils.isNotBlank(compress)){
 			compress = compress.toLowerCase().trim();
 			boolean compressTag = "gzip".equals(compress) || "bzip2".equals(compress) || "zip".equals(compress)
@@ -561,17 +561,17 @@ public class UnstructuredStorageReaderUtil {
 			// 用户可能配置的是 compress:"",空字符串,需要将compress设置为null
 			compress = null;
 		}
-		readerConfiguration.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COMPRESS, compress);
+		readerConfiguration.set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COMPRESS, compress);
 
 	}
 
 	public static void validateFieldDelimiter(Configuration readerConfiguration) {
 		//fieldDelimiter check
-		String delimiterInStr = readerConfiguration.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.FIELD_DELIMITER,null);
+		String delimiterInStr = readerConfiguration.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.FIELD_DELIMITER,null);
 		if(null == delimiterInStr){
 			throw DataXException.asDataXException(UnstructuredStorageReaderErrorCode.REQUIRED_VALUE,
 					String.format("您提供配置文件有误，[%s]是必填参数.",
-							com.alibaba.datax.plugin.unstructuredstorage.reader.Key.FIELD_DELIMITER));
+							net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.FIELD_DELIMITER));
 		}else if(1 != delimiterInStr.length()){
 			// warn: if have, length must be one
 			throw DataXException.asDataXException(UnstructuredStorageReaderErrorCode.ILLEGAL_VALUE,
@@ -583,7 +583,7 @@ public class UnstructuredStorageReaderUtil {
 		// column: 1. index type 2.value type 3.when type is Date, may have
 		// format
 		List<Configuration> columns = readerConfiguration
-				.getListConfiguration(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
+				.getListConfiguration(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
 		if (null == columns || columns.size() == 0) {
 			throw DataXException.asDataXException(UnstructuredStorageReaderErrorCode.REQUIRED_VALUE, "您需要指定 columns");
 		}
@@ -591,19 +591,19 @@ public class UnstructuredStorageReaderUtil {
 		if (null != columns && 1 == columns.size()) {
 			String columnsInStr = columns.get(0).toString();
 			if ("\"*\"".equals(columnsInStr) || "'*'".equals(columnsInStr)) {
-				readerConfiguration.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN, null);
+				readerConfiguration.set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN, null);
 				columns = null;
 			}
 		}
 
 		if (null != columns && columns.size() != 0) {
 			for (Configuration eachColumnConf : columns) {
-				eachColumnConf.getNecessaryValue(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.TYPE,
+				eachColumnConf.getNecessaryValue(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.TYPE,
 						UnstructuredStorageReaderErrorCode.REQUIRED_VALUE);
 				Integer columnIndex = eachColumnConf
-						.getInt(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.INDEX);
+						.getInt(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.INDEX);
 				String columnValue = eachColumnConf
-						.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.VALUE);
+						.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.VALUE);
 
 				if (null == columnIndex && null == columnValue) {
 					throw DataXException.asDataXException(UnstructuredStorageReaderErrorCode.NO_INDEX_VALUE,

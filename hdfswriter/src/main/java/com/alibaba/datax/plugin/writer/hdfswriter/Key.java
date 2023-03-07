@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.hdfswriter;
+package net.tbsoft.datax.plugin.writer.hdfswriter;
 
 /**
  * Created by shf on 15/10/8.

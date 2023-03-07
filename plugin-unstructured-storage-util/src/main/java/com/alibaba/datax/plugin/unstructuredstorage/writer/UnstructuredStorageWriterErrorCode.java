@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.unstructuredstorage.writer;
+package net.tbsoft.datax.plugin.unstructuredstorage.writer;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 
 public enum UnstructuredStorageWriterErrorCode implements ErrorCode {

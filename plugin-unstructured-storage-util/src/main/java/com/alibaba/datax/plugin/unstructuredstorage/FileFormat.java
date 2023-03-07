@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.unstructuredstorage;
+package net.tbsoft.datax.plugin.unstructuredstorage;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.Constant;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.Key;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.Key;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.hbase094xwriter;
+package net.tbsoft.datax.plugin.writer.hbase094xwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * Created by shf on 16/3/8.

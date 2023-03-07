@@ -1,22 +1,22 @@
-package com.alibaba.datax.plugin.reader.otsreader;
+package net.tbsoft.datax.plugin.reader.otsreader;
 
 import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.otsreader.callable.GetRangeCallable;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSColumn;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSConf;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSConst;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSRange;
-import com.alibaba.datax.plugin.reader.otsreader.utils.Common;
-import com.alibaba.datax.plugin.reader.otsreader.utils.GsonParser;
-import com.alibaba.datax.plugin.reader.otsreader.utils.DefaultNoRetry;
-import com.alibaba.datax.plugin.reader.otsreader.utils.RetryHelper;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.otsreader.callable.GetRangeCallable;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSColumn;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSConf;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSConst;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSRange;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.Common;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.GsonParser;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.DefaultNoRetry;
+import net.tbsoft.datax.plugin.reader.otsreader.utils.RetryHelper;
 import com.aliyun.openservices.ots.OTSClientAsync;
 import com.aliyun.openservices.ots.OTSServiceConfiguration;
 import com.aliyun.openservices.ots.model.Direction;

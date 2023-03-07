@@ -1,18 +1,18 @@
-package com.alibaba.datax.plugin.writer.adbpgwriter.util;
+package net.tbsoft.datax.plugin.writer.adbpgwriter.util;
 
-import com.alibaba.cloud.analyticdb.adb4pgclient.Adb4pgClient;
-import com.alibaba.cloud.analyticdb.adb4pgclient.Adb4pgClientException;
-import com.alibaba.cloud.analyticdb.adb4pgclient.DatabaseConfig;
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.spi.ErrorCode;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.writer.Constant;
-import com.alibaba.datax.plugin.rdbms.writer.Key;
-import com.alibaba.datax.plugin.rdbms.writer.util.WriterUtil;
+import net.tbsoft.cloud.analyticdb.adb4pgclient.Adb4pgClient;
+import net.tbsoft.cloud.analyticdb.adb4pgclient.Adb4pgClientException;
+import net.tbsoft.cloud.analyticdb.adb4pgclient.DatabaseConfig;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.writer.Constant;
+import net.tbsoft.datax.plugin.rdbms.writer.Key;
+import net.tbsoft.datax.plugin.rdbms.writer.util.WriterUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 import java.sql.Connection;
 import java.util.*;
 
-import static com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode.COLUMN_SPLIT_ERROR;
+import static net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode.COLUMN_SPLIT_ERROR;
 
 /**
  * @author yuncheng
@@ -48,10 +48,10 @@ public class Adb4pgUtil {
         String userName = originalConfig.getString(Key.USERNAME);
         String passWord = originalConfig.getString(Key.PASSWORD);
         String tableName = originalConfig.getString(Key.TABLE);
-        String schemaName = originalConfig.getString(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.SCHEMA);
-        String host = originalConfig.getString(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.HOST);
-        String port = originalConfig.getString(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.PORT);
-        String databseName = originalConfig.getString(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.DATABASE);
+        String schemaName = originalConfig.getString(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.SCHEMA);
+        String host = originalConfig.getString(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.HOST);
+        String port = originalConfig.getString(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.PORT);
+        String databseName = originalConfig.getString(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.DATABASE);
 
         List<String> columns = originalConfig.getList(Key.COLUMN, String.class);
         DatabaseConfig databaseConfig = new DatabaseConfig();
@@ -64,7 +64,7 @@ public class Adb4pgUtil {
         databaseConfig.setPassword(passWord);
         databaseConfig.setLogger(LOG);
 
-        databaseConfig.setInsertIgnore(originalConfig.getBool(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.IS_INSERTINGORE, true));
+        databaseConfig.setInsertIgnore(originalConfig.getBool(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.IS_INSERTINGORE, true));
         databaseConfig.addTable(Collections.singletonList(tableName), schemaName);
         databaseConfig.setColumns(columns, tableName, schemaName);
 
@@ -95,9 +95,9 @@ public class Adb4pgUtil {
     }
 
     private static String generateJdbcUrl(Configuration configuration) {
-        String host = configuration.getString(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.HOST);
-        String port = configuration.getString(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.PORT);
-        String databseName = configuration.getString(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.DATABASE);
+        String host = configuration.getString(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.HOST);
+        String port = configuration.getString(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.PORT);
+        String databseName = configuration.getString(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.DATABASE);
         String jdbcUrl = "jdbc:postgresql://" + host + ":" + port + "/" + databseName;
         return jdbcUrl;
 

@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.writer.hdfswriter;
+package net.tbsoft.datax.plugin.writer.hdfswriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.Constant;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant;
 import com.google.common.collect.Sets;
 import org.apache.commons.io.Charsets;
 import org.apache.commons.io.IOUtils;
@@ -252,7 +252,7 @@ public class HdfsWriter extends Writer {
                 }
 
                 splitedTaskConfig
-                        .set(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME,
+                        .set(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_NAME,
                                 fullFileName);
 
                 LOG.info(String.format("splited write file name:[%s]",

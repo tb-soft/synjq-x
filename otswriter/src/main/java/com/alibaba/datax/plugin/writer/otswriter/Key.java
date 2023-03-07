@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.alibaba.datax.plugin.writer.otswriter;
+package net.tbsoft.datax.plugin.writer.otswriter;
 
 public final class Key {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.alibaba.datax.common.util;
+package net.tbsoft.datax.common.util;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

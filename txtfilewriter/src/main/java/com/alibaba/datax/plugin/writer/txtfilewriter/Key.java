@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.txtfilewriter;
+package net.tbsoft.datax.plugin.writer.txtfilewriter;
 
 /**
  * Created by haiwei.luo on 14-9-17.

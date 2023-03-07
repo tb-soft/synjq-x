@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.adswriter.load;
+package net.tbsoft.datax.plugin.writer.adswriter.load;
 
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.Configuration;
 
 /**
  * Created by xiafei.qiuxf on 15/4/13.

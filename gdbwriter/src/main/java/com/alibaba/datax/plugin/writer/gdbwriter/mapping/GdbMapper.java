@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.mapping;
+package net.tbsoft.datax.plugin.writer.gdbwriter.mapping;
 
 import java.util.function.Function;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.plugin.writer.gdbwriter.model.GdbElement;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.plugin.writer.gdbwriter.model.GdbElement;
 
 /**
  * @author jerrywang

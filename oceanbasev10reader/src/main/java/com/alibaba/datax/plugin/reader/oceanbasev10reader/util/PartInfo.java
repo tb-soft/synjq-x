@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader.util;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader.util;
 
 import java.util.ArrayList;
 import java.util.List;

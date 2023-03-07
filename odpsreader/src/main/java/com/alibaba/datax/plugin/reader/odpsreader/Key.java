@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.odpsreader;
+package net.tbsoft.datax.plugin.reader.odpsreader;
 
 public class Key {
 

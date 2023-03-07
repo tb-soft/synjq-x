@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.hbase11xsqlreader;
+package net.tbsoft.datax.plugin.reader.hbase11xsqlreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.hbase.util.Pair;
 import org.slf4j.Logger;

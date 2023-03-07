@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.unstructuredstorage.writer.binaryFileUtil;
+package net.tbsoft.datax.plugin.unstructuredstorage.writer.binaryFileUtil;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum BinaryFileWriterErrorCode implements ErrorCode {
 	ILLEGAL_VALUE("UnstructuredStorageWriter-00", "errorcode.illegal_value"),

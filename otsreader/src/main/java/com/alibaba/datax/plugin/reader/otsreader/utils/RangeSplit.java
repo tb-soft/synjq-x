@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsreader.utils;
+package net.tbsoft.datax.plugin.reader.otsreader.utils;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -6,8 +6,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSPrimaryKeyColumn;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSRange;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSPrimaryKeyColumn;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSRange;
 import com.aliyun.openservices.ots.model.PrimaryKeyType;
 import com.aliyun.openservices.ots.model.PrimaryKeyValue;
 import com.aliyun.openservices.ots.model.RowPrimaryKey;

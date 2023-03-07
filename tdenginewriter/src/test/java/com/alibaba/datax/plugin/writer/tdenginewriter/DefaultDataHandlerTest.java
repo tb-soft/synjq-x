@@ -1,12 +1,12 @@
-package com.alibaba.datax.plugin.writer.tdenginewriter;
+package net.tbsoft.datax.plugin.writer.tdenginewriter;
 
-import com.alibaba.datax.common.element.DateColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.transport.record.DefaultRecord;
+import net.tbsoft.datax.common.element.DateColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.transport.record.DefaultRecord;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;

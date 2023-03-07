@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.loghubreader;
+package net.tbsoft.datax.plugin.reader.loghubreader;
 
 public final class Key {
 

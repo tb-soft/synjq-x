@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adswriter;
+package net.tbsoft.datax.plugin.writer.adswriter;
 
 public class AdsException extends Exception {
 

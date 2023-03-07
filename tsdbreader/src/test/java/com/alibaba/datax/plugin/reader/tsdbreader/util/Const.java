@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.tsdbreader.util;
+package net.tbsoft.datax.plugin.reader.tsdbreader.util;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：Const
  *

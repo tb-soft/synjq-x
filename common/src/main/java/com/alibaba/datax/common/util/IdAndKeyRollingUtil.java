@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.util;
+package net.tbsoft.datax.common.util;
 
 import java.util.Map;
 
@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.exception.DataXException;
 
 public class IdAndKeyRollingUtil {
 	private static Logger LOGGER = LoggerFactory.getLogger(IdAndKeyRollingUtil.class);

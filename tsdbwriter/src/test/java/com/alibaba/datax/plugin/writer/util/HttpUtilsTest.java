@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.util;
+package net.tbsoft.datax.plugin.writer.util;
 
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：HttpUtils Test
  *

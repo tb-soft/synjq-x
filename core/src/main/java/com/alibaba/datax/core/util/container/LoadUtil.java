@@ -1,15 +1,15 @@
-package com.alibaba.datax.core.util.container;
+package net.tbsoft.datax.core.util.container;
 
-import com.alibaba.datax.common.constant.PluginType;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.AbstractJobPlugin;
-import com.alibaba.datax.common.plugin.AbstractPlugin;
-import com.alibaba.datax.common.plugin.AbstractTaskPlugin;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.taskgroup.runner.AbstractRunner;
-import com.alibaba.datax.core.taskgroup.runner.ReaderRunner;
-import com.alibaba.datax.core.taskgroup.runner.WriterRunner;
-import com.alibaba.datax.core.util.FrameworkErrorCode;
+import net.tbsoft.datax.common.constant.PluginType;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.AbstractJobPlugin;
+import net.tbsoft.datax.common.plugin.AbstractPlugin;
+import net.tbsoft.datax.common.plugin.AbstractTaskPlugin;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.taskgroup.runner.AbstractRunner;
+import net.tbsoft.datax.core.taskgroup.runner.ReaderRunner;
+import net.tbsoft.datax.core.taskgroup.runner.WriterRunner;
+import net.tbsoft.datax.core.util.FrameworkErrorCode;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashMap;

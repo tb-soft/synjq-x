@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.unstructuredstorage.reader.binaryFileUtil;
+package net.tbsoft.datax.plugin.unstructuredstorage.reader.binaryFileUtil;
 
 import java.util.Arrays;
 

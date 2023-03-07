@@ -1,17 +1,17 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.adswriter.load;
+package net.tbsoft.datax.plugin.writer.adswriter.load;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.writer.adswriter.AdsException;
-import com.alibaba.datax.plugin.writer.adswriter.AdsWriterErrorCode;
-import com.alibaba.datax.plugin.writer.adswriter.ads.ColumnDataType;
-import com.alibaba.datax.plugin.writer.adswriter.ads.ColumnInfo;
-import com.alibaba.datax.plugin.writer.adswriter.ads.TableInfo;
-import com.alibaba.datax.plugin.writer.adswriter.util.AdsUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.writer.adswriter.AdsException;
+import net.tbsoft.datax.plugin.writer.adswriter.AdsWriterErrorCode;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.ColumnDataType;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.ColumnInfo;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.TableInfo;
+import net.tbsoft.datax.plugin.writer.adswriter.util.AdsUtil;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -81,7 +81,7 @@ public class AdsHelper {
      * 
      * @param table The table
      * @return The table meta information
-     * @throws com.alibaba.datax.plugin.writer.adswriter.AdsException
+     * @throws net.tbsoft.datax.plugin.writer.adswriter.AdsException
      */
     public TableInfo getTableInfo(String table) throws AdsException {
 

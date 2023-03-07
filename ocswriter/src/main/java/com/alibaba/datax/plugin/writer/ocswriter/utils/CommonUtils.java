@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.ocswriter.utils;
+package net.tbsoft.datax.plugin.writer.ocswriter.utils;
 
 public class CommonUtils {
 

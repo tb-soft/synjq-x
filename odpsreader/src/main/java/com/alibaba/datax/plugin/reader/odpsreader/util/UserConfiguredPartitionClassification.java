@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.odpsreader.util;
+package net.tbsoft.datax.plugin.reader.odpsreader.util;
 
 import java.util.List;
 

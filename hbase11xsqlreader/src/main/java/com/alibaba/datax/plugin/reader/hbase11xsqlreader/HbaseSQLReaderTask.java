@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.reader.hbase11xsqlreader;
+package net.tbsoft.datax.plugin.reader.hbase11xsqlreader;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
 import org.apache.hadoop.mapreduce.TaskAttemptID;
 import org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl;
 import org.apache.phoenix.jdbc.PhoenixConnection;

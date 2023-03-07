@@ -1,6 +1,6 @@
-package com.alibaba.datax.transformer;
+package net.tbsoft.datax.transformer;
 
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Record;
 
 import java.util.Map;
 

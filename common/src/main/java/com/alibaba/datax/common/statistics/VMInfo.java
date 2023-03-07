@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.statistics;
+package net.tbsoft.datax.common.statistics;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.writer.mongodbwriter.util;
+package net.tbsoft.datax.plugin.writer.mongodbwriter.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.mongodbwriter.KeyConstant;
-import com.alibaba.datax.plugin.writer.mongodbwriter.MongoDBWriterErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.mongodbwriter.KeyConstant;
+import net.tbsoft.datax.plugin.writer.mongodbwriter.MongoDBWriterErrorCode;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;

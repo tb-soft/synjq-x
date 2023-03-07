@@ -1,6 +1,6 @@
-package com.alibaba.datax.core.util;
+package net.tbsoft.datax.core.util;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * TODO: 根据现有日志数据分析各类错误，进行细化。

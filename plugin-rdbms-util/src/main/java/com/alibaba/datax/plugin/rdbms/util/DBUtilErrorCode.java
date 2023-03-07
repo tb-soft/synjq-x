@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.rdbms.util;
+package net.tbsoft.datax.plugin.rdbms.util;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 //TODO
 public enum DBUtilErrorCode implements ErrorCode {

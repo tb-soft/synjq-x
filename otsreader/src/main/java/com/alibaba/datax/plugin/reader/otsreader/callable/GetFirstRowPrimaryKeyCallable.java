@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsreader.callable;
+package net.tbsoft.datax.plugin.reader.otsreader.callable;
 
 import java.util.List;
 import java.util.Map;

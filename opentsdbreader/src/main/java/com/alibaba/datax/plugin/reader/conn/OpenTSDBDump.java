@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.conn;
+package net.tbsoft.datax.plugin.reader.conn;
 
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.fastjson2.JSON;
 import net.opentsdb.core.TSDB;
 import net.opentsdb.utils.Config;
 

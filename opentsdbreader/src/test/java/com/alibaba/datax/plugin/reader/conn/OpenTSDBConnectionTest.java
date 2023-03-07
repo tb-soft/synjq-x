@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.reader.conn;
+package net.tbsoft.datax.plugin.reader.conn;
 
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：OpenTSDB Connection4TSDB Test
  *

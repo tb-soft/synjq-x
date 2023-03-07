@@ -1,12 +1,12 @@
-package com.alibaba.datax.plugin.reader.odpsreader;
+package net.tbsoft.datax.plugin.reader.odpsreader;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.MessageSource;
-import com.alibaba.datax.plugin.reader.odpsreader.util.OdpsUtil;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.MessageSource;
+import net.tbsoft.datax.plugin.reader.odpsreader.util.OdpsUtil;
+import net.tbsoft.fastjson2.JSON;
 import com.aliyun.odps.Column;
 import com.aliyun.odps.OdpsType;
 import com.aliyun.odps.data.*;
@@ -130,7 +130,7 @@ public class ReaderProxy {
 
                 if (odpsRecord != null) {
 
-                    com.alibaba.datax.common.element.Record dataXRecord = recordSender
+                    net.tbsoft.datax.common.element.Record dataXRecord = recordSender
                             .createRecord();
                     // warn: for PARTITION||NORMAL columnTypeMap's key
                     // sets(columnName) is big than parsedColumns's left
@@ -200,7 +200,7 @@ public class ReaderProxy {
         }
         if (IS_DEBUG) {
             LOG.debug(String.format("partition value details: %s",
-                    com.alibaba.fastjson2.JSON.toJSONString(partitionMap)));
+                    net.tbsoft.fastjson2.JSON.toJSONString(partitionMap)));
         }
         return partitionMap;
     }
@@ -212,7 +212,7 @@ public class ReaderProxy {
         // it's will never happen, but add this checking
         if (!partitionMap.containsKey(partitionColumnName)) {
             String errorMessage = MESSAGE_SOURCE.message("readerproxy.3",
-                    com.alibaba.fastjson2.JSON.toJSONString(partitionMap),
+                    net.tbsoft.fastjson2.JSON.toJSONString(partitionMap),
                     partitionColumnName);
             throw DataXException.asDataXException(
                     OdpsReaderErrorCode.READ_DATA_FAIL, errorMessage);
@@ -241,7 +241,7 @@ public class ReaderProxy {
      *            true means partition column and false means normal column
      * */
     private void odpsColumnToDataXField(Record odpsRecord,
-            com.alibaba.datax.common.element.Record dataXRecord, TypeInfo typeInfo,
+            net.tbsoft.datax.common.element.Record dataXRecord, TypeInfo typeInfo,
             String columnNameValue, boolean isPartitionColumn) {
         
         ArrayRecord record = (ArrayRecord) odpsRecord;

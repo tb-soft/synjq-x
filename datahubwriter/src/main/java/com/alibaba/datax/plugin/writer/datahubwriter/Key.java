@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.datahubwriter;
+package net.tbsoft.datax.plugin.writer.datahubwriter;
 
 public final class Key {
 

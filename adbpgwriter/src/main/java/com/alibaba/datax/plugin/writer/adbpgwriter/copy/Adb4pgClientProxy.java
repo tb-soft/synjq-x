@@ -1,19 +1,19 @@
-package com.alibaba.datax.plugin.writer.adbpgwriter.copy;
+package net.tbsoft.datax.plugin.writer.adbpgwriter.copy;
 
-import com.alibaba.cloud.analyticdb.adb4pgclient.*;
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.transport.record.DefaultRecord;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.writer.adbpgwriter.util.Adb4pgUtil;
-import com.alibaba.datax.plugin.writer.adbpgwriter.util.Constant;
-import com.alibaba.datax.plugin.writer.adbpgwriter.util.Key;
+import net.tbsoft.cloud.analyticdb.adb4pgclient.*;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.transport.record.DefaultRecord;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.writer.adbpgwriter.util.Adb4pgUtil;
+import net.tbsoft.datax.plugin.writer.adbpgwriter.util.Constant;
+import net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -74,8 +74,8 @@ public class Adb4pgClientProxy implements AdbProxy {
 
         //List<String> columns = configuration.getList(Key.COLUMN, String.class);
 
-        this.table = configuration.getString(com.alibaba.datax.plugin.rdbms.writer.Key.TABLE);
-        this.schema = configuration.getString(com.alibaba.datax.plugin.writer.adbpgwriter.util.Key.SCHEMA);
+        this.table = configuration.getString(net.tbsoft.datax.plugin.rdbms.writer.Key.TABLE);
+        this.schema = configuration.getString(net.tbsoft.datax.plugin.writer.adbpgwriter.util.Key.SCHEMA);
         this.adb4pgClient = new Adb4pgClient(databaseConfig);
         this.columns = databaseConfig.getColumns(table,schema);
         this.tableInfo = adb4pgClient.getTableInfo(table, schema);

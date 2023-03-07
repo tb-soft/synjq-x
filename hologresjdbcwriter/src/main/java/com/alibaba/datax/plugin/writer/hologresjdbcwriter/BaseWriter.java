@@ -1,27 +1,27 @@
-package com.alibaba.datax.plugin.writer.hologresjdbcwriter;
+package net.tbsoft.datax.plugin.writer.hologresjdbcwriter;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.DateColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.writer.hologresjdbcwriter.util.ConfLoader;
-import com.alibaba.datax.plugin.writer.hologresjdbcwriter.util.OriginalConfPretreatmentUtil;
-import com.alibaba.datax.plugin.writer.hologresjdbcwriter.util.WriterUtil;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONObject;
-import com.alibaba.hologres.client.HoloClient;
-import com.alibaba.hologres.client.HoloConfig;
-import com.alibaba.hologres.client.Put;
-import com.alibaba.hologres.client.exception.HoloClientWithDetailsException;
-import com.alibaba.hologres.client.model.TableSchema;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.DateColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.writer.hologresjdbcwriter.util.ConfLoader;
+import net.tbsoft.datax.plugin.writer.hologresjdbcwriter.util.OriginalConfPretreatmentUtil;
+import net.tbsoft.datax.plugin.writer.hologresjdbcwriter.util.WriterUtil;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONObject;
+import net.tbsoft.hologres.client.HoloClient;
+import net.tbsoft.hologres.client.HoloConfig;
+import net.tbsoft.hologres.client.Put;
+import net.tbsoft.hologres.client.exception.HoloClientWithDetailsException;
+import net.tbsoft.hologres.client.model.TableSchema;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -126,7 +126,7 @@ public class BaseWriter {
 			try (HoloClient client = new HoloClient(config)) {
 				TableSchema schema = client.getTableSchema(table);
 				LOG.info("table {} column info:", schema.getTableNameObj().getFullName());
-				for (com.alibaba.hologres.client.model.Column column : schema.getColumnSchema()) {
+				for (net.tbsoft.hologres.client.model.Column column : schema.getColumnSchema()) {
 					LOG.info("name:{},type:{},typeName:{},nullable:{},defaultValue:{}", column.getName(), column.getType(), column.getTypeName(), column.getAllowNull(), column.getDefaultValue());
 				}
 				for (String userColumn : userConfiguredColumns) {
@@ -276,7 +276,7 @@ public class BaseWriter {
 			config.setJdbcUrl(this.jdbcUrl);
 			config.setUsername(username);
 			config.setPassword(password);
-			config.setWriteMode(writeMode == WriteMode.IGNORE ? com.alibaba.hologres.client.model.WriteMode.INSERT_OR_IGNORE : (writeMode == WriteMode.UPDATE ? com.alibaba.hologres.client.model.WriteMode.INSERT_OR_UPDATE : com.alibaba.hologres.client.model.WriteMode.INSERT_OR_REPLACE));
+			config.setWriteMode(writeMode == WriteMode.IGNORE ? net.tbsoft.hologres.client.model.WriteMode.INSERT_OR_IGNORE : (writeMode == WriteMode.UPDATE ? net.tbsoft.hologres.client.model.WriteMode.INSERT_OR_UPDATE : net.tbsoft.hologres.client.model.WriteMode.INSERT_OR_REPLACE));
 			config.setWriteBatchSize(this.batchSize);
 			config.setWriteBatchTotalByteSize(this.batchByteSize);
 			config.setMetaCacheTTL(3600000L);
@@ -342,7 +342,7 @@ public class BaseWriter {
 
 		private void handleDirtyData(HoloClientWithDetailsException detail) {
 			for (int i = 0; i < detail.size(); ++i) {
-				com.alibaba.hologres.client.model.Record failRecord = detail.getFailRecord(i);
+				net.tbsoft.hologres.client.model.Record failRecord = detail.getFailRecord(i);
 				if (failRecord.getAttachmentList() != null) {
 					for (Object obj : failRecord.getAttachmentList()) {
 						taskPluginCollector.collectDirtyRecord((Record) obj, detail.getException(i));
@@ -380,7 +380,7 @@ public class BaseWriter {
 		}
 
 		protected void fillColumn(Put data, TableSchema schema, int index, Column column) throws SQLException {
-			com.alibaba.hologres.client.model.Column holoColumn = schema.getColumn(index);
+			net.tbsoft.hologres.client.model.Column holoColumn = schema.getColumn(index);
 			switch (holoColumn.getType()) {
 				case Types.CHAR:
 				case Types.NCHAR:

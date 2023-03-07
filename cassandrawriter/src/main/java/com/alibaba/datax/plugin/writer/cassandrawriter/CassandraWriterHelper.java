@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.cassandrawriter;
+package net.tbsoft.datax.plugin.writer.cassandrawriter;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -16,12 +16,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONException;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONException;
+import net.tbsoft.fastjson2.JSONObject;
 
 import com.datastax.driver.core.BoundStatement;
 import com.datastax.driver.core.CodecRegistry;

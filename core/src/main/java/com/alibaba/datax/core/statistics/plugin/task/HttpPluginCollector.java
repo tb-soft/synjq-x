@@ -1,9 +1,9 @@
-package com.alibaba.datax.core.statistics.plugin.task;
+package net.tbsoft.datax.core.statistics.plugin.task;
 
-import com.alibaba.datax.common.constant.PluginType;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.common.constant.PluginType;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.statistics.communication.Communication;
 
 /**
  * Created by jingxing on 14-9-9.

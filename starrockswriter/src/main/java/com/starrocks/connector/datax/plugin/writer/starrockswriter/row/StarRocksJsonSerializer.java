@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.fastjson2.JSON;
 
 public class StarRocksJsonSerializer extends StarRocksBaseSerializer implements StarRocksISerializer {
 

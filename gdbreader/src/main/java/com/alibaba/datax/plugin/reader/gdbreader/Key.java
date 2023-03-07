@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.gdbreader;
+package net.tbsoft.datax.plugin.reader.gdbreader;
 
 public final class Key {
 

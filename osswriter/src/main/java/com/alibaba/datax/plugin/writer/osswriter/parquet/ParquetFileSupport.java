@@ -1,13 +1,13 @@
-package com.alibaba.datax.plugin.writer.osswriter.parquet;
+package net.tbsoft.datax.plugin.writer.osswriter.parquet;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.plugin.unstructuredstorage.writer.Key;
-import com.alibaba.datax.plugin.writer.osswriter.Constant;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.plugin.unstructuredstorage.writer.Key;
+import net.tbsoft.datax.plugin.writer.osswriter.Constant;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONObject;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.slf4j.Logger;
@@ -40,7 +40,7 @@ public class ParquetFileSupport extends WriteSupport<Record> {
     private Binary binaryForNull;
     private TaskPluginCollector taskPluginCollector;
 
-    public ParquetFileSupport(MessageType schema, com.alibaba.datax.common.util.Configuration taskConfig, TaskPluginCollector taskPluginCollector) {
+    public ParquetFileSupport(MessageType schema, net.tbsoft.datax.common.util.Configuration taskConfig, TaskPluginCollector taskPluginCollector) {
         this.schema = schema;
         // 不通类型的nullFormat
         this.nullFormat = taskConfig.getString(Key.NULL_FORMAT, Constant.DEFAULT_NULL_FORMAT);

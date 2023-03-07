@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.model;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model;
 
 /**
  * 表示来自开放结构化数据服务（Open Table Service，OTS）的错误代码。

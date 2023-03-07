@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.util;
+package net.tbsoft.datax.common.util;
 
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;

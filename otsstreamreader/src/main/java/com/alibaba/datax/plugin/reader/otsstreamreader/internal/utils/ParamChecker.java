@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils;
 
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.Configuration;
 
 public class ParamChecker {
 

@@ -5,12 +5,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-package com.alibaba.datax.plugin.reader.gdbreader.util;
+package net.tbsoft.datax.plugin.reader.gdbreader.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.gdbreader.GdbReaderErrorCode;
-import com.alibaba.datax.plugin.reader.gdbreader.Key;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.gdbreader.GdbReaderErrorCode;
+import net.tbsoft.datax.plugin.reader.gdbreader.Key;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;

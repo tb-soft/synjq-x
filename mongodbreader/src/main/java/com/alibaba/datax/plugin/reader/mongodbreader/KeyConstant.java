@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.mongodbreader;
+package net.tbsoft.datax.plugin.reader.mongodbreader;
 
 /**
  * Created by jianying.wcj on 2015/3/17 0017.

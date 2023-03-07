@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader;
 
 public interface Config {
     // queryTimeoutSecond

@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.reader.otsreader.utils;
+package net.tbsoft.datax.plugin.reader.otsreader.utils;
 
-import com.alibaba.datax.plugin.reader.otsreader.adaptor.OTSColumnAdaptor;
-import com.alibaba.datax.plugin.reader.otsreader.adaptor.PrimaryKeyValueAdaptor;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSColumn;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSConf;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSRange;
+import net.tbsoft.datax.plugin.reader.otsreader.adaptor.OTSColumnAdaptor;
+import net.tbsoft.datax.plugin.reader.otsreader.adaptor.PrimaryKeyValueAdaptor;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSColumn;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSConf;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSRange;
 import com.aliyun.openservices.ots.model.Direction;
 import com.aliyun.openservices.ots.model.PrimaryKeyValue;
 import com.aliyun.openservices.ots.model.RowPrimaryKey;

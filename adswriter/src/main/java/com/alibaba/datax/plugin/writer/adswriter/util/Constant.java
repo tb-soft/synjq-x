@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adswriter.util;
+package net.tbsoft.datax.plugin.writer.adswriter.util;
 
 public class Constant {
 

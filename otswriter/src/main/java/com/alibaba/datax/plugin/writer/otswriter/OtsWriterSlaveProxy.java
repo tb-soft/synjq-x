@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.otswriter;
+package net.tbsoft.datax.plugin.writer.otswriter;
 
-import com.alibaba.datax.plugin.writer.otswriter.model.*;
-import com.alibaba.datax.plugin.writer.otswriter.utils.Common;
+import net.tbsoft.datax.plugin.writer.otswriter.model.*;
+import net.tbsoft.datax.plugin.writer.otswriter.utils.Common;
 import com.aliyun.openservices.ots.*;
 import com.aliyun.openservices.ots.internal.OTSCallback;
 import com.aliyun.openservices.ots.internal.writer.WriterConfig;
@@ -10,11 +10,11 @@ import org.apache.commons.math3.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.otswriter.utils.GsonParser;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.otswriter.utils.GsonParser;
 
 import java.util.List;
 import java.util.concurrent.Executors;

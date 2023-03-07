@@ -1,8 +1,8 @@
-package com.alibaba.datax.core.statistics.container.communicator.taskgroup;
+package net.tbsoft.datax.core.statistics.container.communicator.taskgroup;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.statistics.container.report.ProcessInnerReporter;
-import com.alibaba.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.statistics.container.report.ProcessInnerReporter;
+import net.tbsoft.datax.core.statistics.communication.Communication;
 
 public class StandaloneTGContainerCommunicator extends AbstractTGContainerCommunicator {
 

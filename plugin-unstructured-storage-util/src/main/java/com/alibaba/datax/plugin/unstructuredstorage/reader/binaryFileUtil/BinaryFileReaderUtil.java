@@ -1,13 +1,13 @@
-package com.alibaba.datax.plugin.unstructuredstorage.reader.binaryFileUtil;
+package net.tbsoft.datax.plugin.unstructuredstorage.reader.binaryFileUtil;
 
-import com.alibaba.datax.common.element.BytesColumn;
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.Key;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
+import net.tbsoft.datax.common.element.BytesColumn;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.Key;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

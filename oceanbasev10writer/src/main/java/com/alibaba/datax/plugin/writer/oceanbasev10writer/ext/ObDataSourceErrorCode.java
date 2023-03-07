@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.ext;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum ObDataSourceErrorCode implements ErrorCode {
 	DESC("ObDataSourceError code","connect error");

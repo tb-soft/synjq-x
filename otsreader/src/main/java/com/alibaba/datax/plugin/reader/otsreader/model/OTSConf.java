@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsreader.model;
+package net.tbsoft.datax.plugin.reader.otsreader.model;
 
 import java.util.List;
 

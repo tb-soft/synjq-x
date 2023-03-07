@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.writer.hbase11xwriter;
+package net.tbsoft.datax.plugin.writer.hbase11xwriter;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
 import org.apache.hadoop.hbase.client.Put;
 
 public  class MultiVersionTask extends HbaseAbstractTask {

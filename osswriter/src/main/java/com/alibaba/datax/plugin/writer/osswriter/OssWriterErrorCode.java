@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.osswriter;
+package net.tbsoft.datax.plugin.writer.osswriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * Created by haiwei.luo on 14-9-17.

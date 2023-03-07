@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.cassandrareader;
+package net.tbsoft.datax.plugin.reader.cassandrareader;
 
 /**
  * Created by mazhenlin on 2019/8/19.

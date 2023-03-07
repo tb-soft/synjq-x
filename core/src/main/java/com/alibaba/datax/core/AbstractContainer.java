@@ -1,7 +1,7 @@
-package com.alibaba.datax.core;
+package net.tbsoft.datax.core;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.statistics.container.communicator.AbstractContainerCommunicator;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.statistics.container.communicator.AbstractContainerCommunicator;
 import org.apache.commons.lang.Validate;
 
 /**

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.task;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.task;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -7,21 +7,21 @@ import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.TimeUnit;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.ext.ObClientConnHolder;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext.ObClientConnHolder;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.Config;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.ext.ConnHolder;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.ext.ServerConnectInfo;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.task.ConcurrentTableWriterTask.ConcurrentTableWriter;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.util.ObWriterUtils;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.Config;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext.ConnHolder;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext.ServerConnectInfo;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.task.ConcurrentTableWriterTask.ConcurrentTableWriter;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.util.ObWriterUtils;
 
 public class InsertTask implements Runnable {
 

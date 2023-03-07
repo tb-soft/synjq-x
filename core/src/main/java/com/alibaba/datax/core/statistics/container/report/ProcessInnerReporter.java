@@ -1,7 +1,7 @@
-package com.alibaba.datax.core.statistics.container.report;
+package net.tbsoft.datax.core.statistics.container.report;
 
-import com.alibaba.datax.core.statistics.communication.Communication;
-import com.alibaba.datax.core.statistics.communication.LocalTGCommunicationManager;
+import net.tbsoft.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.core.statistics.communication.LocalTGCommunicationManager;
 
 public class ProcessInnerReporter extends AbstractReporter {
 

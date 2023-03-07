@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.otswriter.callable;
+package net.tbsoft.datax.plugin.writer.otswriter.callable;
 
 import java.util.concurrent.Callable;
 

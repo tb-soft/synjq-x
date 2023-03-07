@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.hdfsreader;
+package net.tbsoft.datax.plugin.reader.hdfsreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum HdfsReaderErrorCode implements ErrorCode {
     BAD_CONFIG_VALUE("HdfsReader-00", "您配置的值不合法."),

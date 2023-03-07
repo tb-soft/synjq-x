@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.otswriter.utils;
+package net.tbsoft.datax.plugin.writer.otswriter.utils;
 
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSConf;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSConf;
 import com.aliyun.openservices.ots.model.Direction;
 import com.aliyun.openservices.ots.model.RowPrimaryKey;
 import com.aliyun.openservices.ots.model.TableMeta;

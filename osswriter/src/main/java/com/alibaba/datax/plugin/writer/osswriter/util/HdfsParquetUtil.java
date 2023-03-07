@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.writer.osswriter.util;
+package net.tbsoft.datax.plugin.writer.osswriter.util;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.hdfswriter.HdfsWriter;
-import com.alibaba.datax.plugin.writer.osswriter.Key;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.hdfswriter.HdfsWriter;
+import net.tbsoft.datax.plugin.writer.osswriter.Key;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONObject;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.hadoop.fs.FileSystem;
@@ -42,14 +42,14 @@ public class HdfsParquetUtil {
      */
     public static void adaptConfiguration(HdfsWriter.Job hdfsWriterJob, Configuration writerSliceConfig){
         String fileFormat = writerSliceConfig.getString(
-                com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT,
-                com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.FILE_FORMAT_TEXT);
+                net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT,
+                net.tbsoft.datax.plugin.unstructuredstorage.writer.Constant.FILE_FORMAT_TEXT);
 
         String bucket = writerSliceConfig.getString(Key.BUCKET);
         String fs =String.format("oss://%s",bucket);
-        writerSliceConfig.set(com.alibaba.datax.plugin.writer.hdfswriter.Key.DEFAULT_FS,fs);
-        writerSliceConfig.set(com.alibaba.datax.plugin.writer.hdfswriter.Key.FILE_TYPE,
-                writerSliceConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT));
+        writerSliceConfig.set(net.tbsoft.datax.plugin.writer.hdfswriter.Key.DEFAULT_FS,fs);
+        writerSliceConfig.set(net.tbsoft.datax.plugin.writer.hdfswriter.Key.FILE_TYPE,
+                writerSliceConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.writer.Key.FILE_FORMAT));
 
         /**
          *  "writeMode"、 "compress"、"encoding" 、path、fileName 相互一致

@@ -1,22 +1,22 @@
-package com.alibaba.datax.plugin.reader.tsdbreader.conn;
+package net.tbsoft.datax.plugin.reader.tsdbreader.conn;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.plugin.reader.tsdbreader.Constant;
-import com.alibaba.datax.plugin.reader.tsdbreader.util.HttpUtils;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONReader;
-import com.alibaba.fastjson2.JSONReader.Feature;
-import com.alibaba.fastjson2.JSONWriter;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.plugin.reader.tsdbreader.Constant;
+import net.tbsoft.datax.plugin.reader.tsdbreader.util.HttpUtils;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONReader;
+import net.tbsoft.fastjson2.JSONReader.Feature;
+import net.tbsoft.fastjson2.JSONWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
-import static com.alibaba.datax.plugin.reader.tsdbreader.Constant.METRIC_SPECIFY_KEY_PREFIX_LENGTH;
+import static net.tbsoft.datax.plugin.reader.tsdbreader.Constant.METRIC_SPECIFY_KEY_PREFIX_LENGTH;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：TSDB Dump
  *

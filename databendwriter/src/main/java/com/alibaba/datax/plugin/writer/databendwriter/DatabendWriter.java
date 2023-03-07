@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.writer.databendwriter;
+package net.tbsoft.datax.plugin.writer.databendwriter;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.CommonErrorCode;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.writer.CommonRdbmsWriter;
-import com.alibaba.datax.plugin.writer.databendwriter.util.DatabendWriterUtil;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.CommonErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.writer.CommonRdbmsWriter;
+import net.tbsoft.datax.plugin.writer.databendwriter.util.DatabendWriterUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

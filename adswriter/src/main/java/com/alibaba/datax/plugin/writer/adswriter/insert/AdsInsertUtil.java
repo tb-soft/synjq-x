@@ -1,17 +1,17 @@
-package com.alibaba.datax.plugin.writer.adswriter.insert;
+package net.tbsoft.datax.plugin.writer.adswriter.insert;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.ListUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.writer.adswriter.AdsException;
-import com.alibaba.datax.plugin.writer.adswriter.AdsWriterErrorCode;
-import com.alibaba.datax.plugin.writer.adswriter.ads.ColumnInfo;
-import com.alibaba.datax.plugin.writer.adswriter.ads.TableInfo;
-import com.alibaba.datax.plugin.writer.adswriter.load.AdsHelper;
-import com.alibaba.datax.plugin.writer.adswriter.util.AdsUtil;
-import com.alibaba.datax.plugin.writer.adswriter.util.Constant;
-import com.alibaba.datax.plugin.writer.adswriter.util.Key;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.ListUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.writer.adswriter.AdsException;
+import net.tbsoft.datax.plugin.writer.adswriter.AdsWriterErrorCode;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.ColumnInfo;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.TableInfo;
+import net.tbsoft.datax.plugin.writer.adswriter.load.AdsHelper;
+import net.tbsoft.datax.plugin.writer.adswriter.util.AdsUtil;
+import net.tbsoft.datax.plugin.writer.adswriter.util.Constant;
+import net.tbsoft.datax.plugin.writer.adswriter.util.Key;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;

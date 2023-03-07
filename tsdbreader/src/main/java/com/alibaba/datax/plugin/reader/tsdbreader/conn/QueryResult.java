@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.reader.tsdbreader.conn;
+package net.tbsoft.datax.plugin.reader.tsdbreader.conn;
 
 import java.util.List;
 import java.util.Map;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：Query Result
  *

@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.datahubwriter;
+package net.tbsoft.datax.plugin.writer.datahubwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
-import com.alibaba.datax.common.util.MessageSource;
+import net.tbsoft.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.util.MessageSource;
 
 public enum DatahubWriterErrorCode implements ErrorCode {
     MISSING_REQUIRED_VALUE("DatahubWriter-01", MessageSource.loadResourceBundle(DatahubWriterErrorCode.class).message("errorcode.missing_required_value")),

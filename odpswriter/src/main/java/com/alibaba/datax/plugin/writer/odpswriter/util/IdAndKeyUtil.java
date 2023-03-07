@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.alibaba.datax.plugin.writer.odpswriter.util;
+package net.tbsoft.datax.plugin.writer.odpswriter.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.IdAndKeyRollingUtil;
-import com.alibaba.datax.common.util.MessageSource;
-import com.alibaba.datax.plugin.writer.odpswriter.Key;
-import com.alibaba.datax.plugin.writer.odpswriter.OdpsWriterErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.IdAndKeyRollingUtil;
+import net.tbsoft.datax.common.util.MessageSource;
+import net.tbsoft.datax.plugin.writer.odpswriter.Key;
+import net.tbsoft.datax.plugin.writer.odpswriter.OdpsWriterErrorCode;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

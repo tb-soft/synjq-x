@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.doriswriter;
+package net.tbsoft.datax.plugin.writer.doriswriter;
 
 import com.google.common.base.Strings;
 import org.apache.commons.lang3.concurrent.BasicThreadFactory;

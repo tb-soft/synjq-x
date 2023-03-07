@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.rdbms.writer.util;
+package net.tbsoft.datax.plugin.rdbms.writer.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.ListUtil;
-import com.alibaba.datax.plugin.rdbms.util.*;
-import com.alibaba.datax.plugin.rdbms.writer.Constant;
-import com.alibaba.datax.plugin.rdbms.writer.Key;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.ListUtil;
+import net.tbsoft.datax.plugin.rdbms.util.*;
+import net.tbsoft.datax.plugin.rdbms.writer.Constant;
+import net.tbsoft.datax.plugin.rdbms.writer.Key;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -169,8 +169,8 @@ public final class OriginalConfPretreatmentUtil {
 
     public static boolean isOB10(String jdbcUrl) {
         //ob10的处理
-        if (jdbcUrl.startsWith(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING)) {
-            String[] ss = jdbcUrl.split(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
+        if (jdbcUrl.startsWith(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING)) {
+            String[] ss = jdbcUrl.split(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
             if (ss.length != 3) {
                 throw DataXException
                         .asDataXException(

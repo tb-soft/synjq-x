@@ -1,6 +1,6 @@
-package com.alibaba.datax.core.job.scheduler.processinner;
+package net.tbsoft.datax.core.job.scheduler.processinner;
 
-import com.alibaba.datax.core.statistics.container.communicator.AbstractContainerCommunicator;
+import net.tbsoft.datax.core.statistics.container.communicator.AbstractContainerCommunicator;
 
 /**
  * Created by hongjiao.hj on 2014/12/22.

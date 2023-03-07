@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.util;
+package net.tbsoft.datax.plugin.reader.util;
 
 import java.util.concurrent.TimeUnit;
 

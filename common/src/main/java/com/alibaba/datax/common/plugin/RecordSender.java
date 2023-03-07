@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.alibaba.datax.common.plugin;
+package net.tbsoft.datax.common.plugin;
 
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Record;
 
 public interface RecordSender {
 

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.rdbms.reader;
+package net.tbsoft.datax.plugin.rdbms.reader;
 
 /**
  * 编码，时区等配置，暂未定.

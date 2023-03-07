@@ -1,20 +1,20 @@
-package com.alibaba.datax.plugin.writer.odpswriter;
+package net.tbsoft.datax.plugin.writer.odpswriter;
 
-import com.alibaba.datax.common.exception.CommonErrorCode;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.statistics.PerfRecord;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.ListUtil;
-import com.alibaba.datax.common.util.MessageSource;
-import com.alibaba.datax.plugin.writer.odpswriter.model.PartitionInfo;
-import com.alibaba.datax.plugin.writer.odpswriter.model.UserDefinedFunction;
-import com.alibaba.datax.plugin.writer.odpswriter.util.*;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.exception.CommonErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.statistics.PerfRecord;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.ListUtil;
+import net.tbsoft.datax.common.util.MessageSource;
+import net.tbsoft.datax.plugin.writer.odpswriter.model.PartitionInfo;
+import net.tbsoft.datax.plugin.writer.odpswriter.model.UserDefinedFunction;
+import net.tbsoft.datax.plugin.writer.odpswriter.util.*;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONObject;
 import com.aliyun.odps.Odps;
 import com.aliyun.odps.Table;
 import com.aliyun.odps.TableSchema;
@@ -32,7 +32,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 
-import static com.alibaba.datax.plugin.writer.odpswriter.util.CustomPartitionUtils.getListWithJson;
+import static net.tbsoft.datax.plugin.writer.odpswriter.util.CustomPartitionUtils.getListWithJson;
 
 /**
  * 已修改为：每个 task 各自创建自己的 upload,拥有自己的 uploadId，并在 task 中完成对对应 block 的提交。
@@ -589,7 +589,7 @@ public class OdpsWriter extends Writer {
                     currentWriteBlocks = null;
                 }
 
-                com.alibaba.datax.common.element.Record dataXRecord = null;
+                net.tbsoft.datax.common.element.Record dataXRecord = null;
 
                 PerfRecord blockClose = new PerfRecord(super.getTaskGroupId(), super.getTaskId(), PerfRecord.PHASE.ODPS_BLOCK_CLOSE);
                 blockClose.start();

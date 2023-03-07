@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.oscarwriter;
+package net.tbsoft.datax.plugin.writer.oscarwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum OscarWriterErrorCode implements ErrorCode {
 	;

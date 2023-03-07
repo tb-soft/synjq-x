@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.drdsreader;
+package net.tbsoft.datax.plugin.reader.drdsreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum DrdsReaderErrorCode implements ErrorCode {
     GET_TOPOLOGY_FAILED("DrdsReader-01", "获取 drds 表的拓扑结构失败."),;

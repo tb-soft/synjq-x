@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.util;
+package net.tbsoft.datax.plugin.writer.util;
 
-import com.alibaba.datax.plugin.writer.conn.DataPoint4TSDB;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.plugin.writer.conn.DataPoint4TSDB;
+import net.tbsoft.fastjson2.JSON;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：TSDB Utils
  *

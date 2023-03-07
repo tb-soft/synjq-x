@@ -1,13 +1,13 @@
-package com.alibaba.datax.core.transport.exchanger;
+package net.tbsoft.datax.core.transport.exchanger;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.core.statistics.communication.Communication;
-import com.alibaba.datax.core.statistics.communication.CommunicationTool;
-import com.alibaba.datax.core.transport.transformer.TransformerErrorCode;
-import com.alibaba.datax.core.transport.transformer.TransformerExecution;
-import com.alibaba.datax.core.util.container.ClassLoaderSwapper;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.core.statistics.communication.CommunicationTool;
+import net.tbsoft.datax.core.transport.transformer.TransformerErrorCode;
+import net.tbsoft.datax.core.transport.transformer.TransformerExecution;
+import net.tbsoft.datax.core.util.container.ClassLoaderSwapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

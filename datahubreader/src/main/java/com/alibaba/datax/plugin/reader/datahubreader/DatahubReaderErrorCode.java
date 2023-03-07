@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.datahubreader;
+package net.tbsoft.datax.plugin.reader.datahubreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum DatahubReaderErrorCode implements ErrorCode {
     BAD_CONFIG_VALUE("DatahubReader-00", "The value you configured is invalid."),

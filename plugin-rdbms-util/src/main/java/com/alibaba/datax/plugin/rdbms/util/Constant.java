@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.rdbms.util;
+package net.tbsoft.datax.plugin.rdbms.util;
 
 public final class Constant {
     static final int TIMEOUT_SECONDS = 15;

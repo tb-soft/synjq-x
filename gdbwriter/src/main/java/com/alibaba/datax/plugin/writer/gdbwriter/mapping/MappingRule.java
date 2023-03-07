@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.mapping;
+package net.tbsoft.datax.plugin.writer.gdbwriter.mapping;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.alibaba.datax.plugin.writer.gdbwriter.Key.ImportType;
-import com.alibaba.datax.plugin.writer.gdbwriter.Key.PropertyType;
+import net.tbsoft.datax.plugin.writer.gdbwriter.Key.ImportType;
+import net.tbsoft.datax.plugin.writer.gdbwriter.Key.PropertyType;
 
 import lombok.Data;
 

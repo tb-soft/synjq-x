@@ -1,8 +1,8 @@
-package com.alibaba.datax.core.statistics.communication;
+package net.tbsoft.datax.core.statistics.communication;
 
-import com.alibaba.datax.common.statistics.PerfTrace;
-import com.alibaba.datax.common.util.StrUtil;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.statistics.PerfTrace;
+import net.tbsoft.datax.common.util.StrUtil;
+import net.tbsoft.fastjson2.JSON;
 import org.apache.commons.lang.Validate;
 
 import java.text.DecimalFormat;

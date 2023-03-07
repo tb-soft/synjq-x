@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.hbase11xreader;
+package net.tbsoft.datax.plugin.reader.hbase11xreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * Created by shf on 16/3/8.

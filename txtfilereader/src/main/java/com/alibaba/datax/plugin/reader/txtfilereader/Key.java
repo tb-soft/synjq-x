@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.txtfilereader;
+package net.tbsoft.datax.plugin.reader.txtfilereader;
 
 /**
  * Created by haiwei.luo on 14-9-20.

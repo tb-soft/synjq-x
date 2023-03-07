@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.reader.hbase20xsqlreader;
+package net.tbsoft.datax.plugin.reader.hbase20xsqlreader;
 
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
 
 import java.util.List;
 

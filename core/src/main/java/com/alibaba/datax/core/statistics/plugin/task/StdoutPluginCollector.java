@@ -1,12 +1,12 @@
-package com.alibaba.datax.core.statistics.plugin.task;
+package net.tbsoft.datax.core.statistics.plugin.task;
 
-import com.alibaba.datax.common.constant.PluginType;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.statistics.communication.Communication;
-import com.alibaba.datax.core.util.container.CoreConstant;
-import com.alibaba.datax.core.statistics.plugin.task.util.DirtyRecord;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.constant.PluginType;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.core.util.container.CoreConstant;
+import net.tbsoft.datax.core.statistics.plugin.task.util.DirtyRecord;
+import net.tbsoft.fastjson2.JSON;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

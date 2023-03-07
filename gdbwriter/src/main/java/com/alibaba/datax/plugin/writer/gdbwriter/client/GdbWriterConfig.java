@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.client;
+package net.tbsoft.datax.plugin.writer.gdbwriter.client;
 
-import static com.alibaba.datax.plugin.writer.gdbwriter.util.ConfigHelper.assertConfig;
-import static com.alibaba.datax.plugin.writer.gdbwriter.util.ConfigHelper.assertHasContent;
+import static net.tbsoft.datax.plugin.writer.gdbwriter.util.ConfigHelper.assertConfig;
+import static net.tbsoft.datax.plugin.writer.gdbwriter.util.ConfigHelper.assertHasContent;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.gdbwriter.Key;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.gdbwriter.Key;
 
 /**
  * @author jerrywang

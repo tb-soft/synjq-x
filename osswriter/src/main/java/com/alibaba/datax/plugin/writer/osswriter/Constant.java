@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.osswriter;
+package net.tbsoft.datax.plugin.writer.osswriter;
 
 /**
  * Created by haiwei.luo on 15-02-09.

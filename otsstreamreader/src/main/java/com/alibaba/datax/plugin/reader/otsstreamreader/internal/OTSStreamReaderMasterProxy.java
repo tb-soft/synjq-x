@@ -1,13 +1,13 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConstants;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.core.CheckpointTimeTracker;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.core.OTSStreamReaderChecker;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.model.StreamJob;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.GsonParser;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.OTSHelper;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConstants;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.core.CheckpointTimeTracker;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.core.OTSStreamReaderChecker;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model.StreamJob;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.GsonParser;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.OTSHelper;
 import com.alicloud.openservices.tablestore.*;
 import com.alicloud.openservices.tablestore.model.*;
 import org.slf4j.Logger;

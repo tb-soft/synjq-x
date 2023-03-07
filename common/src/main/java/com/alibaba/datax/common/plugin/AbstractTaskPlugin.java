@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.plugin;
+package net.tbsoft.datax.common.plugin;
 
 /**
  * Created by jingxing on 14-8-24.

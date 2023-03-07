@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.kingbaseesreader;
+package net.tbsoft.datax.plugin.reader.kingbaseesreader;
 
 public class Constant {
 

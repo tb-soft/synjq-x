@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.odpswriter.util;
+package net.tbsoft.datax.plugin.writer.odpswriter.util;
 
 public class OdpsExceptionMsg {
 

@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.hbase11xsqlwriter;
+package net.tbsoft.datax.plugin.writer.hbase11xsqlwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
 import com.google.common.base.Strings;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.hbase.TableName;

@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader;
+package net.tbsoft.datax.plugin.reader;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.tdenginewriter.Key;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.tdenginewriter.Key;
 import org.junit.Assert;
 import org.junit.Test;
 

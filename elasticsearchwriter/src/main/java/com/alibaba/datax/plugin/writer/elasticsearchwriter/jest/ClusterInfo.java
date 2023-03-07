@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.elasticsearchwriter.jest;
+package net.tbsoft.datax.plugin.writer.elasticsearchwriter.jest;
 
 import com.google.gson.Gson;
 import io.searchbox.action.AbstractAction;

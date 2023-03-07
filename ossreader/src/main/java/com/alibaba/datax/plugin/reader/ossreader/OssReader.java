@@ -1,19 +1,19 @@
-package com.alibaba.datax.plugin.reader.ossreader;
+package net.tbsoft.datax.plugin.reader.ossreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.hdfsreader.HdfsReader;
-import com.alibaba.datax.plugin.reader.ossreader.util.HdfsParquetUtil;
-import com.alibaba.datax.plugin.reader.ossreader.util.OssSplitUtil;
-import com.alibaba.datax.plugin.reader.ossreader.util.OssUtil;
-import com.alibaba.datax.plugin.unstructuredstorage.FileFormat;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.binaryFileUtil.BinaryFileReaderUtil;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.split.StartEndPair;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.TypeReference;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.hdfsreader.HdfsReader;
+import net.tbsoft.datax.plugin.reader.ossreader.util.HdfsParquetUtil;
+import net.tbsoft.datax.plugin.reader.ossreader.util.OssSplitUtil;
+import net.tbsoft.datax.plugin.reader.ossreader.util.OssUtil;
+import net.tbsoft.datax.plugin.unstructuredstorage.FileFormat;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.binaryFileUtil.BinaryFileReaderUtil;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.split.StartEndPair;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.TypeReference;
 import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.OSSException;
@@ -63,8 +63,8 @@ public class OssReader extends Reader {
             LOG.debug("init() begin...");
             this.readerOriginConfig = this.getPluginJobConf();
             this.basicValidateParameter();
-            this.fileFormat = this.readerOriginConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.FILE_FORMAT,
-                    com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_FILE_FORMAT);
+            this.fileFormat = this.readerOriginConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.FILE_FORMAT,
+                    net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_FILE_FORMAT);
             this.useHdfsReaderProxy  = HdfsParquetUtil.isUseHdfsWriterProxy(this.fileFormat);
             if(useHdfsReaderProxy){
                 HdfsParquetUtil.adaptConfiguration(this.readerOriginConfig);
@@ -182,7 +182,7 @@ public class OssReader extends Reader {
             if (0 == objects.size() && this.successOnNoObject) {
                 readerSplitConfigs = new ArrayList<Configuration>();
                 Configuration splitedConfig = this.readerOriginConfig.clone();
-                splitedConfig.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.SPLIT_SLICE_CONFIG, null);
+                splitedConfig.set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.SPLIT_SLICE_CONFIG, null);
                 readerSplitConfigs.add(splitedConfig);
                 LOG.info(String.format("no OSS object to be read"));
                 LOG.debug("split() ok and end...");
@@ -393,8 +393,8 @@ public class OssReader extends Reader {
         @Override
         public void init() {
             this.readerSliceConfig = this.getPluginJobConf();
-            this.fileFormat = this.readerSliceConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.FILE_FORMAT,
-                    com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_FILE_FORMAT);
+            this.fileFormat = this.readerSliceConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.FILE_FORMAT,
+                    net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_FILE_FORMAT);
             this.useHdfsReaderProxy  = HdfsParquetUtil.isUseHdfsWriterProxy(this.fileFormat);
             if(useHdfsReaderProxy){
                 this.hdfsReaderTask = new HdfsReader.Task();
@@ -409,7 +409,7 @@ public class OssReader extends Reader {
                 return;
             }
             String allWorksForTaskStr = this.readerSliceConfig
-                    .getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.SPLIT_SLICE_CONFIG);
+                    .getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.SPLIT_SLICE_CONFIG);
             if (StringUtils.isBlank(allWorksForTaskStr)) {
                 allWorksForTaskStr = "[]";
             }
@@ -417,10 +417,10 @@ public class OssReader extends Reader {
             });
             this.isBinaryFile = FileFormat.getFileFormatByConfiguration(this.readerSliceConfig).isBinary();
             this.blockSizeInByte = this.readerSliceConfig.getInt(
-                    com.alibaba.datax.plugin.unstructuredstorage.reader.Key.BLOCK_SIZE_IN_BYTE,
-                    com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_BLOCK_SIZE_IN_BYTE);
+                    net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.BLOCK_SIZE_IN_BYTE,
+                    net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_BLOCK_SIZE_IN_BYTE);
             this.originSkipHeader = this.readerSliceConfig
-                    .getBool(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.SKIP_HEADER, false);
+                    .getBool(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.SKIP_HEADER, false);
         }
 
         @Override
@@ -455,7 +455,7 @@ public class OssReader extends Reader {
                 InputStream ossInputStream = new OssInputStream(ossClient, bucket, object, start, end);
                 // 检查是否要跳过表头, 防止重复跳过首行
                 Boolean skipHeaderValue = this.originSkipHeader && (0L == start);
-                this.readerSliceConfig.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.SKIP_HEADER,
+                this.readerSliceConfig.set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.SKIP_HEADER,
                         skipHeaderValue);
                 try {
                     if (!this.isBinaryFile) {

@@ -4,11 +4,11 @@
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public
  * License version 2 as published by the Free Software Foundation.
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.mapping;
+package net.tbsoft.datax.plugin.writer.gdbwriter.mapping;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.gdbwriter.Key;
-import com.alibaba.datax.plugin.writer.gdbwriter.client.GdbWriterConfig;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.gdbwriter.Key;
+import net.tbsoft.datax.plugin.writer.gdbwriter.client.GdbWriterConfig;
 
 /**
  * @author : Liu Jianping

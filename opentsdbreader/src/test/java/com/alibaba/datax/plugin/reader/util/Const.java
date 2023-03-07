@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.util;
+package net.tbsoft.datax.plugin.reader.util;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：Const
  *

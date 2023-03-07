@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.alibaba.datax.plugin.writer.gdbwriter.model;
+package net.tbsoft.datax.plugin.writer.gdbwriter.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.gdbwriter.Key;
-import com.alibaba.datax.plugin.writer.gdbwriter.util.GdbDuplicateIdException;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.gdbwriter.Key;
+import net.tbsoft.datax.plugin.writer.gdbwriter.util.GdbDuplicateIdException;
 
 import groovy.lang.Tuple2;
 import lombok.extern.slf4j.Slf4j;

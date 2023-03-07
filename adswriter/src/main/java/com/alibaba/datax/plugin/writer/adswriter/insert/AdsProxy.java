@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.adswriter.insert;
+package net.tbsoft.datax.plugin.writer.adswriter.insert;
 
-import com.alibaba.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
 
 import java.sql.Connection;
 

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.alibaba.datax.plugin.reader.odpsreader.util;
+package net.tbsoft.datax.plugin.reader.odpsreader.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.IdAndKeyRollingUtil;
-import com.alibaba.datax.common.util.MessageSource;
-import com.alibaba.datax.plugin.reader.odpsreader.Key;
-import com.alibaba.datax.plugin.reader.odpsreader.OdpsReaderErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.IdAndKeyRollingUtil;
+import net.tbsoft.datax.common.util.MessageSource;
+import net.tbsoft.datax.plugin.reader.odpsreader.Key;
+import net.tbsoft.datax.plugin.reader.odpsreader.OdpsReaderErrorCode;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

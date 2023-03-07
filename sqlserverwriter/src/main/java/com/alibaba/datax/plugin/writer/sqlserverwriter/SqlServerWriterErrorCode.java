@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.sqlserverwriter;
+package net.tbsoft.datax.plugin.writer.sqlserverwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum SqlServerWriterErrorCode implements ErrorCode {
     ;

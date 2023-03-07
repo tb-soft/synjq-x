@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.writer.hbase20xsqlwriter;
+package net.tbsoft.datax.plugin.writer.hbase20xsqlwriter;
 
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;

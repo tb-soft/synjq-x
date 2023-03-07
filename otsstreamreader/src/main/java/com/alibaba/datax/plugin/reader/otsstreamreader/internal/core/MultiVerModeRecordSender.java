@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.core;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.core;
 
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.ColumnValueTransformHelper;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.OTSStreamReaderException;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.ColumnValueTransformHelper;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.OTSStreamReaderException;
 import com.alicloud.openservices.tablestore.model.*;
 
 /**

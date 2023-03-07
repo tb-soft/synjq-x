@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader;
+package net.tbsoft.datax.plugin.reader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum TDengineReaderErrorCode implements ErrorCode {
 

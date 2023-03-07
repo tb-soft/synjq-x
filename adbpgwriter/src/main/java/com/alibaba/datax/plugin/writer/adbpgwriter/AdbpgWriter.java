@@ -1,24 +1,24 @@
-package com.alibaba.datax.plugin.writer.adbpgwriter;
+package net.tbsoft.datax.plugin.writer.adbpgwriter;
 
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.writer.CommonRdbmsWriter;
-import com.alibaba.datax.plugin.rdbms.writer.Key;
-import com.alibaba.datax.plugin.rdbms.writer.util.OriginalConfPretreatmentUtil;
-import com.alibaba.datax.plugin.writer.adbpgwriter.copy.Adb4pgClientProxy;
-import com.alibaba.datax.plugin.writer.adbpgwriter.util.Adb4pgUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.writer.CommonRdbmsWriter;
+import net.tbsoft.datax.plugin.rdbms.writer.Key;
+import net.tbsoft.datax.plugin.rdbms.writer.util.OriginalConfPretreatmentUtil;
+import net.tbsoft.datax.plugin.writer.adbpgwriter.copy.Adb4pgClientProxy;
+import net.tbsoft.datax.plugin.writer.adbpgwriter.util.Adb4pgUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode.*;
-import static com.alibaba.datax.plugin.rdbms.util.DataBaseType.PostgreSQL;
+import static net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode.*;
+import static net.tbsoft.datax.plugin.rdbms.util.DataBaseType.PostgreSQL;
 
 /**
  * @author yuncheng

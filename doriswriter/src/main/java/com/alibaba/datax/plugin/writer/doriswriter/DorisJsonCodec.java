@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.doriswriter;
+package net.tbsoft.datax.plugin.writer.doriswriter;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.fastjson2.JSON;
 
 import java.util.HashMap;
 import java.util.List;

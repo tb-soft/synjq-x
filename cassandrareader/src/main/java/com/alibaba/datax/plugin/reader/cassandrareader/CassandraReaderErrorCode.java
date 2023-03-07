@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.cassandrareader;
+package net.tbsoft.datax.plugin.reader.cassandrareader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum CassandraReaderErrorCode implements ErrorCode {
     CONF_ERROR("CassandraReader-00", "配置错误."),

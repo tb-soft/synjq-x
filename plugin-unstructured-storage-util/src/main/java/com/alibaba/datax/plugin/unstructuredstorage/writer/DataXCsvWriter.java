@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.unstructuredstorage.writer;
+package net.tbsoft.datax.plugin.unstructuredstorage.writer;
 
 import org.apache.commons.io.IOUtils;
 

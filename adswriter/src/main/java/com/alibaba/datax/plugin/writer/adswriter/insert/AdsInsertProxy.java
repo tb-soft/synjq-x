@@ -1,18 +1,18 @@
-package com.alibaba.datax.plugin.writer.adswriter.insert;
+package net.tbsoft.datax.plugin.writer.adswriter.insert;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.writer.adswriter.ads.TableInfo;
-import com.alibaba.datax.plugin.writer.adswriter.util.AdsUtil;
-import com.alibaba.datax.plugin.writer.adswriter.util.Constant;
-import com.alibaba.datax.plugin.writer.adswriter.util.Key;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.writer.adswriter.ads.TableInfo;
+import net.tbsoft.datax.plugin.writer.adswriter.util.AdsUtil;
+import net.tbsoft.datax.plugin.writer.adswriter.util.Constant;
+import net.tbsoft.datax.plugin.writer.adswriter.util.Key;
 import com.mysql.jdbc.JDBC4PreparedStatement;
 
 import org.apache.commons.lang3.StringUtils;

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.gdbwriter;
+package net.tbsoft.datax.plugin.writer.gdbwriter;
 
 public final class Key {
 

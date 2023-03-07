@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.unstructuredstorage.reader;
+package net.tbsoft.datax.plugin.unstructuredstorage.reader;
 
 /**
  * Created by haiwei.luo on 14-12-5.

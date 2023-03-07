@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConstants;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.core.*;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.model.ShardCheckpoint;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.model.StreamJob;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.OTSHelper;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.TimeUtils;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConstants;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.core.*;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model.ShardCheckpoint;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model.StreamJob;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.OTSHelper;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.TimeUtils;
 import com.alicloud.openservices.tablestore.*;
 import com.alicloud.openservices.tablestore.model.*;
 import com.aliyun.openservices.ots.internal.streamclient.model.CheckpointPosition;

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.rdbmsreader;
+package net.tbsoft.datax.plugin.reader.rdbmsreader;
 
 public class Constant {
 

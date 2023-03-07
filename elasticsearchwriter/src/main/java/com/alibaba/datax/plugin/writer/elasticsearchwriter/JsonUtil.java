@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.writer.elasticsearchwriter;
+package net.tbsoft.datax.plugin.writer.elasticsearchwriter;
 
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONException;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONException;
+import net.tbsoft.fastjson2.JSONObject;
 
 /**
  * @author bozu

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.otswriter.model;
+package net.tbsoft.datax.plugin.writer.otswriter.model;
 
 import java.util.Map;
 import java.util.Map.Entry;

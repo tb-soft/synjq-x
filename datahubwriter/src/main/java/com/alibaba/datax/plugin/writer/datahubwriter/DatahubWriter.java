@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.writer.datahubwriter;
+package net.tbsoft.datax.plugin.writer.datahubwriter;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.DataXCaseEnvUtil;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.DataXCaseEnvUtil;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.fastjson2.JSON;
 import com.aliyun.datahub.client.DatahubClient;
 import com.aliyun.datahub.client.model.FieldType;
 import com.aliyun.datahub.client.model.GetTopicResult;

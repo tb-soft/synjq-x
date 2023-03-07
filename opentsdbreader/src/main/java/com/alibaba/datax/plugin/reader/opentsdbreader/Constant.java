@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.opentsdbreader;
+package net.tbsoft.datax.plugin.reader.opentsdbreader;
 
 //This file is part of OpenTSDB.
 

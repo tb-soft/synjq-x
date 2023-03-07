@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.gdbwriter;
+package net.tbsoft.datax.plugin.writer.gdbwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum GdbWriterErrorCode implements ErrorCode {
     BAD_CONFIG_VALUE("GdbWriter-00", "您配置的值不合法."),

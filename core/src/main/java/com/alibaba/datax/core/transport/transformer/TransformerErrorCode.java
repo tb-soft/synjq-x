@@ -1,6 +1,6 @@
-package com.alibaba.datax.core.transport.transformer;
+package net.tbsoft.datax.core.transport.transformer;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum TransformerErrorCode implements ErrorCode {
     //重复命名

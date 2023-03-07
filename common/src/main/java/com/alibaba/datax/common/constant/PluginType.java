@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.constant;
+package net.tbsoft.datax.common.constant;
 
 /**
  * Created by jingxing on 14-8-31.

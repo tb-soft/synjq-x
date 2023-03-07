@@ -5,7 +5,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-package com.alibaba.datax.plugin.reader.gdbreader.model;
+package net.tbsoft.datax.plugin.reader.gdbreader.model;
 
 import org.apache.tinkerpop.gremlin.driver.ResultSet;
 

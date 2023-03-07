@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.model;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model;
 
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.StatusTableConstants;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.StatusTableConstants;
 import com.alicloud.openservices.tablestore.model.ColumnValue;
 import com.alicloud.openservices.tablestore.model.Row;
 import com.alicloud.openservices.tablestore.model.RowPutChange;

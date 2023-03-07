@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.rdbms.reader;
+package net.tbsoft.datax.plugin.rdbms.reader;
 
 public final class Constant {
     public static final String PK_TYPE = "pkType";

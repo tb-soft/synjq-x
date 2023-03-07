@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.plugin;
+package net.tbsoft.datax.common.plugin;
 
 import java.util.List;
 import java.util.Map;

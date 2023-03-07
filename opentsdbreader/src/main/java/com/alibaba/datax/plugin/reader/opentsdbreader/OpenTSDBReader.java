@@ -1,12 +1,12 @@
-package com.alibaba.datax.plugin.reader.opentsdbreader;
+package net.tbsoft.datax.plugin.reader.opentsdbreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.conn.OpenTSDBConnection;
-import com.alibaba.datax.plugin.reader.util.TimeUtils;
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.conn.OpenTSDBConnection;
+import net.tbsoft.datax.plugin.reader.util.TimeUtils;
+import net.tbsoft.fastjson2.JSON;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.slf4j.Logger;

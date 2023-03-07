@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adswriter.odps;
+package net.tbsoft.datax.plugin.writer.adswriter.odps;
 
 /**
  * ODPS 数据类型.

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.otswriter;
+package net.tbsoft.datax.plugin.writer.otswriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public class OtsWriterError implements ErrorCode {
     

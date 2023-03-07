@@ -1,16 +1,16 @@
-package com.alibaba.datax.core.transport.exchanger;
+package net.tbsoft.datax.core.transport.exchanger;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.CommonErrorCode;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.transport.channel.Channel;
-import com.alibaba.datax.core.transport.record.TerminateRecord;
-import com.alibaba.datax.core.util.FrameworkErrorCode;
-import com.alibaba.datax.core.util.container.CoreConstant;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.CommonErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.transport.channel.Channel;
+import net.tbsoft.datax.core.transport.record.TerminateRecord;
+import net.tbsoft.datax.core.util.FrameworkErrorCode;
+import net.tbsoft.datax.core.util.container.CoreConstant;
 import org.apache.commons.lang.Validate;
 
 import java.util.ArrayList;
@@ -60,7 +60,7 @@ public class BufferedRecordExchanger implements RecordSender, RecordReceiver {
 			BufferedRecordExchanger.RECORD_CLASS = ((Class<? extends Record>) Class
 					.forName(configuration.getString(
                             CoreConstant.DATAX_CORE_TRANSPORT_RECORD_CLASS,
-                            "com.alibaba.datax.core.transport.record.DefaultRecord")));
+                            "net.tbsoft.datax.core.transport.record.DefaultRecord")));
 		} catch (Exception e) {
 			throw DataXException.asDataXException(
 					FrameworkErrorCode.CONFIG_ERROR, e);

@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.writer.osswriter.parquet;
+package net.tbsoft.datax.plugin.writer.osswriter.parquet;
 
 import org.apache.hadoop.fs.Path;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.util.Configuration;
 
 import parquet.hadoop.ParquetWriter;
 import parquet.hadoop.metadata.CompressionCodecName;

@@ -2,7 +2,7 @@ package com.starrocks.connector.datax.plugin.writer.starrockswriter.row;
 
 import java.io.StringWriter;
 
-import com.alibaba.datax.common.element.Record;
+import net.tbsoft.datax.common.element.Record;
 
 import com.google.common.base.Strings;
 

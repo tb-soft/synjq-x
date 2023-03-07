@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.alibaba.datax</groupId>
+		<groupId>net.tbsoft.datax</groupId>
 		<artifactId>datax-all</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
@@ -13,7 +13,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.alibaba.datax</groupId>
+			<groupId>net.tbsoft.datax</groupId>
 			<artifactId>datax-common</artifactId>
 			<version>${datax-project-version}</version>
 			<exclusions>
@@ -32,7 +32,7 @@
 			<artifactId>logback-classic</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.alibaba.datax</groupId>
+			<groupId>net.tbsoft.datax</groupId>
 			<artifactId>plugin-rdbms-util</artifactId>
 			<version>${datax-project-version}</version>
 		</dependency>
@@ -62,7 +62,7 @@
             <version>4.5.3</version>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.fastjson2</groupId>
+            <groupId>net.tbsoft.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
             <version>2.0.23</version>
         </dependency>
@@ -99,8 +99,8 @@
                             <createDependencyReducedPom>true</createDependencyReducedPom>
                             <relocations>
                                 <relocation>
-                                    <pattern>com.alibaba.fastjson</pattern>
-                                    <shadedPattern>com.starrocks.shade.com.alibaba.fastjson</shadedPattern>
+                                    <pattern>net.tbsoft.fastjson</pattern>
+                                    <shadedPattern>com.starrocks.shade.net.tbsoft.fastjson</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.apache.http</pattern>
@@ -118,7 +118,7 @@
                                     <include>commons-logging:*</include>
                                     <include>org.apache.httpcomponents:httpclient</include>
                                     <include>org.apache.httpcomponents:httpcore</include>
-                                    <include>com.alibaba:fastjson</include>
+                                    <include>net.tbsoft:fastjson</include>
                                 </includes>
                             </artifactSet>
                             <filters>

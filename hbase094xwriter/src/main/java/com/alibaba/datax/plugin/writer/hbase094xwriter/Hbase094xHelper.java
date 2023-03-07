@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.writer.hbase094xwriter;
+package net.tbsoft.datax.plugin.writer.hbase094xwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.TypeReference;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.TypeReference;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.hadoop.fs.Path;
@@ -51,7 +51,7 @@ public class Hbase094xHelper {
     }
 
 
-    public static HTable getTable(com.alibaba.datax.common.util.Configuration configuration){
+    public static HTable getTable(net.tbsoft.datax.common.util.Configuration configuration){
         String hbaseConfig = configuration.getString(Key.HBASE_CONFIG);
         String userTable = configuration.getString(Key.TABLE);
         org.apache.hadoop.conf.Configuration hConfiguration = Hbase094xHelper.getHbaseConfiguration(hbaseConfig);
@@ -76,7 +76,7 @@ public class Hbase094xHelper {
         }
     }
 
-    public static void deleteTable(com.alibaba.datax.common.util.Configuration configuration) {
+    public static void deleteTable(net.tbsoft.datax.common.util.Configuration configuration) {
         String userTable = configuration.getString(Key.TABLE);
         LOG.info(String.format("由于您配置了deleteType delete,HBasWriter begins to delete table %s .", userTable));
         Scan scan = new Scan();
@@ -97,7 +97,7 @@ public class Hbase094xHelper {
         }
     }
 
-    public static void truncateTable(com.alibaba.datax.common.util.Configuration configuration)  {
+    public static void truncateTable(net.tbsoft.datax.common.util.Configuration configuration)  {
 
         String hbaseConfig = configuration.getString(Key.HBASE_CONFIG);
         String userTable = configuration.getString(Key.TABLE);
@@ -162,7 +162,7 @@ public class Hbase094xHelper {
     }
 
 
-    public static void validateParameter(com.alibaba.datax.common.util.Configuration originalConfig) {
+    public static void validateParameter(net.tbsoft.datax.common.util.Configuration originalConfig) {
         originalConfig.getNecessaryValue(Key.HBASE_CONFIG, Hbase094xWriterErrorCode.REQUIRED_VALUE);
         originalConfig.getNecessaryValue(Key.TABLE, Hbase094xWriterErrorCode.REQUIRED_VALUE);
 
@@ -185,7 +185,7 @@ public class Hbase094xHelper {
 
 
 
-    public  static  void validateMode(com.alibaba.datax.common.util.Configuration originalConfig){
+    public  static  void validateMode(net.tbsoft.datax.common.util.Configuration originalConfig){
         String mode = originalConfig.getNecessaryValue(Key.MODE, Hbase094xWriterErrorCode.REQUIRED_VALUE);
         ModeType modeType = ModeType.getByTypeName(mode);
         switch (modeType) {
@@ -201,7 +201,7 @@ public class Hbase094xHelper {
         }
     }
 
-    public static void validateColumn(com.alibaba.datax.common.util.Configuration originalConfig){
+    public static void validateColumn(net.tbsoft.datax.common.util.Configuration originalConfig){
         List<Configuration> columns = originalConfig.getListConfiguration(Key.COLUMN);
         if (columns == null || columns.isEmpty()) {
             throw DataXException.asDataXException(Hbase094xWriterErrorCode.REQUIRED_VALUE, "column为必填项，其形式为：column:[{\"index\": 0,\"name\": \"cf0:column0\",\"type\": \"string\"},{\"index\": 1,\"name\": \"cf1:column1\",\"type\": \"long\"}]");
@@ -220,7 +220,7 @@ public class Hbase094xHelper {
         }
     }
 
-    public static void validateRowkeyColumn(com.alibaba.datax.common.util.Configuration originalConfig){
+    public static void validateRowkeyColumn(net.tbsoft.datax.common.util.Configuration originalConfig){
         List<Configuration> rowkeyColumn = originalConfig.getListConfiguration(Key.ROWKEY_COLUMN);
         if (rowkeyColumn == null || rowkeyColumn.isEmpty()) {
             throw DataXException.asDataXException(Hbase094xWriterErrorCode.REQUIRED_VALUE, "rowkeyColumn为必填项，其形式为：rowkeyColumn:[{\"index\": 0,\"type\": \"string\"},{\"index\": -1,\"type\": \"string\",\"value\": \"_\"}]");
@@ -244,7 +244,7 @@ public class Hbase094xHelper {
         }
     }
 
-    public static void validateVersionColumn(com.alibaba.datax.common.util.Configuration originalConfig){
+    public static void validateVersionColumn(net.tbsoft.datax.common.util.Configuration originalConfig){
         Configuration versionColumn = originalConfig.getConfiguration(Key.VERSION_COLUMN);
         //为null,表示用当前时间;指定列,需要index
         if(versionColumn != null){

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.config;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config;
 
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.TimeUtils;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.TimeUtils;
 
 public class OTSStreamReaderConstants {
 

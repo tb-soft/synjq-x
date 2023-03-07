@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.loghubwriter;
+package net.tbsoft.datax.plugin.writer.loghubwriter;
 
 /**
  * 配置关键字

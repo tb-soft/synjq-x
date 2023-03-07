@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.oraclewriter;
+package net.tbsoft.datax.plugin.writer.oraclewriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum OracleWriterErrorCode implements ErrorCode {
 	;

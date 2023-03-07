@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.odpsreader.util;
+package net.tbsoft.datax.plugin.reader.odpsreader.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.alibaba.datax.plugin.reader.odpsreader.Constant;
+import net.tbsoft.datax.plugin.reader.odpsreader.Constant;
 import com.aliyun.odps.Partition;
 import com.aliyun.odps.Table;
 import org.apache.commons.lang3.StringUtils;

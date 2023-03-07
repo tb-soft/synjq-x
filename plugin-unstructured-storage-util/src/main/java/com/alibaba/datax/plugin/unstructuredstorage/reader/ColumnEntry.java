@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.unstructuredstorage.reader;
+package net.tbsoft.datax.plugin.unstructuredstorage.reader;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSON;
 
 public class ColumnEntry {
     private Integer index;

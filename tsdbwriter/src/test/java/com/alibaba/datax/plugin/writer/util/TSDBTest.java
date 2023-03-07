@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.writer.util;
+package net.tbsoft.datax.plugin.writer.util;
 
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：TSDB Test
  *

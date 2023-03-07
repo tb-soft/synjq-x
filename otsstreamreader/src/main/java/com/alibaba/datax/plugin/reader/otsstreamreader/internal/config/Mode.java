@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.config;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config;
 
 public enum Mode {
 

@@ -1,13 +1,13 @@
-package com.alibaba.datax.core.statistics.container.communicator;
+package net.tbsoft.datax.core.statistics.container.communicator;
 
 
-import com.alibaba.datax.common.statistics.VMInfo;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.statistics.communication.Communication;
-import com.alibaba.datax.core.statistics.container.collector.AbstractCollector;
-import com.alibaba.datax.core.statistics.container.report.AbstractReporter;
-import com.alibaba.datax.core.util.container.CoreConstant;
-import com.alibaba.datax.dataxservice.face.domain.enums.State;
+import net.tbsoft.datax.common.statistics.VMInfo;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.core.statistics.container.collector.AbstractCollector;
+import net.tbsoft.datax.core.statistics.container.report.AbstractReporter;
+import net.tbsoft.datax.core.util.container.CoreConstant;
+import net.tbsoft.datax.dataxservice.face.domain.enums.State;
 
 import java.util.List;
 import java.util.Map;

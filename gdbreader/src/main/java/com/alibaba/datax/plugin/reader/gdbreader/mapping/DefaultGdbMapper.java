@@ -5,10 +5,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-package com.alibaba.datax.plugin.reader.gdbreader.mapping;
+package net.tbsoft.datax.plugin.reader.gdbreader.mapping;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.plugin.reader.gdbreader.model.GdbElement;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.plugin.reader.gdbreader.model.GdbElement;
 import org.apache.tinkerpop.gremlin.structure.util.reference.ReferenceProperty;
 import org.apache.tinkerpop.gremlin.structure.util.reference.ReferenceVertexProperty;
 

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.core;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.core;
 
 import com.alicloud.openservices.tablestore.model.StreamRecord;
 

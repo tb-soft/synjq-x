@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.mongodbwriter;
+package net.tbsoft.datax.plugin.writer.mongodbwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum MongoDBWriterErrorCode implements ErrorCode {
 

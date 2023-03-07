@@ -1,6 +1,6 @@
-package com.alibaba.datax.common.element;
+package net.tbsoft.datax.common.element;
 
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSON;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.tsdbwriter;
+package net.tbsoft.datax.plugin.writer.tsdbwriter;
 
 class TSDBModel {
     static final String TSDB_METRIC_NUM = "metric_num";

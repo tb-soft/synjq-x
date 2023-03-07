@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.exception;
+package net.tbsoft.datax.common.exception;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

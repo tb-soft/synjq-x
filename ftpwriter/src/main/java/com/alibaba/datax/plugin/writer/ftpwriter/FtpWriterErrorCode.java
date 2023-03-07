@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.ftpwriter;
+package net.tbsoft.datax.plugin.writer.ftpwriter;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum FtpWriterErrorCode implements ErrorCode {
     

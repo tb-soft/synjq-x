@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.ftpreader;
+package net.tbsoft.datax.plugin.reader.ftpreader;
 
 import java.io.InputStream;
 import java.util.HashSet;
@@ -9,8 +9,8 @@ import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;

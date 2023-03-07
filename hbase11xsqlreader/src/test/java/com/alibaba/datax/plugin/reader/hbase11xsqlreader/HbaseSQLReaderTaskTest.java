@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.hbase11xsqlreader;
+package net.tbsoft.datax.plugin.reader.hbase11xsqlreader;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.transport.record.DefaultRecord;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.transport.record.DefaultRecord;
 import org.junit.Test;
 
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adswriter.ads;
+package net.tbsoft.datax.plugin.writer.adswriter.ads;
 
 import java.util.ArrayList;
 import java.util.List;

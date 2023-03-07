@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsreader.utils;
+package net.tbsoft.datax.plugin.reader.otsreader.utils;
 
 import java.util.HashSet;
 import java.util.Set;

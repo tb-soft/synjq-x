@@ -1,20 +1,20 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.task;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.task;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.writer.CommonRdbmsWriter;
-import com.alibaba.datax.plugin.rdbms.writer.Key;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.Config;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.ext.ConnHolder;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.ext.ObClientConnHolder;
-import com.alibaba.datax.plugin.writer.oceanbasev10writer.util.ObWriterUtils;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.writer.CommonRdbmsWriter;
+import net.tbsoft.datax.plugin.rdbms.writer.Key;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.Config;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext.ConnHolder;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.ext.ObClientConnHolder;
+import net.tbsoft.datax.plugin.writer.oceanbasev10writer.util.ObWriterUtils;
 
 public class SingleTableWriterTask extends CommonRdbmsWriter.Task {
 

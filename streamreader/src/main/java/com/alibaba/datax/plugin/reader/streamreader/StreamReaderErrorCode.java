@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.streamreader;
+package net.tbsoft.datax.plugin.reader.streamreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum StreamReaderErrorCode implements ErrorCode {
     REQUIRED_VALUE("StreamReader-00", "缺失必要的值"),

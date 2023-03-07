@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.rdbms.util;
+package net.tbsoft.datax.plugin.rdbms.util;
 
-import com.alibaba.datax.common.util.RangeSplitUtil;
+import net.tbsoft.datax.common.util.RangeSplitUtil;
 import org.apache.commons.lang3.StringUtils;
 
 import java.math.BigInteger;

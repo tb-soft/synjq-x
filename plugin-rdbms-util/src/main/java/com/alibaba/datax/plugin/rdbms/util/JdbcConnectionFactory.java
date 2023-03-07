@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.rdbms.util;
+package net.tbsoft.datax.plugin.rdbms.util;
 
 import java.sql.Connection;
 

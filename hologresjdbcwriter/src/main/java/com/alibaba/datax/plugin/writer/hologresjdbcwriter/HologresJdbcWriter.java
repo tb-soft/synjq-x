@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.writer.hologresjdbcwriter;
+package net.tbsoft.datax.plugin.writer.hologresjdbcwriter;
 
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
 
 import java.util.List;
 

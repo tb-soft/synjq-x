@@ -1,6 +1,6 @@
-package com.alibaba.datax.core.util;
+package net.tbsoft.datax.core.util;
 
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.Configuration;
 import org.apache.commons.lang.Validate;
 
 /**

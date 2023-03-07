@@ -1,22 +1,22 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader;
 
 import java.sql.Connection;
 import java.util.List;
 
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.ext.ObReaderKey;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.ext.ObReaderKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.reader.Constant;
-import com.alibaba.datax.plugin.rdbms.reader.Key;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.ext.ReaderJob;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.ext.ReaderTask;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.util.ObReaderUtils;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.reader.Constant;
+import net.tbsoft.datax.plugin.rdbms.reader.Key;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.ext.ReaderJob;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.ext.ReaderTask;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.util.ObReaderUtils;
 
 public class OceanBaseReader extends Reader {
 
@@ -88,8 +88,8 @@ public class OceanBaseReader extends Reader {
             Configuration connConf = Configuration.from(conns.get(0).toString());
             List<String> jdbcUrls = connConf.getList(Key.JDBC_URL, String.class);
             String jdbcUrl = jdbcUrls.get(0);
-            if (jdbcUrl.startsWith(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING)) {
-                String[] ss = jdbcUrl.split(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
+            if (jdbcUrl.startsWith(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING)) {
+                String[] ss = jdbcUrl.split(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
                 if (ss.length != 3) {
                     LOG.warn("unrecognized jdbc url: " + jdbcUrl);
                     return;

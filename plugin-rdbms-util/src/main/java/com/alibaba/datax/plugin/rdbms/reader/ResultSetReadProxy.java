@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.rdbms.reader;
+package net.tbsoft.datax.plugin.rdbms.reader;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

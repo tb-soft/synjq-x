@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.rdbms.writer;
+package net.tbsoft.datax.plugin.rdbms.writer;
 
 public final class Key {
     public final static String JDBC_URL = "jdbcUrl";

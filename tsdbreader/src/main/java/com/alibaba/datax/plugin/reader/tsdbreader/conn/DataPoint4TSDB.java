@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.reader.tsdbreader.conn;
+package net.tbsoft.datax.plugin.reader.tsdbreader.conn;
 
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSON;
 
 import java.util.Map;
 
 /**
- * Copyright @ 2019 alibaba.com
+ * Copyright @ 2019 tb-soft.net
  * All right reserved.
  * Function：DataPoint for TSDB
  *

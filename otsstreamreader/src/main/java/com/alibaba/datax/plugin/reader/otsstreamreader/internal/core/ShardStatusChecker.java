@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.core;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.core;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.OTSReaderError;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.model.ShardCheckpoint;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.OTSReaderError;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model.ShardCheckpoint;
 import com.alicloud.openservices.tablestore.model.StreamShard;
 import com.aliyun.openservices.ots.internal.streamclient.model.CheckpointPosition;
 import org.slf4j.Logger;

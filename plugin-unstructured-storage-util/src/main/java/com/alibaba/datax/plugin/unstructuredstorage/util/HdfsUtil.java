@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.unstructuredstorage.util;
+package net.tbsoft.datax.plugin.unstructuredstorage.util;
 
 
 public class HdfsUtil {

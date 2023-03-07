@@ -1,6 +1,6 @@
 {
   "name": "odpsreader",
-  "class": "com.alibaba.datax.plugin.reader.odpsreader.OdpsReader",
+  "class": "net.tbsoft.datax.plugin.reader.odpsreader.OdpsReader",
   "description": {
     "useScene": "prod.",
     "mechanism": "TODO",

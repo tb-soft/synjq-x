@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.reader.oceanbasev10reader.util;
+package net.tbsoft.datax.plugin.reader.oceanbasev10reader.util;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.plugin.rdbms.reader.util.SingleTableSplitUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.reader.oceanbasev10reader.ext.Constant;
-import com.alibaba.druid.sql.SQLUtils;
-import com.alibaba.druid.sql.ast.SQLExpr;
-import com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr;
-import com.alibaba.druid.sql.ast.expr.SQLBinaryOperator;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.plugin.rdbms.reader.util.SingleTableSplitUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.reader.oceanbasev10reader.ext.Constant;
+import net.tbsoft.druid.sql.SQLUtils;
+import net.tbsoft.druid.sql.ast.SQLExpr;
+import net.tbsoft.druid.sql.ast.expr.SQLBinaryOpExpr;
+import net.tbsoft.druid.sql.ast.expr.SQLBinaryOperator;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

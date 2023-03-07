@@ -1,6 +1,6 @@
-package com.alibaba.datax.core.statistics.container.report;
+package net.tbsoft.datax.core.statistics.container.report;
 
-import com.alibaba.datax.core.statistics.communication.Communication;
+import net.tbsoft.datax.core.statistics.communication.Communication;
 
 public abstract class AbstractReporter {
 

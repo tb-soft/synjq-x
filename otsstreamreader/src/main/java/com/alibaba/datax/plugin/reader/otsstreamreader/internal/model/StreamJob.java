@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.model;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.OTSReaderError;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.StatusTableConstants;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.GsonParser;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.OTSReaderError;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.StatusTableConstants;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.GsonParser;
 import com.alicloud.openservices.tablestore.core.utils.CompressUtil;
 import com.alicloud.openservices.tablestore.model.Column;
 import com.alicloud.openservices.tablestore.model.ColumnValue;

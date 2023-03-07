@@ -21,7 +21,7 @@
         </Console>
     </Appenders>
     <Loggers>
-        <AsyncLogger name="com.alibaba.datax.plugin.reader.otsstreamreader.internal" level="warn" additivity="false">
+        <AsyncLogger name="net.tbsoft.datax.plugin.reader.otsstreamreader.internal" level="warn" additivity="false">
             <AppenderRef ref="Async" level="warn" />
         </AsyncLogger>
         <AsyncLogger name="com.aliyun.openservices.client.internal.streamclient" level="warn" additivity="false">

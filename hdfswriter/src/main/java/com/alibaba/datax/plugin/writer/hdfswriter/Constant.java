@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.hdfswriter;
+package net.tbsoft.datax.plugin.writer.hdfswriter;
 
 public class Constant {
 

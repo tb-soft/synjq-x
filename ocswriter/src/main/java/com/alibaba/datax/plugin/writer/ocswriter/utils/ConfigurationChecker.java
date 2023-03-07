@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.writer.ocswriter.utils;
+package net.tbsoft.datax.plugin.writer.ocswriter.utils;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.ocswriter.Key;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.ocswriter.Key;
 import com.google.common.annotations.VisibleForTesting;
 
 import net.spy.memcached.AddrUtil;

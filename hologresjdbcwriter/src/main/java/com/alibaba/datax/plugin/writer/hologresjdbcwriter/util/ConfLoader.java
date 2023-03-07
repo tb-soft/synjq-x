@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.hologresjdbcwriter.util;
+package net.tbsoft.datax.plugin.writer.hologresjdbcwriter.util;
 
-import com.alibaba.hologres.client.model.WriteMode;
+import net.tbsoft.hologres.client.model.WriteMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

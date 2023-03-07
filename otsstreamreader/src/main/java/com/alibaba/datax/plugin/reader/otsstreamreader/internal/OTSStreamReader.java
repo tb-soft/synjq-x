@@ -1,13 +1,13 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConstants;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.model.StreamJob;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.GsonParser;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConstants;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.model.StreamJob;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.GsonParser;
 import com.alicloud.openservices.tablestore.TableStoreException;
 import com.alicloud.openservices.tablestore.model.StreamShard;
 

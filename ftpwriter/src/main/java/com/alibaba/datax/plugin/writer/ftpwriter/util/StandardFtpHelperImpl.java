@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.ftpwriter.util;
+package net.tbsoft.datax.plugin.writer.ftpwriter.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -16,10 +16,10 @@ import org.apache.commons.net.ftp.FTPReply;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.plugin.writer.ftpwriter.FtpWriterErrorCode;
-import com.alibaba.fastjson2.JSON;
-import com.alibaba.fastjson2.JSONWriter;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.plugin.writer.ftpwriter.FtpWriterErrorCode;
+import net.tbsoft.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSONWriter;
 
 public class StandardFtpHelperImpl implements IFtpHelper {
     private static final Logger LOG = LoggerFactory

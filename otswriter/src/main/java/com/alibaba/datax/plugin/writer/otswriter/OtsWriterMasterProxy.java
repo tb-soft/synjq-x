@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.otswriter;
+package net.tbsoft.datax.plugin.writer.otswriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,16 +6,16 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.otswriter.callable.GetTableMetaCallable;
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSConf;
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSConf.RestrictConf;
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSConst;
-import com.alibaba.datax.plugin.writer.otswriter.model.OTSOpType;
-import com.alibaba.datax.plugin.writer.otswriter.utils.GsonParser;
-import com.alibaba.datax.plugin.writer.otswriter.utils.ParamChecker;
-import com.alibaba.datax.plugin.writer.otswriter.utils.RetryHelper;
-import com.alibaba.datax.plugin.writer.otswriter.utils.WriterModelParser;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.writer.otswriter.callable.GetTableMetaCallable;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSConf;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSConf.RestrictConf;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSConst;
+import net.tbsoft.datax.plugin.writer.otswriter.model.OTSOpType;
+import net.tbsoft.datax.plugin.writer.otswriter.utils.GsonParser;
+import net.tbsoft.datax.plugin.writer.otswriter.utils.ParamChecker;
+import net.tbsoft.datax.plugin.writer.otswriter.utils.RetryHelper;
+import net.tbsoft.datax.plugin.writer.otswriter.utils.WriterModelParser;
 import com.aliyun.openservices.ots.OTSClient;
 import com.aliyun.openservices.ots.model.TableMeta;
 

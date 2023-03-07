@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.reader.loghubreader;
+package net.tbsoft.datax.plugin.reader.loghubreader;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.DataXCaseEnvUtil;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.DataXCaseEnvUtil;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.fastjson2.JSONObject;
 import com.aliyun.openservices.log.Client;
 import com.aliyun.openservices.log.common.Consts.CursorMode;
 import com.aliyun.openservices.log.common.*;

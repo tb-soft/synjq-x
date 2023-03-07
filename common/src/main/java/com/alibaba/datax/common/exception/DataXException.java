@@ -1,6 +1,6 @@
-package com.alibaba.datax.common.exception;
+package net.tbsoft.datax.common.exception;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

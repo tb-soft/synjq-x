@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.hbase11xwriter;
+package net.tbsoft.datax.plugin.writer.hbase11xwriter;
 
 public final class Key {
 

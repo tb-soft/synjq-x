@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.ftpwriter.util;
+package net.tbsoft.datax.plugin.writer.ftpwriter.util;
 
 import java.io.OutputStream;
 import java.util.Set;

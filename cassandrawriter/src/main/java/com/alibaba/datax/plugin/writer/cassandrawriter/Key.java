@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.cassandrawriter;
+package net.tbsoft.datax.plugin.writer.cassandrawriter;
 
 /**
  * Created by mazhenlin on 2019/8/19.

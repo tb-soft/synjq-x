@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.ossreader;
+package net.tbsoft.datax.plugin.reader.ossreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 /**
  * Created by mengxin.liumx on 2014/12/7.

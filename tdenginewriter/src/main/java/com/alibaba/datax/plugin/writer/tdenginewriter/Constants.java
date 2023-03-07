@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.tdenginewriter;
+package net.tbsoft.datax.plugin.writer.tdenginewriter;
 
 public class Constants {
     public static final String DEFAULT_USERNAME = "root";

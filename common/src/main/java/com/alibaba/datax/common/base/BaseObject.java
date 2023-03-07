@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.base;
+package net.tbsoft.datax.common.base;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

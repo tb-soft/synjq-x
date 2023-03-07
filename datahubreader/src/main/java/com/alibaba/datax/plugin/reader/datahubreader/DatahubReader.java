@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.datahubreader;
+package net.tbsoft.datax.plugin.reader.datahubreader;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -9,13 +9,13 @@ import com.aliyun.datahub.client.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
 
 
 import com.aliyun.datahub.client.DatahubClient;

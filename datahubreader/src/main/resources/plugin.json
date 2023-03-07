@@ -1,6 +1,6 @@
 {
-    "name": "datahubreader",
-    "class": "com.alibaba.datax.plugin.reader.datahubreader.DatahubReader",
-    "description": "datahub reader",
-    "developer": "alibaba"
+  "name": "datahubreader",
+  "class": "net.tbsoft.datax.plugin.reader.datahubreader.DatahubReader",
+  "description": "datahub reader",
+  "developer": "alibaba"
 }

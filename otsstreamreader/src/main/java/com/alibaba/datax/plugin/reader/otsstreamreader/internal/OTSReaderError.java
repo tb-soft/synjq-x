@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public class OTSReaderError implements ErrorCode {
 

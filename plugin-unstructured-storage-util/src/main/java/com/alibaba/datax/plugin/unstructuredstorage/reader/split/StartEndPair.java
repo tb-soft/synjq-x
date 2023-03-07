@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.unstructuredstorage.reader.split;
+package net.tbsoft.datax.plugin.unstructuredstorage.reader.split;
 
 /**
  * @Author: guxuan

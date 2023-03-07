@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.reader.hbase20xsqlreader;
+package net.tbsoft.datax.plugin.reader.hbase20xsqlreader;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.statistics.PerfRecord;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.statistics.PerfRecord;
+import net.tbsoft.datax.common.util.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.alibaba.datax.plugin.reader.otsreader;
+package net.tbsoft.datax.plugin.reader.otsreader;
 
 public final class Key {
     /* ots account configuration */

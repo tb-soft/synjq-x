@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.reader.ossreader.util;
+package net.tbsoft.datax.plugin.reader.ossreader.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.ossreader.OssInputStream;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.Key;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.split.StartEndPair;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.split.UnstructuredSplitUtil;
-import com.alibaba.fastjson2.JSONArray;
-import com.alibaba.fastjson2.JSONObject;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.ossreader.OssInputStream;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.Key;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.split.StartEndPair;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.split.UnstructuredSplitUtil;
+import net.tbsoft.fastjson2.JSONArray;
+import net.tbsoft.fastjson2.JSONObject;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.GetObjectRequest;
 import com.aliyun.oss.model.OSSObject;
@@ -59,18 +59,18 @@ public class OssSplitUtil extends UnstructuredSplitUtil {
     }
 
     private Boolean canSplitSingleFile(Configuration jobConfig) {
-        Boolean enableInnerSplit = jobConfig.getBool(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENABLE_INNER_SPLIT, true);
+        Boolean enableInnerSplit = jobConfig.getBool(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.ENABLE_INNER_SPLIT, true);
         if (!enableInnerSplit) {
             return false;
         }
 
         // 默认不切分
-        String fileFormat = jobConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.FILE_FORMAT,
-                com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_FILE_FORMAT);
-        String compressType = jobConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COMPRESS);
+        String fileFormat = jobConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.FILE_FORMAT,
+                net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_FILE_FORMAT);
+        String compressType = jobConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COMPRESS);
 
         // 如果不满足"是text格式且非压缩文件"，则直接返回false
-        if (! StringUtils.equalsIgnoreCase(fileFormat, com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.FILE_FORMAT_TEXT) ||
+        if (! StringUtils.equalsIgnoreCase(fileFormat, net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.FILE_FORMAT_TEXT) ||
                 ! StringUtils.isBlank(compressType)) {
             return false;
         }
@@ -221,7 +221,7 @@ public class OssSplitUtil extends UnstructuredSplitUtil {
 
         this.splitGroupNum = adviceNumber;
         this.avgLen = (long)Math.ceil((double)this.getTotoalLenOfObjList(objKeySizePares) / this.splitGroupNum);
-        this.balanceThreshold = originConfiguration.getDouble(com.alibaba.datax.plugin.reader.ossreader.Key.BALANCE_THRESHOLD, 10.0);
+        this.balanceThreshold = originConfiguration.getDouble(net.tbsoft.datax.plugin.reader.ossreader.Key.BALANCE_THRESHOLD, 10.0);
 
         List<Group> groups = this.splitObjectToGroups(objKeySizePares, this.splitGroupNum);
 

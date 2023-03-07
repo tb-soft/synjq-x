@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader;
+package net.tbsoft.datax.plugin.reader;
 
-import com.alibaba.datax.core.Engine;
+import net.tbsoft.datax.core.Engine;
 import org.junit.Ignore;
 import org.junit.Test;
 

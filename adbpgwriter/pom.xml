@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>datax-all</artifactId>
-        <groupId>com.alibaba.datax</groupId>
+        <groupId>net.tbsoft.datax</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -14,7 +14,7 @@
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>datax-common</artifactId>
             <version>${datax-project-version}</version>
             <exclusions>
@@ -29,24 +29,24 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>datax-core</artifactId>
             <version>${datax-project-version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>plugin-rdbms-util</artifactId>
             <version>${datax-project-version}</version>
             <exclusions>
                 <exclusion>
-                    <groupId>com.alibaba</groupId>
+                    <groupId>net.tbsoft</groupId>
                     <artifactId>druid</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>net.tbsoft</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.17</version>
         </dependency>
@@ -71,7 +71,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.cloud.analyticdb</groupId>
+            <groupId>net.tbsoft.cloud.analyticdb</groupId>
             <artifactId>adb4pgclient</artifactId>
             <version>1.0.0</version>
         </dependency>

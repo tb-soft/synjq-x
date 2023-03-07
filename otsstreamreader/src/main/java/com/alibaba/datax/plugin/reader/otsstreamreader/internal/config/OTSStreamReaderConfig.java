@@ -1,9 +1,9 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.config;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.OTSStreamReaderException;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.ParamChecker;
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils.TimeUtils;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.OTSStreamReaderException;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.ParamChecker;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils.TimeUtils;
 import com.alicloud.openservices.tablestore.SyncClientInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

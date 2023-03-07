@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.streamreader;
+package net.tbsoft.datax.plugin.reader.streamreader;
 
 public class Key {
 

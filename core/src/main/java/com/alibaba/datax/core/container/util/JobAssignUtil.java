@@ -1,8 +1,8 @@
-package com.alibaba.datax.core.container.util;
+package net.tbsoft.datax.core.container.util;
 
-import com.alibaba.datax.common.constant.CommonConstant;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.util.container.CoreConstant;
+import net.tbsoft.datax.common.constant.CommonConstant;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.util.container.CoreConstant;
 import org.apache.commons.lang.Validate;
 import org.apache.commons.lang3.StringUtils;
 

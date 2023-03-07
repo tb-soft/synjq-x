@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.adbpgwriter.copy;
+package net.tbsoft.datax.plugin.writer.adbpgwriter.copy;
 
-import com.alibaba.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
 
 import java.sql.Connection;
 /**

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.alibaba.datax</groupId>
+        <groupId>net.tbsoft.datax</groupId>
         <artifactId>datax-all</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -33,7 +33,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba.datax</groupId>
+            <groupId>net.tbsoft.datax</groupId>
             <artifactId>datax-common</artifactId>
             <version>${datax-project-version}</version>
             <exclusions>
@@ -82,7 +82,7 @@
 
         <!-- json -->
         <dependency>
-            <groupId>com.alibaba.fastjson2</groupId>
+            <groupId>net.tbsoft.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
         </dependency>
 

@@ -1,4 +1,4 @@
-package com.alibaba.datax.core.transport.transformer;
+package net.tbsoft.datax.core.transport.transformer;
 
 import org.apache.commons.codec.digest.DigestUtils;
 

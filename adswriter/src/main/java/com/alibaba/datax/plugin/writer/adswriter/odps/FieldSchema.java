@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.adswriter.odps;
+package net.tbsoft.datax.plugin.writer.adswriter.odps;
 
 /**
  * ODPS列属性，包含列名和类型 列名和类型与SQL的DESC表或分区显示的列名和类型一致

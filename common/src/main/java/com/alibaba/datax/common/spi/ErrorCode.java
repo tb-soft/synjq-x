@@ -1,4 +1,4 @@
-package com.alibaba.datax.common.spi;
+package net.tbsoft.datax.common.spi;
 
 /**
  * 尤其注意：最好提供toString()实现。例如：

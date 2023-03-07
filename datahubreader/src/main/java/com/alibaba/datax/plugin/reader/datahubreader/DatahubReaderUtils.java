@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.datahubreader;
+package net.tbsoft.datax.plugin.reader.datahubreader;
 
 import java.math.BigDecimal;
 import java.text.ParseException;
@@ -7,10 +7,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.DataXCaseEnvUtil;
-import com.alibaba.datax.common.util.RetryUtil;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.DataXCaseEnvUtil;
+import net.tbsoft.datax.common.util.RetryUtil;
 
 import com.aliyun.datahub.client.DatahubClient;
 import com.aliyun.datahub.client.exception.InvalidParameterException;

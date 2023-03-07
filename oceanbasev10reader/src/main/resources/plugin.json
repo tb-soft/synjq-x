@@ -1,6 +1,6 @@
 {
-    "name": "oceanbasev10reader",
-    "class": "com.alibaba.datax.plugin.reader.oceanbasev10reader.OceanBaseReader",
-    "description": "read data from oceanbase with SQL interface",
-    "developer": "oceanbase"
+  "name": "oceanbasev10reader",
+  "class": "net.tbsoft.datax.plugin.reader.oceanbasev10reader.OceanBaseReader",
+  "description": "read data from oceanbase with SQL interface",
+  "developer": "oceanbase"
 }

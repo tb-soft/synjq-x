@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.ocswriter.utils;
+package net.tbsoft.datax.plugin.writer.ocswriter.utils;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum OcsWriterErrorCode implements ErrorCode {
     REQUIRED_VALUE("OcsWriterErrorCode-000", "参数不能为空"),

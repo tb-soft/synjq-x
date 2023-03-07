@@ -1,11 +1,11 @@
-package com.alibaba.datax.plugin.reader.txtfilereader;
+package net.tbsoft.datax.plugin.reader.txtfilereader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderErrorCode;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
 import com.google.common.collect.Sets;
 
 import org.apache.commons.io.Charsets;
@@ -77,17 +77,17 @@ public class TxtFileReader extends Reader {
 
 			String encoding = this.originConfig
 					.getString(
-							com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
-							com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_ENCODING);
+							net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
+							net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_ENCODING);
 			if (StringUtils.isBlank(encoding)) {
                 this.originConfig
-                        .set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
-                                com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_ENCODING);
+                        .set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
+                                net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_ENCODING);
 			} else {
 				try {
 					encoding = encoding.trim();
 					this.originConfig
-							.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
+							.set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
 									encoding);
 					Charsets.toCharset(encoding);
 				} catch (UnsupportedCharsetException uce) {
@@ -105,13 +105,13 @@ public class TxtFileReader extends Reader {
 			// column: 1. index type 2.value type 3.when type is Date, may have
 			// format
 			List<Configuration> columns = this.originConfig
-					.getListConfiguration(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
+					.getListConfiguration(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
 			// handle ["*"]
 			if (null != columns && 1 == columns.size()) {
 				String columnsInStr = columns.get(0).toString();
 				if ("\"*\"".equals(columnsInStr) || "'*'".equals(columnsInStr)) {
 					this.originConfig
-							.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN,
+							.set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN,
 									null);
 					columns = null;
 				}
@@ -121,12 +121,12 @@ public class TxtFileReader extends Reader {
 				for (Configuration eachColumnConf : columns) {
 					eachColumnConf
 							.getNecessaryValue(
-									com.alibaba.datax.plugin.unstructuredstorage.reader.Key.TYPE,
+									net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.TYPE,
 									TxtFileReaderErrorCode.REQUIRED_VALUE);
 					Integer columnIndex = eachColumnConf
-							.getInt(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.INDEX);
+							.getInt(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.INDEX);
 					String columnValue = eachColumnConf
-							.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.VALUE);
+							.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.VALUE);
 
 					if (null == columnIndex && null == columnValue) {
 						throw DataXException.asDataXException(
@@ -150,10 +150,10 @@ public class TxtFileReader extends Reader {
 
 			// only support compress types
 			String compress = this.originConfig
-					.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COMPRESS);
+					.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COMPRESS);
 			if (StringUtils.isBlank(compress)) {
 				this.originConfig
-						.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COMPRESS,
+						.set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COMPRESS,
 								null);
 			} else {
 				Set<String> supportedCompress = Sets
@@ -168,12 +168,12 @@ public class TxtFileReader extends Reader {
 											compress));
 				}
 				this.originConfig
-						.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COMPRESS,
+						.set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COMPRESS,
 								compress);
 			}
 
 			String delimiterInStr = this.originConfig
-					.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.FIELD_DELIMITER);
+					.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.FIELD_DELIMITER);
 			// warn: if have, length must be one
 			if (null != delimiterInStr && 1 != delimiterInStr.length()) {
 				throw DataXException.asDataXException(

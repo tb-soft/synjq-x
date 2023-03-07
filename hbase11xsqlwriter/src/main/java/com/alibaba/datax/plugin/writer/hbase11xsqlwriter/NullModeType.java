@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.writer.hbase11xsqlwriter;
+package net.tbsoft.datax.plugin.writer.hbase11xsqlwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.exception.DataXException;
 
 import java.util.Arrays;
 

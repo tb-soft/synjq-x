@@ -1,26 +1,26 @@
-package com.alibaba.datax.plugin.rdbms.reader;
+package net.tbsoft.datax.plugin.rdbms.reader;
 
-import com.alibaba.datax.common.element.BoolColumn;
-import com.alibaba.datax.common.element.BytesColumn;
-import com.alibaba.datax.common.element.DateColumn;
-import com.alibaba.datax.common.element.DoubleColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.statistics.PerfRecord;
-import com.alibaba.datax.common.statistics.PerfTrace;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.reader.util.OriginalConfPretreatmentUtil;
-import com.alibaba.datax.plugin.rdbms.reader.util.PreCheckTask;
-import com.alibaba.datax.plugin.rdbms.reader.util.ReaderSplitUtil;
-import com.alibaba.datax.plugin.rdbms.reader.util.SingleTableSplitUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DBUtilErrorCode;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.util.RdbmsException;
+import net.tbsoft.datax.common.element.BoolColumn;
+import net.tbsoft.datax.common.element.BytesColumn;
+import net.tbsoft.datax.common.element.DateColumn;
+import net.tbsoft.datax.common.element.DoubleColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.statistics.PerfRecord;
+import net.tbsoft.datax.common.statistics.PerfTrace;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.reader.util.OriginalConfPretreatmentUtil;
+import net.tbsoft.datax.plugin.rdbms.reader.util.PreCheckTask;
+import net.tbsoft.datax.plugin.rdbms.reader.util.ReaderSplitUtil;
+import net.tbsoft.datax.plugin.rdbms.reader.util.SingleTableSplitUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtilErrorCode;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.util.RdbmsException;
 import com.google.common.collect.Lists;
 
 import org.apache.commons.lang3.StringUtils;
@@ -150,8 +150,8 @@ public class CommonRdbmsReader {
             this.jdbcUrl = readerSliceConfig.getString(Key.JDBC_URL);
 
             //ob10的处理
-            if (this.jdbcUrl.startsWith(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING) && this.dataBaseType == DataBaseType.MySql) {
-                String[] ss = this.jdbcUrl.split(com.alibaba.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
+            if (this.jdbcUrl.startsWith(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING) && this.dataBaseType == DataBaseType.MySql) {
+                String[] ss = this.jdbcUrl.split(net.tbsoft.datax.plugin.rdbms.writer.Constant.OB10_SPLIT_STRING_PATTERN);
                 if (ss.length != 3) {
                     throw DataXException
                             .asDataXException(

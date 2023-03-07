@@ -1,12 +1,12 @@
-package com.alibaba.datax.plugin.writer.adbmysqlwriter;
+package net.tbsoft.datax.plugin.writer.adbmysqlwriter;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.rdbms.writer.CommonRdbmsWriter;
-import com.alibaba.datax.plugin.rdbms.writer.Key;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.rdbms.writer.CommonRdbmsWriter;
+import net.tbsoft.datax.plugin.rdbms.writer.Key;
 import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;

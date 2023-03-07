@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils;
 
-import com.alibaba.datax.common.element.*;
-import com.alibaba.datax.common.element.Column;
+import net.tbsoft.datax.common.element.*;
+import net.tbsoft.datax.common.element.Column;
 import com.alicloud.openservices.tablestore.model.*;
 
 public class  ColumnValueTransformHelper {

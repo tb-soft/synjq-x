@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.sqlserverreader;
+package net.tbsoft.datax.plugin.reader.sqlserverreader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum SqlServerReaderErrorCode implements ErrorCode {
     ;

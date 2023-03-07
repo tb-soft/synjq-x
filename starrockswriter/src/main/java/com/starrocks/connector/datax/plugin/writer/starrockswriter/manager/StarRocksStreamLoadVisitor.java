@@ -6,7 +6,7 @@ import java.net.URL;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 
-import com.alibaba.fastjson2.JSON;
+import net.tbsoft.fastjson2.JSON;
 import com.starrocks.connector.datax.plugin.writer.starrockswriter.StarRocksWriterOptions;
 import com.starrocks.connector.datax.plugin.writer.starrockswriter.row.StarRocksDelimiterParser;
 

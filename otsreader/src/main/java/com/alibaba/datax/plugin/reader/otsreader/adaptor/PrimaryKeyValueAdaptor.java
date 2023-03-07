@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsreader.adaptor;
+package net.tbsoft.datax.plugin.reader.otsreader.adaptor;
 
 import java.lang.reflect.Type;
 

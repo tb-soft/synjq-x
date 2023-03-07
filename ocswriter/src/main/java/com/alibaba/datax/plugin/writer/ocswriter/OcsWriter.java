@@ -1,15 +1,15 @@
-package com.alibaba.datax.plugin.writer.ocswriter;
+package net.tbsoft.datax.plugin.writer.ocswriter;
 
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordReceiver;
-import com.alibaba.datax.common.plugin.TaskPluginCollector;
-import com.alibaba.datax.common.spi.Writer;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.RetryUtil;
-import com.alibaba.datax.plugin.writer.ocswriter.utils.ConfigurationChecker;
-import com.alibaba.datax.plugin.writer.ocswriter.utils.OcsWriterErrorCode;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordReceiver;
+import net.tbsoft.datax.common.plugin.TaskPluginCollector;
+import net.tbsoft.datax.common.spi.Writer;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.RetryUtil;
+import net.tbsoft.datax.plugin.writer.ocswriter.utils.ConfigurationChecker;
+import net.tbsoft.datax.plugin.writer.ocswriter.utils.OcsWriterErrorCode;
 import com.google.common.annotations.VisibleForTesting;
 import net.spy.memcached.AddrUtil;
 import net.spy.memcached.ConnectionFactoryBuilder;

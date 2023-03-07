@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.osswriter;
+package net.tbsoft.datax.plugin.writer.osswriter;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.common.util.RetryUtil;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.common.util.RetryUtil;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.*;
 import org.apache.commons.io.IOUtils;

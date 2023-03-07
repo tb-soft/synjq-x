@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer.task;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer.task;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -9,7 +9,7 @@ import org.apache.commons.lang3.tuple.Triple;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
 
 public class ColumnMetaCache {
     private static final Logger LOG = LoggerFactory.getLogger(ColumnMetaCache.class);

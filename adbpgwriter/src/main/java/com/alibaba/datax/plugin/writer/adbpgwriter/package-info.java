@@ -3,6 +3,6 @@
  *
  * @since 0.0.1
  */
-package com.alibaba.datax.plugin.writer.adbpgwriter;
+package net.tbsoft.datax.plugin.writer.adbpgwriter;
 
 

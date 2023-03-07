@@ -1,7 +1,7 @@
-package com.alibaba.datax.common.util;
+package net.tbsoft.datax.common.util;
 
-import com.alibaba.datax.common.exception.CommonErrorCode;
-import com.alibaba.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.exception.CommonErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.oceanbasev10writer;
+package net.tbsoft.datax.plugin.writer.oceanbasev10writer;
 
 public interface Config {
 

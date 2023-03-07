@@ -1,10 +1,10 @@
-package com.alibaba.datax.plugin.reader.hdfsreader;
+package net.tbsoft.datax.plugin.reader.hdfsreader;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.plugin.RecordSender;
-import com.alibaba.datax.common.spi.Reader;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.spi.Reader;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
 import org.apache.commons.io.Charsets;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -87,7 +87,7 @@ public class HdfsReader extends Reader {
                 throw DataXException.asDataXException(HdfsReaderErrorCode.FILE_TYPE_ERROR, message);
             }
 
-            encoding = this.readerOriginConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENCODING, "UTF-8");
+            encoding = this.readerOriginConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.ENCODING, "UTF-8");
 
             try {
                 Charsets.toCharset(encoding);
@@ -122,17 +122,17 @@ public class HdfsReader extends Reader {
 
             // 检测是column 是否为 ["*"] 若是则填为空
             List<Configuration> column = this.readerOriginConfig
-                    .getListConfiguration(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
+                    .getListConfiguration(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
             if (null != column
                     && 1 == column.size()
                     && ("\"*\"".equals(column.get(0).toString()) || "'*'"
                     .equals(column.get(0).toString()))) {
                 readerOriginConfig
-                        .set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN, new ArrayList<String>());
+                        .set(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN, new ArrayList<String>());
             } else {
                 // column: 1. index type 2.value type 3.when type is Data, may have format
                 List<Configuration> columns = this.readerOriginConfig
-                        .getListConfiguration(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
+                        .getListConfiguration(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
 
                 if (null == columns || columns.size() == 0) {
                     throw DataXException.asDataXException(
@@ -142,9 +142,9 @@ public class HdfsReader extends Reader {
 
                 if (null != columns && columns.size() != 0) {
                     for (Configuration eachColumnConf : columns) {
-                        eachColumnConf.getNecessaryValue(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.TYPE, HdfsReaderErrorCode.REQUIRED_VALUE);
-                        Integer columnIndex = eachColumnConf.getInt(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.INDEX);
-                        String columnValue = eachColumnConf.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.VALUE);
+                        eachColumnConf.getNecessaryValue(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.TYPE, HdfsReaderErrorCode.REQUIRED_VALUE);
+                        Integer columnIndex = eachColumnConf.getInt(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.INDEX);
+                        String columnValue = eachColumnConf.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.VALUE);
 
                         if (null == columnIndex && null == columnValue) {
                             throw DataXException.asDataXException(
@@ -240,10 +240,10 @@ public class HdfsReader extends Reader {
             this.taskConfig = super.getPluginJobConf();
             this.sourceFiles = this.taskConfig.getList(Constant.SOURCE_FILES, String.class);
             this.specifiedFileType = this.taskConfig.getNecessaryValue(Key.FILETYPE, HdfsReaderErrorCode.REQUIRED_VALUE);
-            this.encoding = this.taskConfig.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENCODING, "UTF-8");
+            this.encoding = this.taskConfig.getString(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.ENCODING, "UTF-8");
             this.dfsUtil = new DFSUtil(this.taskConfig);
-            this.bufferSize = this.taskConfig.getInt(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.BUFFER_SIZE,
-                    com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_BUFFER_SIZE);
+            this.bufferSize = this.taskConfig.getInt(net.tbsoft.datax.plugin.unstructuredstorage.reader.Key.BUFFER_SIZE,
+                    net.tbsoft.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_BUFFER_SIZE);
         }
 
         @Override

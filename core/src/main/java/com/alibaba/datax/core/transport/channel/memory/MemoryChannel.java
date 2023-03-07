@@ -1,12 +1,12 @@
-package com.alibaba.datax.core.transport.channel.memory;
+package net.tbsoft.datax.core.transport.channel.memory;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.transport.channel.Channel;
-import com.alibaba.datax.core.transport.record.TerminateRecord;
-import com.alibaba.datax.core.util.FrameworkErrorCode;
-import com.alibaba.datax.core.util.container.CoreConstant;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.transport.channel.Channel;
+import net.tbsoft.datax.core.transport.record.TerminateRecord;
+import net.tbsoft.datax.core.util.FrameworkErrorCode;
+import net.tbsoft.datax.core.util.container.CoreConstant;
 
 import java.util.Collection;
 import java.util.concurrent.ArrayBlockingQueue;

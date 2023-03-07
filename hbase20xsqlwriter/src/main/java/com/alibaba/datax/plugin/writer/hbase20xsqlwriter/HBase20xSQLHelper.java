@@ -1,7 +1,7 @@
-package com.alibaba.datax.plugin.writer.hbase20xsqlwriter;
+package net.tbsoft.datax.plugin.writer.hbase20xsqlwriter;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,7 +28,7 @@ public class HBase20xSQLHelper {
     /**
      * 验证配置参数是否正确
      */
-    public static void validateParameter(com.alibaba.datax.common.util.Configuration originalConfig) {
+    public static void validateParameter(net.tbsoft.datax.common.util.Configuration originalConfig) {
         // 表名和queryserver地址必须配置，否则抛异常
         String tableName = originalConfig.getNecessaryValue(Key.TABLE, HBase20xSQLWriterErrorCode.REQUIRED_VALUE);
         String queryServerAddress = originalConfig.getNecessaryValue(Key.QUERYSERVER_ADDRESS, HBase20xSQLWriterErrorCode.REQUIRED_VALUE);

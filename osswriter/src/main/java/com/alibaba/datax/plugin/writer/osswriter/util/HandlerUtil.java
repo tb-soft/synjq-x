@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.writer.osswriter.util;
+package net.tbsoft.datax.plugin.writer.osswriter.util;
 
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.core.util.container.CoreConstant;
-import com.alibaba.datax.plugin.writer.osswriter.Key;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.core.util.container.CoreConstant;
+import net.tbsoft.datax.plugin.writer.osswriter.Key;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

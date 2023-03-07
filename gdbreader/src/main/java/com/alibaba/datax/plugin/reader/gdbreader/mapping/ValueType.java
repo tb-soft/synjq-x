@@ -5,13 +5,13 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-package com.alibaba.datax.plugin.reader.gdbreader.mapping;
+package net.tbsoft.datax.plugin.reader.gdbreader.mapping;
 
-import com.alibaba.datax.common.element.BoolColumn;
-import com.alibaba.datax.common.element.Column;
-import com.alibaba.datax.common.element.DoubleColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.element.BoolColumn;
+import net.tbsoft.datax.common.element.Column;
+import net.tbsoft.datax.common.element.DoubleColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.StringColumn;
 
 import java.util.HashMap;
 import java.util.Map;

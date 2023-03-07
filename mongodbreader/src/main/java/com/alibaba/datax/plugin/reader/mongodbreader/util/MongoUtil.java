@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.reader.mongodbreader.util;
+package net.tbsoft.datax.plugin.reader.mongodbreader.util;
 
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.reader.mongodbreader.KeyConstant;
-import com.alibaba.datax.plugin.reader.mongodbreader.MongoDBReaderErrorCode;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.reader.mongodbreader.KeyConstant;
+import net.tbsoft.datax.plugin.reader.mongodbreader.MongoDBReaderErrorCode;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;

@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.writer.odpswriter;
+package net.tbsoft.datax.plugin.writer.odpswriter;
 
 public class DateTransForm {
     /**

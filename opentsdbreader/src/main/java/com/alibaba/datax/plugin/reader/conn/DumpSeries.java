@@ -1,8 +1,8 @@
-package com.alibaba.datax.plugin.reader.conn;
+package net.tbsoft.datax.plugin.reader.conn;
 
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.common.plugin.RecordSender;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.common.plugin.RecordSender;
 import net.opentsdb.core.*;
 import net.opentsdb.core.Internal.Cell;
 import org.hbase.async.KeyValue;

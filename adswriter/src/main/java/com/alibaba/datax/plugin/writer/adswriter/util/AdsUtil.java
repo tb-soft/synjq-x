@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.writer.adswriter.util;
+package net.tbsoft.datax.plugin.writer.adswriter.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.rdbms.util.DBUtil;
-import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
-import com.alibaba.datax.plugin.writer.adswriter.load.AdsHelper;
-import com.alibaba.datax.plugin.writer.adswriter.AdsWriterErrorCode;
-import com.alibaba.datax.plugin.writer.adswriter.load.TransferProjectConf;
-import com.alibaba.datax.plugin.writer.adswriter.odps.FieldSchema;
-import com.alibaba.datax.plugin.writer.adswriter.odps.TableMeta;
+import net.tbsoft.datax.common.exception.DataXException;
+import net.tbsoft.datax.common.util.Configuration;
+import net.tbsoft.datax.plugin.rdbms.util.DBUtil;
+import net.tbsoft.datax.plugin.rdbms.util.DataBaseType;
+import net.tbsoft.datax.plugin.writer.adswriter.load.AdsHelper;
+import net.tbsoft.datax.plugin.writer.adswriter.AdsWriterErrorCode;
+import net.tbsoft.datax.plugin.writer.adswriter.load.TransferProjectConf;
+import net.tbsoft.datax.plugin.writer.adswriter.odps.FieldSchema;
+import net.tbsoft.datax.plugin.writer.adswriter.odps.TableMeta;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

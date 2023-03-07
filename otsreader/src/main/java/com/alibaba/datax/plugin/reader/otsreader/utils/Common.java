@@ -1,17 +1,17 @@
-package com.alibaba.datax.plugin.reader.otsreader.utils;
+package net.tbsoft.datax.plugin.reader.otsreader.utils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.alibaba.datax.common.element.BoolColumn;
-import com.alibaba.datax.common.element.BytesColumn;
-import com.alibaba.datax.common.element.DoubleColumn;
-import com.alibaba.datax.common.element.LongColumn;
-import com.alibaba.datax.common.element.Record;
-import com.alibaba.datax.common.element.StringColumn;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSColumn;
-import com.alibaba.datax.plugin.reader.otsreader.model.OTSPrimaryKeyColumn;
+import net.tbsoft.datax.common.element.BoolColumn;
+import net.tbsoft.datax.common.element.BytesColumn;
+import net.tbsoft.datax.common.element.DoubleColumn;
+import net.tbsoft.datax.common.element.LongColumn;
+import net.tbsoft.datax.common.element.Record;
+import net.tbsoft.datax.common.element.StringColumn;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSColumn;
+import net.tbsoft.datax.plugin.reader.otsreader.model.OTSPrimaryKeyColumn;
 import com.aliyun.openservices.ots.ClientException;
 import com.aliyun.openservices.ots.OTSException;
 import com.aliyun.openservices.ots.model.ColumnValue;

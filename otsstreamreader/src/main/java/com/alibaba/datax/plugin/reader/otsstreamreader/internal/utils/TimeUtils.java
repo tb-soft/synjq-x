@@ -1,4 +1,4 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.otsstreamreader.internal.utils;
+package net.tbsoft.datax.plugin.reader.otsstreamreader.internal.utils;
 
-import com.alibaba.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
+import net.tbsoft.datax.plugin.reader.otsstreamreader.internal.config.OTSStreamReaderConfig;
 import com.alicloud.openservices.tablestore.model.StreamShard;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;

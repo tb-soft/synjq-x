@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.oraclereader;
+package net.tbsoft.datax.plugin.reader.oraclereader;
 
-import com.alibaba.datax.common.spi.ErrorCode;
+import net.tbsoft.datax.common.spi.ErrorCode;
 
 public enum OracleReaderErrorCode implements ErrorCode {
     HINT_ERROR("Oraclereader-00", "您的 Hint 配置出错."),

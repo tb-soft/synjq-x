@@ -1,6 +1,6 @@
-package com.alibaba.datax.plugin.reader.hbase11xreader;
+package net.tbsoft.datax.plugin.reader.hbase11xreader;
 
-import com.alibaba.datax.common.base.BaseObject;
+import net.tbsoft.datax.common.base.BaseObject;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.hadoop.hbase.util.Bytes;
